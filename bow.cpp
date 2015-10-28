@@ -163,7 +163,7 @@ bool Init() {
     return false;
 }
 
-Document BuildDocument(char* filename) {
+Document BuildDocument(const char* filename) {
     Document doc;
 
     std::ifstream input(filename);
@@ -195,7 +195,7 @@ Document BuildDocument(char* filename) {
     return doc;
 }
 
-void Train(const Document& doc) {
+void Train(const Document& doc, size_t job_id) {
     for (int epoch = 0; epoch < 50; ++epoch) {
         double nll = 0;
         double probas[labels.size()];
@@ -220,7 +220,8 @@ void Train(const Document& doc) {
                 std::cout << POSToText(predicted) << " instead of " << POSToText(doc[i].second) << "\n";
             }
         }
-        std::cout << nll << "\n" << nb_correct << " / " << nb_tokens << "\n=======\n";
+        LogData("accuracy", nb_correct * 100 / nb_tokens, job_id);
+        LogData("iter", epoch, job_id);
     }
 }
 
@@ -267,26 +268,33 @@ static const JobDesc classify = {
         }
         html << Close();
         return html;
-    }
+    },
 };
 
+static const JobDesc train = {
+    { { "training set", "text", "A relative or absolute filepath to the training set" } },
+    "Train",
+    "/train",
+    "Train the model on the specified dataset",
+    false /* synchronous */,
+    false /* reentrant */,
+    [](const std::vector<std::string>& vs, size_t id) {
+        Document doc = BuildDocument(vs[0].c_str());
+        bool need_training = Init();
+
+        if (need_training) {
+            Train(doc, id);
+        }
+        return Html();
+    },
+    { Chart("progression").Label("iter").Value("accuracy") }
+};
+
+
 int main(int argc, char** argv) {
-    if (argc < 2 || argc > 3) {
-        std::cerr << "Usage: ./" << argv[0] << " <training set>\n";
-        return 1;
-    }
-    Init();
-    Document doc = BuildDocument(argv[1]);
-
-    bool need_training = Init();
-
-    if (need_training) {
-        Train(doc);
-        Save();
-    }
-
     InitHttpInterface();  // Init the http server
     RegisterJob(classify);
+    RegisterJob(train);
     ServiceLoopForever();  // infinite loop ending only on SIGINT / SIGTERM / SIGKILL
     StopHttpInterface();  // clear resources
     return 0;

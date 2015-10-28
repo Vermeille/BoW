@@ -1,0 +1,6000 @@
+ films . | OPEN_movies
+ haut . | GO_UP
+ pourrais tu aller à la page suivante . | GO_NEXT
+ haut . | GO_UP
+ trouve ces photos . | FIND
+ va en bas . | GO_DOWN
+ trouve les . | FIND
+ bas . | GO_DOWN
+ aller à films . | OPEN_movies
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve ces photos . | FIND
+ supprime les .usiques  . | REMOVE
+ page suivante . | GO_NEXT
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu le trouver . | FIND
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ films . | OPEN_movies
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ haut . | GO_UP
+ image suivante . | GO_NEXT
+ supprime le . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ trouve ça . | FIND
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ pourrais tu trouver ça . | FIND
+ trouve ces musiques  . | FIND
+ pourrais tu aller à la page précédente . | GO_PREV
+ navigateur . | OPEN_browser
+ photo suivante . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ suivant . | GO_NEXT
+ musique . | OPEN_music
+ photos . | OPEN_photos
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ précédent . | GO_PREV
+ photos . | OPEN_photos
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ peux tu le trouver . | FIND
+ supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ photos . | OPEN_photos
+ bas . | GO_DOWN
+ aller à suivant game . | GO_NEXT
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ pourrais tu aller à photo suivante . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ trouve ces . | FIND
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ peux tu supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ images . | OPEN_photos
+ trouve les . | FIND
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ bas . | GO_DOWN
+ trouve ces . | FIND
+ images . | OPEN_photos
+ aller à image suivante . | GO_NEXT
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ trouve les photos . | FIND
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ peux tu le trouver . | FIND
+ pourrais tu trouve ces . | FIND
+ trouve ces . | FIND
+ précédent photo . | GO_PREV
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ trouve ça films . | FIND
+ supprime le . | REMOVE
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ trouve ces images . | FIND
+ musique . | OPEN_music
+ précédent . | GO_PREV
+ jeux . | OPEN_games
+ supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu trouve ces . | FIND
+ trouve ça films . | FIND
+ précédent photo . | GO_PREV
+ jeux . | OPEN_games
+ trouve les . | FIND
+ suivant game . | GO_NEXT
+ supprime ça films . | REMOVE
+ va en bas . | GO_DOWN
+ peux tu trouve ces films . | FIND
+ trouve les photos . | FIND
+ peux tu les supprimer . | REMOVE
+ page suivante . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ photo suivante . | GO_NEXT
+ suivant film . | GO_NEXT
+ bas . | GO_DOWN
+ haut . | GO_UP
+ trouve ces musique . | FIND
+ bas . | GO_DOWN
+ images . | OPEN_photos
+ supprime ça images . | REMOVE
+ musique . | OPEN_music
+ trouve ces . | FIND
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ trouve ça images . | FIND
+ trouve ces films . | FIND
+ suivant film . | GO_NEXT
+ supprime les .hotos . | REMOVE
+ trouve ces . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ peux tu aller à précédent game . | GO_PREV
+ va en bas . | GO_DOWN
+ précédent image . | GO_PREV
+ photos . | OPEN_photos
+ peux tu va en haut . | GO_UP
+ suivant . | GO_NEXT
+ trouve ça images . | FIND
+ trouve le . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ haut . | GO_UP
+ bas . | GO_DOWN
+ trouve les jeux . | FIND
+ trouve ça . | FIND
+ trouve ces . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu aller à photos . | OPEN_photos
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ films . | OPEN_movies
+ trouve ces musique . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ supprime ça jeux . | REMOVE
+ bas . | GO_DOWN
+ peux tu supprime les . | REMOVE
+ trouve les photos . | FIND
+ haut . | GO_UP
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ haut . | GO_UP
+ supprime les . | REMOVE
+ films . | OPEN_movies
+ précédent image . | GO_PREV
+ supprime le . | REMOVE
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ peux tu aller à films . | OPEN_movies
+ suivant film . | GO_NEXT
+ trouve ça . | FIND
+ pourrais tu aller à films . | OPEN_movies
+ suivant chanson . | GO_NEXT
+ suivant . | GO_NEXT
+ trouve ces . | FIND
+ pourrais tu trouve ces jeux . | FIND
+ peux tu supprime ça jeux . | REMOVE
+ navigateur . | OPEN_browser
+ supprime les . | REMOVE
+ suivant film . | GO_NEXT
+ haut . | GO_UP
+ films . | OPEN_movies
+ trouve les musique . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ films . | OPEN_movies
+ haut . | GO_UP
+ pourrais tu aller à précédent chanson . | GO_PREV
+ jeux . | OPEN_games
+ peux tu supprime les .usiques  . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu trouve ces . | FIND
+ peux tu aller à précédent game . | GO_PREV
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ suivant film . | GO_NEXT
+ bas . | GO_DOWN
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ trouve le . | FIND
+ photos . | OPEN_photos
+ précédent image . | GO_PREV
+ pourrais tu supprimer ces . | REMOVE
+ peux tu supprime ça . | REMOVE
+ peux tu supprime ça jeux . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ peux tu va en haut . | GO_UP
+ images . | OPEN_photos
+ photos . | OPEN_photos
+ va en haut . | GO_UP
+ haut . | GO_UP
+ peux tu trouve ces . | FIND
+ peux tu va en haut . | GO_UP
+ photos . | OPEN_photos
+ haut . | GO_UP
+ peux tu aller à la page suivante . | GO_NEXT
+ trouve les . | FIND
+ supprime le . | REMOVE
+ supprime les . | REMOVE
+ pourrais tu aller à photos . | OPEN_photos
+ images . | OPEN_photos
+ trouve les . | FIND
+ trouve le . | FIND
+ trouve ces photos . | FIND
+ peux tu supprime les .hotos . | REMOVE
+ trouve le . | FIND
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ jeux . | OPEN_games
+ trouve les images . | FIND
+ musique . | OPEN_music
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ trouve ces films . | FIND
+ peux tu supprime les . | REMOVE
+ précédent image . | GO_PREV
+ précédent film . | GO_PREV
+ images . | OPEN_photos
+ va en bas . | GO_DOWN
+ trouve ça . | FIND
+ pourrais tu supprimer le . | REMOVE
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ image suivante . | GO_NEXT
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ photos . | OPEN_photos
+ précédent film . | GO_PREV
+ image suivante . | GO_NEXT
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu supprimer ça films . | REMOVE
+ photos . | OPEN_photos
+ suivant game . | GO_NEXT
+ trouve les . | FIND
+ supprime les . | REMOVE
+ aller à images . | OPEN_photos
+ peux tu supprime les . | REMOVE
+ films . | OPEN_movies
+ photos . | OPEN_photos
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ aller à suivant game . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ trouve les jeux . | FIND
+ pourrais tu le trouver . | FIND
+ trouve ça . | FIND
+ pourrais tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ trouve ces films . | FIND
+ peux tu aller à suivant game . | GO_NEXT
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ trouve le . | FIND
+ trouve ces . | FIND
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ trouve les . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu aller à musique . | OPEN_music
+ photo suivante . | GO_NEXT
+ pourrais tu aller à jeux . | OPEN_games
+ bas . | GO_DOWN
+ haut . | GO_UP
+ trouve les . | FIND
+ jeux . | OPEN_games
+ trouve ça films . | FIND
+ aller à photos . | OPEN_photos
+ trouve les . | FIND
+ photos . | OPEN_photos
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ suivant chanson . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ images . | OPEN_photos
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ films . | OPEN_movies
+ aller à images . | OPEN_photos
+ suivant . | GO_NEXT
+ peux tu supprime les . | REMOVE
+ images . | OPEN_photos
+ haut . | GO_UP
+ images . | OPEN_photos
+ trouve les . | FIND
+ page précédente . | GO_PREV
+ trouve ces . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ trouve les photos . | FIND
+ trouve ça images . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ peux tu aller à précédent image . | GO_PREV
+ trouve ces photos . | FIND
+ supprime le . | REMOVE
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ supprime le . | REMOVE
+ peux tu le supprimer . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve les images . | FIND
+ navigateur . | OPEN_browser
+ trouve ça images . | FIND
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ pourrais tu aller au film précédent . | GO_PREV
+ haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ bas . | GO_DOWN
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ supprime ça images . | REMOVE
+ supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ photos . | OPEN_photos
+ images . | OPEN_photos
+ images . | OPEN_photos
+ peux tu les supprimer . | REMOVE
+ peux tu supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ précédent photo . | GO_PREV
+ trouve ces . | FIND
+ aller à précédent image . | GO_PREV
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ peux tu le trouver . | FIND
+ haut . | GO_UP
+ images . | OPEN_photos
+ trouve ça . | FIND
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ pourrais tu trouver ça . | FIND
+ peux tu le trouver . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ musique . | OPEN_music
+ supprime les . | REMOVE
+ supprime le . | REMOVE
+ pourrais tu supprimer ça images . | REMOVE
+ aller à photos . | OPEN_photos
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ haut . | GO_UP
+ supprime le . | REMOVE
+ jeux . | OPEN_games
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ musique . | OPEN_music
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu le trouver films . | FIND
+ supprime ça . | REMOVE
+ va en bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ peux tu le trouver . | FIND
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ peux tu supprime ça . | REMOVE
+ précédent image . | GO_PREV
+ trouve ça . | FIND
+ peux tu supprime les .usique . | REMOVE
+ trouve ça . | FIND
+ peux tu le trouver . | FIND
+ haut . | GO_UP
+ musique . | OPEN_music
+ pourrais tu supprimer ça . | REMOVE
+ musique . | OPEN_music
+ pourrais tu supprimer ces films . | REMOVE
+ pourrais tu aller à images . | OPEN_photos
+ suivant . | GO_NEXT
+ précédent film . | GO_PREV
+ suivant film . | GO_NEXT
+ haut . | GO_UP
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer films . | REMOVE
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ images . | OPEN_photos
+ précédent . | GO_PREV
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ images . | OPEN_photos
+ films . | OPEN_movies
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ va en bas . | GO_DOWN
+ pourrais tu le trouver . | FIND
+ page suivante . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu aller à films . | OPEN_movies
+ précédent game . | GO_PREV
+ haut . | GO_UP
+ trouve ça . | FIND
+ haut . | GO_UP
+ pourrais tu les supprimer jeux . | REMOVE
+ suivant . | GO_NEXT
+ précédent film . | GO_PREV
+ trouve ça . | FIND
+ haut . | GO_UP
+ peux tu aller à suivant game . | GO_NEXT
+ supprime ça images . | REMOVE
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ peux tu aller à photos . | OPEN_photos
+ jeux . | OPEN_games
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ suivant . | GO_NEXT
+ trouve ça films . | FIND
+ page suivante . | GO_NEXT
+ peux tu supprime les . | REMOVE
+ haut . | GO_UP
+ peux tu supprime les .usiques  . | REMOVE
+ peux tu le supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ça . | REMOVE
+ aller à photos . | OPEN_photos
+ photo suivante . | GO_NEXT
+ peux tu aller à précédent chanson . | GO_PREV
+ supprime les . | REMOVE
+ images . | OPEN_photos
+ trouve ça . | FIND
+ trouve ça films . | FIND
+ supprime ça films . | REMOVE
+ haut . | GO_UP
+ image suivante . | GO_NEXT
+ peux tu va en haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ page suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ peux tu aller à précédent image . | GO_PREV
+ précédent image . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ supprime le . | REMOVE
+ peux tu supprime ça . | REMOVE
+ supprime le . | REMOVE
+ supprime ça . | REMOVE
+ peux tu les supprimer photos . | REMOVE
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu le trouver . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ peux tu le supprimer . | REMOVE
+ haut . | GO_UP
+ supprime les . | REMOVE
+ aller à la page précédente . | GO_PREV
+ trouve ça . | FIND
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve le . | FIND
+ trouve le . | FIND
+ supprime ça . | REMOVE
+ supprime les .usiques  . | REMOVE
+ aller à navigateur . | OPEN_browser
+ précédent photo . | GO_PREV
+ supprime ça . | REMOVE
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu aller à précédent chanson . | GO_PREV
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ peux tu le supprimer . | REMOVE
+ aller à la photo précédente . | GO_PREV
+ supprime les . | REMOVE
+ photos . | OPEN_photos
+ page suivante . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ peux tu supprime ça images . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ haut . | GO_UP
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ trouve ces musique . | FIND
+ précédent photo . | GO_PREV
+ peux tu supprime ça jeux . | REMOVE
+ suivant film . | GO_NEXT
+ images . | OPEN_photos
+ haut . | GO_UP
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ musique . | OPEN_music
+ films . | OPEN_movies
+ peux tu aller à précédent game . | GO_PREV
+ photos . | OPEN_photos
+ haut . | GO_UP
+ page suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ pourrais tu va en haut . | GO_UP
+ haut . | GO_UP
+ aller à images . | OPEN_photos
+ suivant game . | GO_NEXT
+ page précédente . | GO_PREV
+ haut . | GO_UP
+ pourrais tu aller à photos . | OPEN_photos
+ trouve les . | FIND
+ pourrais tu aller à la page précédente . | GO_PREV
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ haut . | GO_UP
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ suivant . | GO_NEXT
+ trouve ça . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve le . | FIND
+ trouve les . | FIND
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ pourrais tu les supprimer photos . | REMOVE
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ trouve les photos . | FIND
+ pourrais tu aller à image suivante . | GO_NEXT
+ pourrais tu supprimer ces films . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer films . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu supprime ça jeux . | REMOVE
+ supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve ces photos . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ images . | OPEN_photos
+ trouve les . | FIND
+ précédent game . | GO_PREV
+ images . | OPEN_photos
+ trouve ces photos . | FIND
+ bas . | GO_DOWN
+ trouve ces . | FIND
+ haut . | GO_UP
+ pourrais tu supprimer ces . | REMOVE
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ peux tu supprime les .ilms . | REMOVE
+ photo suivante . | GO_NEXT
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ haut . | GO_UP
+ images . | OPEN_photos
+ trouve ça . | FIND
+ photos . | OPEN_photos
+ trouve ces . | FIND
+ musique . | OPEN_music
+ trouve ces . | FIND
+ trouve ces . | FIND
+ pourrais tu les supprimer . | REMOVE
+ supprime ça . | REMOVE
+ peux tu les supprimer images . | REMOVE
+ films . | OPEN_movies
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve le . | FIND
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ pourrais tu supprimer le . | REMOVE
+ page précédente . | GO_PREV
+ peux tu trouver ça . | FIND
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ces . | REMOVE
+ supprime ça jeux . | REMOVE
+ musique . | OPEN_music
+ pourrais tu le trouver . | FIND
+ trouve les . | FIND
+ photo suivante . | GO_NEXT
+ va en haut . | GO_UP
+ aller à films . | OPEN_movies
+ trouve le . | FIND
+ peux tu le trouver films . | FIND
+ trouve les films . | FIND
+ supprime ça films . | REMOVE
+ suivant . | GO_NEXT
+ aller à films . | OPEN_movies
+ pourrais tu les supprimer . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ va en haut . | GO_UP
+ photos . | OPEN_photos
+ haut . | GO_UP
+ supprime les . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ supprime le . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ photos . | OPEN_photos
+ navigateur . | OPEN_browser
+ suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu va en haut . | GO_UP
+ trouve ces musiques  . | FIND
+ va en haut . | GO_UP
+ aller à photo suivante . | GO_NEXT
+ supprime ça jeux . | REMOVE
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ peux tu supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu aller à précédent image . | GO_PREV
+ aller à la photo précédente . | GO_PREV
+ trouve les musique . | FIND
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ va en haut . | GO_UP
+ images . | OPEN_photos
+ haut . | GO_UP
+ peux tu aller à jeux . | OPEN_games
+ peux tu trouver ça . | FIND
+ trouve le . | FIND
+ pourrais tu aller à photos . | OPEN_photos
+ suivant . | GO_NEXT
+ aller à photos . | OPEN_photos
+ supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ musique . | OPEN_music
+ pourrais tu supprimer ça jeux . | REMOVE
+ précédent . | GO_PREV
+ photo suivante . | GO_NEXT
+ bas . | GO_DOWN
+ trouve les . | FIND
+ pourrais tu aller à photos . | OPEN_photos
+ trouve ces . | FIND
+ trouve les jeux . | FIND
+ peux tu trouver ça . | FIND
+ va en haut . | GO_UP
+ précédent . | GO_PREV
+ pourrais tu supprimer ces . | REMOVE
+ aller à photo suivante . | GO_NEXT
+ peux tu trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ musique . | OPEN_music
+ haut . | GO_UP
+ trouve les . | FIND
+ supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ trouve ces . | FIND
+ page précédente . | GO_PREV
+ bas . | GO_DOWN
+ page précédente . | GO_PREV
+ musique . | OPEN_music
+ haut . | GO_UP
+ trouve le . | FIND
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ suivant film . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ peux tu aller à précédent game . | GO_PREV
+ peux tu supprime ça jeux . | REMOVE
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ peux tu supprime les .mages . | REMOVE
+ navigateur . | OPEN_browser
+ navigateur . | OPEN_browser
+ pourrais tu va en bas . | GO_DOWN
+ peux tu supprime les .usiques  . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ça images . | REMOVE
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ trouve ça . | FIND
+ peux tu supprime ça films . | REMOVE
+ trouve les . | FIND
+ trouve le . | FIND
+ précédent film . | GO_PREV
+ peux tu aller à photos . | OPEN_photos
+ supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ haut . | GO_UP
+ pourrais tu trouver ça . | FIND
+ pourrais tu les supprimer images . | REMOVE
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ supprime les . | REMOVE
+ précédent film . | GO_PREV
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ photos . | OPEN_photos
+ films . | OPEN_movies
+ haut . | GO_UP
+ supprime les .hotos . | REMOVE
+ pourrais tu les supprimer jeux . | REMOVE
+ peux tu supprime les .usiques  . | REMOVE
+ bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ musique . | OPEN_music
+ peux tu supprime les .ames . | REMOVE
+ images . | OPEN_photos
+ films . | OPEN_movies
+ peux tu trouver ça . | FIND
+ peux tu le supprimer . | REMOVE
+ pourrais tu les supprimer musique . | REMOVE
+ page précédente . | GO_PREV
+ trouve ces . | FIND
+ films . | OPEN_movies
+ films . | OPEN_movies
+ trouve ça . | FIND
+ musique . | OPEN_music
+ trouve le . | FIND
+ peux tu trouver ça . | FIND
+ peux tu le trouver . | FIND
+ trouve ça films . | FIND
+ bas . | GO_DOWN
+ peux tu trouver ça . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ films . | OPEN_movies
+ pourrais tu supprimer ces . | REMOVE
+ aller à musique . | OPEN_music
+ supprime le . | REMOVE
+ image suivante . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ pourrais tu aller à jeux . | OPEN_games
+ pourrais tu supprimer ça . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ précédent photo . | GO_PREV
+ peux tu le supprimer . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ peux tu le trouver . | FIND
+ précédent photo . | GO_PREV
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ peux tu supprime les .hotos . | REMOVE
+ navigateur . | OPEN_browser
+ page suivante . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ précédent . | GO_PREV
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ précédent . | GO_PREV
+ va en bas . | GO_DOWN
+ peux tu va en haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ aller à images . | OPEN_photos
+ trouve les . | FIND
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ supprime le . | REMOVE
+ suivant chanson . | GO_NEXT
+ jeux . | OPEN_games
+ trouve les . | FIND
+ musique . | OPEN_music
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ trouve ça films . | FIND
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ trouve les . | FIND
+ jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ pourrais tu aller à suivant chanson . | GO_NEXT
+ aller à précédent image . | GO_PREV
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ supprime ça . | REMOVE
+ peux tu va en haut . | GO_UP
+ précédent . | GO_PREV
+ pourrais tu trouve ces . | FIND
+ trouve les . | FIND
+ suivant chanson . | GO_NEXT
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ musique . | OPEN_music
+ précédent . | GO_PREV
+ trouve le . | FIND
+ précédent photo . | GO_PREV
+ peux tu les supprimer musique . | REMOVE
+ pourrais tu trouver ça jeux . | FIND
+ haut . | GO_UP
+ peux tu va en haut . | GO_UP
+ précédent image . | GO_PREV
+ peux tu aller à précédent game . | GO_PREV
+ musique . | OPEN_music
+ peux tu aller à la photo précédente . | GO_PREV
+ peux tu aller au film précédent . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu aller au film précédent . | GO_PREV
+ trouve les . | FIND
+ haut . | GO_UP
+ suivant film . | GO_NEXT
+ pourrais tu le trouver . | FIND
+ trouve les . | FIND
+ trouve les . | FIND
+ musique . | OPEN_music
+ trouve le . | FIND
+ films . | OPEN_movies
+ photos . | OPEN_photos
+ peux tu le supprimer . | REMOVE
+ supprime les . | REMOVE
+ images . | OPEN_photos
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ trouve les images . | FIND
+ musique . | OPEN_music
+ trouve ces . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ pourrais tu trouve ces . | FIND
+ images . | OPEN_photos
+ précédent . | GO_PREV
+ précédent image . | GO_PREV
+ trouve les . | FIND
+ photos . | OPEN_photos
+ peux tu trouver ça . | FIND
+ navigateur . | OPEN_browser
+ peux tu aller à suivant game . | GO_NEXT
+ haut . | GO_UP
+ trouve ces jeux . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ supprime ça jeux . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ navigateur . | OPEN_browser
+ supprime ça . | REMOVE
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer jeux . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ suivant film . | GO_NEXT
+ images . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ trouve les images . | FIND
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ peux tu les supprimer jeux . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ musique . | OPEN_music
+ trouve les jeux . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ trouve le . | FIND
+ bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ précédent . | GO_PREV
+ suivant chanson . | GO_NEXT
+ trouve ça . | FIND
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ pourrais tu les supprimer images . | REMOVE
+ trouve ça . | FIND
+ aller à musique . | OPEN_music
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ précédent image . | GO_PREV
+ pourrais tu supprimer ces jeux . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ peux tu aller à précédent game . | GO_PREV
+ trouve ça . | FIND
+ pourrais tu va en haut . | GO_UP
+ suivant . | GO_NEXT
+ peux tu aller au film suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ trouve ça . | FIND
+ navigateur . | OPEN_browser
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ haut . | GO_UP
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ supprime les .hotos . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ trouve le . | FIND
+ trouve le . | FIND
+ précédent image . | GO_PREV
+ photos . | OPEN_photos
+ pourrais tu trouver ça . | FIND
+ suivant . | GO_NEXT
+ précédent chanson . | GO_PREV
+ trouve les . | FIND
+ supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ supprime les . | REMOVE
+ pourrais tu aller à précédent image . | GO_PREV
+ pourrais tu supprimer ça films . | REMOVE
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ aller à photos . | OPEN_photos
+ images . | OPEN_photos
+ trouve ces . | FIND
+ trouve ces musique . | FIND
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ aller à image suivante . | GO_NEXT
+ jeux . | OPEN_games
+ haut . | GO_UP
+ trouve ces . | FIND
+ image suivante . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ supprime le . | REMOVE
+ photo suivante . | GO_NEXT
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ trouve le . | FIND
+ aller à la photo précédente . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ peux tu aller à musique . | OPEN_music
+ supprime les . | REMOVE
+ va en haut . | GO_UP
+ trouve ça films . | FIND
+ peux tu aller à jeux . | OPEN_games
+ musique . | OPEN_music
+ musique . | OPEN_music
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ aller à suivant game . | GO_NEXT
+ trouve ces . | FIND
+ précédent game . | GO_PREV
+ bas . | GO_DOWN
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve ça images . | FIND
+ jeux . | OPEN_games
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ peux tu aller à suivant chanson . | GO_NEXT
+ haut . | GO_UP
+ aller à la page précédente . | GO_PREV
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ peux tu trouve ces images . | FIND
+ trouve ces photos . | FIND
+ peux tu le trouver . | FIND
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ images . | OPEN_photos
+ pourrais tu supprimer ça . | REMOVE
+ haut . | GO_UP
+ va en bas . | GO_DOWN
+ trouve ça . | FIND
+ haut . | GO_UP
+ peux tu supprime les . | REMOVE
+ pourrais tu aller à photos . | OPEN_photos
+ trouve le . | FIND
+ bas . | GO_DOWN
+ trouve le . | FIND
+ page précédente . | GO_PREV
+ peux tu le supprimer . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ page suivante . | GO_NEXT
+ trouve ces musique . | FIND
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu trouver ça . | FIND
+ films . | OPEN_movies
+ peux tu aller à musique . | OPEN_music
+ trouve les . | FIND
+ aller à jeux . | OPEN_games
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ces musiques  . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ aller à la page suivante . | GO_NEXT
+ trouve ces . | FIND
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ peux tu aller à photos . | OPEN_photos
+ trouve ça images . | FIND
+ haut . | GO_UP
+ pourrais tu va en haut . | GO_UP
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ précédent image . | GO_PREV
+ photos . | OPEN_photos
+ images . | OPEN_photos
+ aller à suivant chanson . | GO_NEXT
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ trouve ça jeux . | FIND
+ supprime les .hotos . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ supprime les . | REMOVE
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve ces jeux . | FIND
+ films . | OPEN_movies
+ trouve le . | FIND
+ pourrais tu supprimer ces jeux . | REMOVE
+ supprime les . | REMOVE
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ trouve ces musique . | FIND
+ images . | OPEN_photos
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ supprime ça . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ supprime les .hotos . | REMOVE
+ trouve le . | FIND
+ pourrais tu aller à musique . | OPEN_music
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ peux tu supprime les .usique . | REMOVE
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ précédent . | GO_PREV
+ précédent . | GO_PREV
+ pourrais tu va en bas . | GO_DOWN
+ supprime le . | REMOVE
+ musique . | OPEN_music
+ va en haut . | GO_UP
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu trouve ces . | FIND
+ bas . | GO_DOWN
+ précédent photo . | GO_PREV
+ photos . | OPEN_photos
+ peux tu supprime les . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ précédent . | GO_PREV
+ haut . | GO_UP
+ images . | OPEN_photos
+ supprime le . | REMOVE
+ trouve les . | FIND
+ pourrais tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ trouve ça . | FIND
+ musique . | OPEN_music
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ films . | OPEN_movies
+ navigateur . | OPEN_browser
+ pourrais tu va en bas . | GO_DOWN
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ supprime le . | REMOVE
+ aller à jeux . | OPEN_games
+ pourrais tu trouver ça films . | FIND
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ suivant . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ jeux . | OPEN_games
+ trouve ça . | FIND
+ précédent image . | GO_PREV
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ trouve ça . | FIND
+ suivant film . | GO_NEXT
+ va en haut . | GO_UP
+ peux tu supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ peux tu le supprimer . | REMOVE
+ supprime ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ haut . | GO_UP
+ images . | OPEN_photos
+ haut . | GO_UP
+ bas . | GO_DOWN
+ pourrais tu supprimer ça jeux . | REMOVE
+ jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ supprime le . | REMOVE
+ trouve le . | FIND
+ supprime ça . | REMOVE
+ trouve ces films . | FIND
+ peux tu supprime ça . | REMOVE
+ musique . | OPEN_music
+ navigateur . | OPEN_browser
+ précédent game . | GO_PREV
+ haut . | GO_UP
+ jeux . | OPEN_games
+ peux tu le supprimer . | REMOVE
+ image suivante . | GO_NEXT
+ bas . | GO_DOWN
+ supprime le . | REMOVE
+ pourrais tu les supprimer musique . | REMOVE
+ pourrais tu supprimer ces images . | REMOVE
+ précédent . | GO_PREV
+ trouve les . | FIND
+ trouve ces musiques  . | FIND
+ supprime ça jeux . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ supprime les . | REMOVE
+ image suivante . | GO_NEXT
+ trouve les . | FIND
+ peux tu aller à films . | OPEN_movies
+ haut . | GO_UP
+ pourrais tu aller à musique . | OPEN_music
+ page suivante . | GO_NEXT
+ pourrais tu supprimer ces musiques  . | REMOVE
+ suivant film . | GO_NEXT
+ trouve ces . | FIND
+ navigateur . | OPEN_browser
+ pourrais tu trouver ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ va en haut . | GO_UP
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve ça images . | FIND
+ peux tu aller à précédent image . | GO_PREV
+ trouve ces musiques  . | FIND
+ haut . | GO_UP
+ photos . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ supprime les photos . | REMOVE
+ peux tu les supprimer films . | REMOVE
+ trouve les . | FIND
+ supprime les .ilms . | REMOVE
+ trouve les . | FIND
+ photo suivante . | GO_NEXT
+ trouve les . | FIND
+ peux tu supprime ça . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ aller à films . | OPEN_movies
+ haut . | GO_UP
+ trouve ces musiques  . | FIND
+ suivant . | GO_NEXT
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ supprime le . | REMOVE
+ peux tu trouver ça . | FIND
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ pourrais tu aller à films . | OPEN_movies
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ peux tu aller à images . | OPEN_photos
+ musique . | OPEN_music
+ haut . | GO_UP
+ pourrais tu supprimer ces photos . | REMOVE
+ supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ haut . | GO_UP
+ précédent . | GO_PREV
+ aller à jeux . | OPEN_games
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ photo suivante . | GO_NEXT
+ précédent . | GO_PREV
+ peux tu aller à photos . | OPEN_photos
+ haut . | GO_UP
+ haut . | GO_UP
+ images . | OPEN_photos
+ image suivante . | GO_NEXT
+ pourrais tu aller à photo suivante . | GO_NEXT
+ pourrais tu aller à navigateur . | OPEN_browser
+ peux tu trouver ça . | FIND
+ pourrais tu va en haut . | GO_UP
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ précédent film . | GO_PREV
+ bas . | GO_DOWN
+ précédent chanson . | GO_PREV
+ précédent . | GO_PREV
+ peux tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ pourrais tu aller à suivant game . | GO_NEXT
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ aller à images . | OPEN_photos
+ haut . | GO_UP
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ trouve le . | FIND
+ musique . | OPEN_music
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ films . | OPEN_movies
+ peux tu trouver ça films . | FIND
+ trouve ça . | FIND
+ peux tu le trouver . | FIND
+ supprime les .hotos . | REMOVE
+ trouve le . | FIND
+ peux tu supprime les .ilms . | REMOVE
+ haut . | GO_UP
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ précédent chanson . | GO_PREV
+ trouve ces photos . | FIND
+ photos . | OPEN_photos
+ page précédente . | GO_PREV
+ images . | OPEN_photos
+ suivant . | GO_NEXT
+ trouve ça . | FIND
+ trouve les . | FIND
+ trouve ça jeux . | FIND
+ précédent . | GO_PREV
+ trouve les . | FIND
+ peux tu trouver ça . | FIND
+ haut . | GO_UP
+ pourrais tu trouve ces . | FIND
+ trouve ces . | FIND
+ pourrais tu supprimer le . | REMOVE
+ films . | OPEN_movies
+ trouve ça . | FIND
+ trouve ça . | FIND
+ va en haut . | GO_UP
+ supprime ça . | REMOVE
+ précédent image . | GO_PREV
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ haut . | GO_UP
+ trouve ça . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ peux tu supprime les . | REMOVE
+ trouve ces musiques  . | FIND
+ trouve ça jeux . | FIND
+ suivant . | GO_NEXT
+ pourrais tu supprimer ça jeux . | REMOVE
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ aller à photos . | OPEN_photos
+ trouve les . | FIND
+ jeux . | OPEN_games
+ images . | OPEN_photos
+ précédent . | GO_PREV
+ haut . | GO_UP
+ peux tu supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve le . | FIND
+ va en bas . | GO_DOWN
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ trouve le . | FIND
+ musique . | OPEN_music
+ peux tu aller à la page précédente . | GO_PREV
+ pourrais tu les supprimer jeux . | REMOVE
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ films . | OPEN_movies
+ trouve le . | FIND
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu aller au film précédent . | GO_PREV
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ trouve le . | FIND
+ supprime le . | REMOVE
+ pourrais tu aller à image suivante . | GO_NEXT
+ haut . | GO_UP
+ trouve ça . | FIND
+ supprime les .hotos . | REMOVE
+ peux tu les supprimer . | REMOVE
+ suivant film . | GO_NEXT
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ trouve le . | FIND
+ pourrais tu supprimer ces jeux . | REMOVE
+ trouve le . | FIND
+ images . | OPEN_photos
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ page suivante . | GO_NEXT
+ pourrais tu va en haut . | GO_UP
+ trouve les . | FIND
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ peux tu supprime ça images . | REMOVE
+ haut . | GO_UP
+ peux tu supprime les .usiques  . | REMOVE
+ précédent . | GO_PREV
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ précédent photo . | GO_PREV
+ précédent game . | GO_PREV
+ page précédente . | GO_PREV
+ supprime les . | REMOVE
+ trouve les films . | FIND
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ peux tu supprime les .ames . | REMOVE
+ photo suivante . | GO_NEXT
+ supprime le . | REMOVE
+ trouve le . | FIND
+ suivant film . | GO_NEXT
+ trouve les images . | FIND
+ peux tu le supprimer . | REMOVE
+ haut . | GO_UP
+ peux tu les supprimer musique . | REMOVE
+ pourrais tu aller à musique . | OPEN_music
+ pourrais tu aller à navigateur . | OPEN_browser
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ aller à photo suivante . | GO_NEXT
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ trouve ces musiques  . | FIND
+ image suivante . | GO_NEXT
+ supprime les photos . | REMOVE
+ images . | OPEN_photos
+ peux tu supprime les .usique . | REMOVE
+ précédent . | GO_PREV
+ peux tu supprime les .usiques  . | REMOVE
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ précédent image . | GO_PREV
+ trouve ces . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ trouve ces images . | FIND
+ peux tu supprime ça . | REMOVE
+ haut . | GO_UP
+ peux tu aller à la page suivante . | GO_NEXT
+ précédent image . | GO_PREV
+ supprime les . | REMOVE
+ supprime les .hotos . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ peux tu le trouver images . | FIND
+ jeux . | OPEN_games
+ trouve le . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ jeux . | OPEN_games
+ photos . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ trouve ces musique . | FIND
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ photo suivante . | GO_NEXT
+ peux tu le trouver . | FIND
+ images . | OPEN_photos
+ trouve le . | FIND
+ précédent image . | GO_PREV
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ trouve le . | FIND
+ peux tu va en haut . | GO_UP
+ aller à jeux . | OPEN_games
+ supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ précédent . | GO_PREV
+ trouve les . | FIND
+ précédent image . | GO_PREV
+ page suivante . | GO_NEXT
+ navigateur . | OPEN_browser
+ page suivante . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ peux tu les supprimer musique . | REMOVE
+ peux tu le trouver . | FIND
+ précédent chanson . | GO_PREV
+ photos . | OPEN_photos
+ haut . | GO_UP
+ trouve ces photos . | FIND
+ images . | OPEN_photos
+ trouve le . | FIND
+ trouve le . | FIND
+ peux tu les supprimer . | REMOVE
+ précédent game . | GO_PREV
+ trouve les jeux . | FIND
+ pourrais tu aller au film précédent . | GO_PREV
+ précédent film . | GO_PREV
+ pourrais tu aller au film suivant . | GO_NEXT
+ aller à précédent image . | GO_PREV
+ films . | OPEN_movies
+ films . | OPEN_movies
+ précédent photo . | GO_PREV
+ aller à la page précédente . | GO_PREV
+ suivant chanson . | GO_NEXT
+ trouve ces . | FIND
+ musique . | OPEN_music
+ jeux . | OPEN_games
+ photos . | OPEN_photos
+ navigateur . | OPEN_browser
+ trouve ces . | FIND
+ trouve ces . | FIND
+ trouve le . | FIND
+ trouve le . | FIND
+ va en haut . | GO_UP
+ films . | OPEN_movies
+ trouve ces . | FIND
+ trouve ça images . | FIND
+ images . | OPEN_photos
+ trouve ça . | FIND
+ pourrais tu supprimer ces musiques  . | REMOVE
+ trouve ça . | FIND
+ photos . | OPEN_photos
+ photos . | OPEN_photos
+ musique . | OPEN_music
+ pourrais tu les supprimer . | REMOVE
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu trouver ça . | FIND
+ précédent game . | GO_PREV
+ trouve les . | FIND
+ peux tu va en haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ces musiques  . | REMOVE
+ trouve les . | FIND
+ précédent game . | GO_PREV
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ images . | OPEN_photos
+ précédent image . | GO_PREV
+ trouve les . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ supprime les images . | REMOVE
+ trouve ces images . | FIND
+ suivant . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ page suivante . | GO_NEXT
+ trouve ça images . | FIND
+ trouve les . | FIND
+ trouve le . | FIND
+ jeux . | OPEN_games
+ va en haut . | GO_UP
+ suivant . | GO_NEXT
+ précédent film . | GO_PREV
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ça . | REMOVE
+ films . | OPEN_movies
+ images . | OPEN_photos
+ peux tu le trouver . | FIND
+ précédent . | GO_PREV
+ haut . | GO_UP
+ supprime ça images . | REMOVE
+ peux tu aller à photos . | OPEN_photos
+ trouve ça . | FIND
+ haut . | GO_UP
+ peux tu les supprimer photos . | REMOVE
+ navigateur . | OPEN_browser
+ peux tu trouve ces . | FIND
+ pourrais tu supprimer ça images . | REMOVE
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ trouve le . | FIND
+ précédent . | GO_PREV
+ trouve les . | FIND
+ trouve ces musiques  . | FIND
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ haut . | GO_UP
+ peux tu les supprimer photos . | REMOVE
+ films . | OPEN_movies
+ images . | OPEN_photos
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ supprime les . | REMOVE
+ trouve les images . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ pourrais tu supprimer ces photos . | REMOVE
+ aller au film suivant . | GO_NEXT
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ haut . | GO_UP
+ pourrais tu les supprimer photos . | REMOVE
+ haut . | GO_UP
+ trouve ça images . | FIND
+ peux tu les supprimer . | REMOVE
+ peux tu trouver ça . | FIND
+ trouve le . | FIND
+ trouve les . | FIND
+ peux tu supprime les . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ images . | OPEN_photos
+ précédent image . | GO_PREV
+ trouve les . | FIND
+ images . | OPEN_photos
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu supprimer ça films . | REMOVE
+ pourrais tu va en bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ aller à jeux . | OPEN_games
+ supprime le . | REMOVE
+ supprime les .hotos . | REMOVE
+ musique . | OPEN_music
+ photos . | OPEN_photos
+ films . | OPEN_movies
+ supprime les films . | REMOVE
+ précédent film . | GO_PREV
+ trouve le . | FIND
+ aller à photos . | OPEN_photos
+ trouve le . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ va en bas . | GO_DOWN
+ peux tu supprime ça jeux . | REMOVE
+ supprime les . | REMOVE
+ haut . | GO_UP
+ films . | OPEN_movies
+ supprime le . | REMOVE
+ pourrais tu les supprimer photos . | REMOVE
+ va en bas . | GO_DOWN
+ pourrais tu trouver ça images . | FIND
+ trouve les . | FIND
+ films . | OPEN_movies
+ supprime le . | REMOVE
+ films . | OPEN_movies
+ pourrais tu aller à photos . | OPEN_photos
+ films . | OPEN_movies
+ trouve le . | FIND
+ précédent . | GO_PREV
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ aller à photos . | OPEN_photos
+ trouve les . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ images . | OPEN_photos
+ musique . | OPEN_music
+ image suivante . | GO_NEXT
+ page précédente . | GO_PREV
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ supprime les . | REMOVE
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu le supprimer . | REMOVE
+ pourrais tu supprimer ces jeux . | REMOVE
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ peux tu supprime les . | REMOVE
+ trouve ça . | FIND
+ précédent . | GO_PREV
+ peux tu le trouver . | FIND
+ musique . | OPEN_music
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ suivant film . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ peux tu supprime ça images . | REMOVE
+ trouve ça jeux . | FIND
+ pourrais tu les supprimer . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu supprimer le . | REMOVE
+ peux tu aller à image suivante . | GO_NEXT
+ trouve ces . | FIND
+ précédent . | GO_PREV
+ haut . | GO_UP
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ trouve les . | FIND
+ peux tu aller à photos . | OPEN_photos
+ bas . | GO_DOWN
+ aller à la page précédente . | GO_PREV
+ supprime les . | REMOVE
+ trouve les . | FIND
+ peux tu le supprimer . | REMOVE
+ trouve ça jeux . | FIND
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ photos . | OPEN_photos
+ trouve ces photos . | FIND
+ pourrais tu le trouver . | FIND
+ aller à précédent game . | GO_PREV
+ photos . | OPEN_photos
+ musique . | OPEN_music
+ trouve ces musiques  . | FIND
+ haut . | GO_UP
+ peux tu aller au film précédent . | GO_PREV
+ haut . | GO_UP
+ supprime les . | REMOVE
+ trouve le . | FIND
+ photos . | OPEN_photos
+ pourrais tu aller à musique . | OPEN_music
+ trouve ça images . | FIND
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ pourrais tu le trouver . | FIND
+ bas . | GO_DOWN
+ pourrais tu supprimer ces . | REMOVE
+ haut . | GO_UP
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve ça . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ peux tu supprime ça . | REMOVE
+ images . | OPEN_photos
+ précédent chanson . | GO_PREV
+ aller à la page suivante . | GO_NEXT
+ haut . | GO_UP
+ suivant chanson . | GO_NEXT
+ trouve ces . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ trouve le . | FIND
+ films . | OPEN_movies
+ supprime le . | REMOVE
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ trouve ces . | FIND
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ trouve les . | FIND
+ peux tu le supprimer . | REMOVE
+ pourrais tu le trouver . | FIND
+ image suivante . | GO_NEXT
+ images . | OPEN_photos
+ peux tu supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu trouve ces . | FIND
+ trouve ça . | FIND
+ précédent photo . | GO_PREV
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ films . | OPEN_movies
+ va en haut . | GO_UP
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ trouve ça . | FIND
+ trouve les musique . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ trouve ça jeux . | FIND
+ navigateur . | OPEN_browser
+ suivant . | GO_NEXT
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ trouve les . | FIND
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ suivant film . | GO_NEXT
+ suivant film . | GO_NEXT
+ images . | OPEN_photos
+ images . | OPEN_photos
+ peux tu supprime les . | REMOVE
+ pourrais tu va en bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ supprime le . | REMOVE
+ suivant chanson . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ peux tu aller à suivant chanson . | GO_NEXT
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu trouver ça . | FIND
+ pourrais tu les supprimer films . | REMOVE
+ va en haut . | GO_UP
+ suivant game . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ supprime ça . | REMOVE
+ images . | OPEN_photos
+ pourrais tu trouver ça . | FIND
+ supprime ça jeux . | REMOVE
+ trouve ça . | FIND
+ peux tu trouver ça . | FIND
+ supprime ça . | REMOVE
+ précédent . | GO_PREV
+ haut . | GO_UP
+ pourrais tu aller à photos . | OPEN_photos
+ bas . | GO_DOWN
+ image suivante . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ précédent game . | GO_PREV
+ photo suivante . | GO_NEXT
+ pourrais tu va en haut . | GO_UP
+ trouve les . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ aller à images . | OPEN_photos
+ trouve les . | FIND
+ supprime les . | REMOVE
+ pourrais tu le trouver . | FIND
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ page précédente . | GO_PREV
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ trouve ça . | FIND
+ pourrais tu le trouver . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu aller à photo suivante . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu aller à jeux . | OPEN_games
+ trouve ces . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ pourrais tu supprimer ces images . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ films . | OPEN_movies
+ précédent image . | GO_PREV
+ haut . | GO_UP
+ trouve ces photos . | FIND
+ trouve les . | FIND
+ trouve ces photos . | FIND
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ suivant game . | GO_NEXT
+ page suivante . | GO_NEXT
+ trouve ça jeux . | FIND
+ pourrais tu va en haut . | GO_UP
+ trouve les . | FIND
+ peux tu supprime ça . | REMOVE
+ jeux . | OPEN_games
+ pourrais tu aller à la page précédente . | GO_PREV
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ pourrais tu supprimer le . | REMOVE
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ peux tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ peux tu aller à images . | OPEN_photos
+ peux tu trouve ces images . | FIND
+ haut . | GO_UP
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ peux tu va en haut . | GO_UP
+ trouve les . | FIND
+ jeux . | OPEN_games
+ peux tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ peux tu va en bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu supprimer ces . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu va en bas . | GO_DOWN
+ peux tu le trouver . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ peux tu le supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ peux tu les supprimer . | REMOVE
+ peux tu supprime ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ page suivante . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu aller à navigateur . | OPEN_browser
+ trouve ça . | FIND
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ précédent . | GO_PREV
+ précédent film . | GO_PREV
+ navigateur . | OPEN_browser
+ peux tu le supprimer . | REMOVE
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ aller à précédent game . | GO_PREV
+ suivant . | GO_NEXT
+ peux tu trouver ça . | FIND
+ précédent . | GO_PREV
+ trouve les . | FIND
+ suivant game . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ suivant . | GO_NEXT
+ image suivante . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ trouve ces photos . | FIND
+ page suivante . | GO_NEXT
+ photo suivante . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ trouve le . | FIND
+ trouve le . | FIND
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ peux tu le trouver . | FIND
+ haut . | GO_UP
+ peux tu supprime les .usique . | REMOVE
+ musique . | OPEN_music
+ peux tu aller à films . | OPEN_movies
+ suivant chanson . | GO_NEXT
+ aller à jeux . | OPEN_games
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ pourrais tu trouve ces films . | FIND
+ pourrais tu les supprimer musique . | REMOVE
+ image suivante . | GO_NEXT
+ images . | OPEN_photos
+ aller à précédent game . | GO_PREV
+ musique . | OPEN_music
+ trouve ces . | FIND
+ peux tu va en haut . | GO_UP
+ bas . | GO_DOWN
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ aller à navigateur . | OPEN_browser
+ navigateur . | OPEN_browser
+ supprime les .usiques  . | REMOVE
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ haut . | GO_UP
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ pourrais tu le trouver . | FIND
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ trouve les . | FIND
+ peux tu le trouver images . | FIND
+ trouve les . | FIND
+ précédent . | GO_PREV
+ films . | OPEN_movies
+ aller à la page précédente . | GO_PREV
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ aller à précédent image . | GO_PREV
+ aller à photos . | OPEN_photos
+ haut . | GO_UP
+ peux tu supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ photo suivante . | GO_NEXT
+ jeux . | OPEN_games
+ pourrais tu aller à musique . | OPEN_music
+ peux tu aller à jeux . | OPEN_games
+ trouve les . | FIND
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ photo suivante . | GO_NEXT
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ page suivante . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu le trouver . | FIND
+ supprime les . | REMOVE
+ images . | OPEN_photos
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ images . | OPEN_photos
+ trouve ça . | FIND
+ pourrais tu trouver ça films . | FIND
+ aller au film précédent . | GO_PREV
+ images . | OPEN_photos
+ trouve ces . | FIND
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ pourrais tu supprimer ces . | REMOVE
+ peux tu aller à jeux . | OPEN_games
+ précédent chanson . | GO_PREV
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ supprime les musique . | REMOVE
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ supprime les .hotos . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ haut . | GO_UP
+ trouve les . | FIND
+ supprime les . | REMOVE
+ trouve ces photos . | FIND
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ peux tu va en haut . | GO_UP
+ jeux . | OPEN_games
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ supprime les . | REMOVE
+ aller à images . | OPEN_photos
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ images . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ image suivante . | GO_NEXT
+ trouve ces musiques  . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ supprime les .hotos . | REMOVE
+ peux tu supprime ça images . | REMOVE
+ peux tu supprime ça . | REMOVE
+ jeux . | OPEN_games
+ trouve ces photos . | FIND
+ supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer ça films . | REMOVE
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ pourrais tu supprimer ces musique . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve ça films . | FIND
+ musique . | OPEN_music
+ trouve ces . | FIND
+ trouve les jeux . | FIND
+ précédent film . | GO_PREV
+ trouve le . | FIND
+ peux tu le supprimer . | REMOVE
+ précédent game . | GO_PREV
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ pourrais tu trouve ces . | FIND
+ images . | OPEN_photos
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ peux tu supprime ça jeux . | REMOVE
+ trouve les photos . | FIND
+ précédent . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ précédent film . | GO_PREV
+ précédent chanson . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ suivant . | GO_NEXT
+ images . | OPEN_photos
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve ça . | FIND
+ trouve le . | FIND
+ supprime ça images . | REMOVE
+ trouve ça . | FIND
+ pourrais tu supprimer le . | REMOVE
+ supprime les jeux . | REMOVE
+ haut . | GO_UP
+ image suivante . | GO_NEXT
+ trouve les . | FIND
+ image suivante . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ trouve ça . | FIND
+ peux tu le supprimer . | REMOVE
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ pourrais tu le trouver musique . | FIND
+ pourrais tu supprimer ça jeux . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ pourrais tu aller à précédent image . | GO_PREV
+ précédent photo . | GO_PREV
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ trouve ces films . | FIND
+ pourrais tu le trouver . | FIND
+ suivant chanson . | GO_NEXT
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu aller à navigateur . | OPEN_browser
+ photos . | OPEN_photos
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ peux tu aller à la photo précédente . | GO_PREV
+ supprime le . | REMOVE
+ jeux . | OPEN_games
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ films . | OPEN_movies
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ aller à musique . | OPEN_music
+ trouve ces images . | FIND
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ pourrais tu le trouver . | FIND
+ pourrais tu trouver ça . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ trouve ça . | FIND
+ peux tu supprime ça . | REMOVE
+ photos . | OPEN_photos
+ trouve ces films . | FIND
+ va en haut . | GO_UP
+ haut . | GO_UP
+ peux tu aller au film précédent . | GO_PREV
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ suivant game . | GO_NEXT
+ trouve ça jeux . | FIND
+ supprime le . | REMOVE
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ aller à photos . | OPEN_photos
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ musique . | OPEN_music
+ trouve ça . | FIND
+ trouve ces musiques  . | FIND
+ va en haut . | GO_UP
+ photos . | OPEN_photos
+ précédent chanson . | GO_PREV
+ trouve les . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu aller à navigateur . | OPEN_browser
+ trouve ça . | FIND
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ films . | OPEN_movies
+ peux tu le trouver . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ trouve les . | FIND
+ pourrais tu supprimer le . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu trouver ça . | FIND
+ trouve ces . | FIND
+ trouve ces . | FIND
+ trouve ça jeux . | FIND
+ suivant . | GO_NEXT
+ trouve ces photos . | FIND
+ trouve les . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ précédent . | GO_PREV
+ pourrais tu aller à précédent chanson . | GO_PREV
+ haut . | GO_UP
+ trouve ça . | FIND
+ trouve ça . | FIND
+ trouve ces . | FIND
+ musique . | OPEN_music
+ pourrais tu aller à musique . | OPEN_music
+ pourrais tu supprimer ça . | REMOVE
+ trouve ces images . | FIND
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ haut . | GO_UP
+ trouve ça . | FIND
+ trouve ces . | FIND
+ films . | OPEN_movies
+ trouve les . | FIND
+ trouve ça images . | FIND
+ pourrais tu trouve ces . | FIND
+ précédent . | GO_PREV
+ musique . | OPEN_music
+ musique . | OPEN_music
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ trouve les jeux . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ haut . | GO_UP
+ trouve les . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ précédent image . | GO_PREV
+ peux tu aller à la page précédente . | GO_PREV
+ trouve les . | FIND
+ trouve ces . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu aller à suivant chanson . | GO_NEXT
+ trouve les . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ trouve les musique . | FIND
+ trouve les . | FIND
+ trouve ces jeux . | FIND
+ trouve les photos . | FIND
+ supprime les . | REMOVE
+ images . | OPEN_photos
+ haut . | GO_UP
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ aller à jeux . | OPEN_games
+ trouve ça . | FIND
+ trouve les photos . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ trouve le . | FIND
+ supprime les . | REMOVE
+ supprime les .ilms . | REMOVE
+ photo suivante . | GO_NEXT
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ supprime ça films . | REMOVE
+ pourrais tu aller à photos . | OPEN_photos
+ trouve les . | FIND
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ trouve le . | FIND
+ aller à films . | OPEN_movies
+ trouve les . | FIND
+ supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ photo suivante . | GO_NEXT
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu supprimer ça jeux . | REMOVE
+ aller à précédent image . | GO_PREV
+ supprime ça . | REMOVE
+ précédent game . | GO_PREV
+ images . | OPEN_photos
+ peux tu supprime les .hotos . | REMOVE
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ précédent image . | GO_PREV
+ films . | OPEN_movies
+ supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ peux tu les supprimer photos . | REMOVE
+ trouve ces photos . | FIND
+ pourrais tu aller à précédent chanson . | GO_PREV
+ va en haut . | GO_UP
+ trouve les . | FIND
+ trouve le . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ supprime le . | REMOVE
+ haut . | GO_UP
+ peux tu aller à films . | OPEN_movies
+ trouve ces films . | FIND
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ trouve ça jeux . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ navigateur . | OPEN_browser
+ films . | OPEN_movies
+ peux tu le supprimer . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ musique . | OPEN_music
+ films . | OPEN_movies
+ peux tu les supprimer musique . | REMOVE
+ haut . | GO_UP
+ peux tu les supprimer musique . | REMOVE
+ trouve les . | FIND
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu va en haut . | GO_UP
+ bas . | GO_DOWN
+ trouve les films . | FIND
+ précédent . | GO_PREV
+ images . | OPEN_photos
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ image suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ pourrais tu va en haut . | GO_UP
+ pourrais tu le trouver . | FIND
+ trouve le . | FIND
+ musique . | OPEN_music
+ pourrais tu aller à films . | OPEN_movies
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve ces photos . | FIND
+ peux tu aller à précédent image . | GO_PREV
+ peux tu supprime les .mages . | REMOVE
+ pourrais tu aller à précédent chanson . | GO_PREV
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ trouve le . | FIND
+ trouve le . | FIND
+ haut . | GO_UP
+ pourrais tu va en bas . | GO_DOWN
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ peux tu le supprimer . | REMOVE
+ aller au film précédent . | GO_PREV
+ pourrais tu aller à précédent game . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ jeux . | OPEN_games
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu aller à la page suivante . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ films . | OPEN_movies
+ trouve les . | FIND
+ peux tu supprime ça . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ supprime le . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ jeux . | OPEN_games
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ peux tu trouve ces . | FIND
+ trouve ça images . | FIND
+ pourrais tu supprimer ces jeux . | REMOVE
+ précédent photo . | GO_PREV
+ trouve le . | FIND
+ peux tu trouve ces images . | FIND
+ jeux . | OPEN_games
+ trouve le . | FIND
+ pourrais tu le trouver . | FIND
+ images . | OPEN_photos
+ supprime le . | REMOVE
+ supprime le . | REMOVE
+ peux tu supprime les .ames . | REMOVE
+ supprime les . | REMOVE
+ jeux . | OPEN_games
+ trouve les images . | FIND
+ pourrais tu le trouver musique . | FIND
+ images . | OPEN_photos
+ trouve ces films . | FIND
+ trouve le . | FIND
+ peux tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ peux tu aller au film suivant . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ musique . | OPEN_music
+ trouve le . | FIND
+ supprime le . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ trouve les . | FIND
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ films . | OPEN_movies
+ supprime les .hotos . | REMOVE
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ aller à précédent chanson . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ images . | OPEN_photos
+ musique . | OPEN_music
+ supprime les . | REMOVE
+ supprime le . | REMOVE
+ trouve les musique . | FIND
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ précédent . | GO_PREV
+ supprime le . | REMOVE
+ supprime les .hotos . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ peux tu va en bas . | GO_DOWN
+ trouve ça . | FIND
+ supprime les .hotos . | REMOVE
+ supprime les . | REMOVE
+ films . | OPEN_movies
+ musique . | OPEN_music
+ films . | OPEN_movies
+ pourrais tu supprimer ces . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ précédent photo . | GO_PREV
+ trouve ça . | FIND
+ trouve ça . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ jeux . | OPEN_games
+ musique . | OPEN_music
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ va en haut . | GO_UP
+ trouve les photos . | FIND
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ces photos . | REMOVE
+ trouve ces . | FIND
+ peux tu aller à la page précédente . | GO_PREV
+ musique . | OPEN_music
+ trouve le . | FIND
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ trouve les images . | FIND
+ trouve le . | FIND
+ peux tu va en haut . | GO_UP
+ images . | OPEN_photos
+ trouve les . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ peux tu trouve ces musiques  . | FIND
+ suivant . | GO_NEXT
+ photos . | OPEN_photos
+ photos . | OPEN_photos
+ navigateur . | OPEN_browser
+ peux tu trouve ces photos . | FIND
+ pourrais tu aller à précédent game . | GO_PREV
+ pourrais tu le trouver . | FIND
+ supprime les .usique . | REMOVE
+ peux tu aller à images . | OPEN_photos
+ trouve ces . | FIND
+ trouve les . | FIND
+ va en bas . | GO_DOWN
+ bas . | GO_DOWN
+ pourrais tu supprimer ces musiques  . | REMOVE
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu supprime ça films . | REMOVE
+ images . | OPEN_photos
+ précédent film . | GO_PREV
+ trouve ces . | FIND
+ trouve les . | FIND
+ trouve les . | FIND
+ films . | OPEN_movies
+ suivant game . | GO_NEXT
+ trouve les . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ films . | OPEN_movies
+ précédent film . | GO_PREV
+ photos . | OPEN_photos
+ haut . | GO_UP
+ précédent chanson . | GO_PREV
+ pourrais tu aller à photos . | OPEN_photos
+ suivant game . | GO_NEXT
+ peux tu supprime les .mages . | REMOVE
+ photo suivante . | GO_NEXT
+ aller à la page précédente . | GO_PREV
+ peux tu aller à musique . | OPEN_music
+ précédent . | GO_PREV
+ trouve ces musiques  . | FIND
+ trouve ça . | FIND
+ peux tu aller à photo suivante . | GO_NEXT
+ haut . | GO_UP
+ peux tu supprime les .usiques  . | REMOVE
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu les supprimer musique . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ trouve ça . | FIND
+ musique . | OPEN_music
+ haut . | GO_UP
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ pourrais tu supprimer ça images . | REMOVE
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ supprime le . | REMOVE
+ pourrais tu le trouver . | FIND
+ bas . | GO_DOWN
+ supprime ça images . | REMOVE
+ pourrais tu supprimer ces musiques  . | REMOVE
+ aller au film suivant . | GO_NEXT
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ précédent image . | GO_PREV
+ pourrais tu va en haut . | GO_UP
+ trouve les . | FIND
+ musique . | OPEN_music
+ aller à suivant game . | GO_NEXT
+ trouve ces photos . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ trouve ces films . | FIND
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ peux tu supprime les .usique . | REMOVE
+ suivant game . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu trouver ça films . | FIND
+ navigateur . | OPEN_browser
+ précédent . | GO_PREV
+ peux tu aller à suivant chanson . | GO_NEXT
+ supprime les images . | REMOVE
+ pourrais tu aller à navigateur . | OPEN_browser
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ pourrais tu aller à navigateur . | OPEN_browser
+ images . | OPEN_photos
+ jeux . | OPEN_games
+ images . | OPEN_photos
+ trouve ces images . | FIND
+ suivant . | GO_NEXT
+ précédent game . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ jeux . | OPEN_games
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ pourrais tu aller à images . | OPEN_photos
+ pourrais tu aller à images . | OPEN_photos
+ suivant . | GO_NEXT
+ précédent . | GO_PREV
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ peux tu aller à musique . | OPEN_music
+ bas . | GO_DOWN
+ pourrais tu aller à photos . | OPEN_photos
+ supprime ça . | REMOVE
+ photos . | OPEN_photos
+ trouve ces musiques  . | FIND
+ image suivante . | GO_NEXT
+ pourrais tu va en haut . | GO_UP
+ pourrais tu aller à photos . | OPEN_photos
+ pourrais tu supprimer ça . | REMOVE
+ trouve ces photos . | FIND
+ trouve ces . | FIND
+ jeux . | OPEN_games
+ pourrais tu aller à musique . | OPEN_music
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ peux tu aller à précédent image . | GO_PREV
+ suivant chanson . | GO_NEXT
+ images . | OPEN_photos
+ images . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ page suivante . | GO_NEXT
+ supprime le . | REMOVE
+ jeux . | OPEN_games
+ pourrais tu aller à suivant chanson . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu trouve ces . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ supprime ça jeux . | REMOVE
+ peux tu supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu trouve ces . | FIND
+ trouve le . | FIND
+ trouve ça . | FIND
+ peux tu aller à suivant chanson . | GO_NEXT
+ trouve ces . | FIND
+ photos . | OPEN_photos
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ haut . | GO_UP
+ photos . | OPEN_photos
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve ça . | FIND
+ trouve ça images . | FIND
+ trouve les . | FIND
+ bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ supprime le . | REMOVE
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ image suivante . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu trouver ça . | FIND
+ précédent film . | GO_PREV
+ suivant game . | GO_NEXT
+ supprime les . | REMOVE
+ aller à précédent chanson . | GO_PREV
+ peux tu le supprimer . | REMOVE
+ trouve le . | FIND
+ musique . | OPEN_music
+ navigateur . | OPEN_browser
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ trouve ça images . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve le . | FIND
+ musique . | OPEN_music
+ peux tu aller à films . | OPEN_movies
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ précédent . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ précédent game . | GO_PREV
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ films . | OPEN_movies
+ peux tu le supprimer . | REMOVE
+ musique . | OPEN_music
+ peux tu va en haut . | GO_UP
+ peux tu supprime les . | REMOVE
+ trouve le . | FIND
+ suivant chanson . | GO_NEXT
+ précédent film . | GO_PREV
+ peux tu supprime les .hotos . | REMOVE
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve ces . | FIND
+ peux tu trouver ça . | FIND
+ trouve les . | FIND
+ jeux . | OPEN_games
+ pourrais tu trouver ça . | FIND
+ images . | OPEN_photos
+ peux tu supprime les . | REMOVE
+ supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ images . | OPEN_photos
+ pourrais tu supprimer ça . | REMOVE
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ précédent game . | GO_PREV
+ trouve les . | FIND
+ peux tu supprime les .hotos . | REMOVE
+ musique . | OPEN_music
+ trouve les . | FIND
+ pourrais tu supprimer le . | REMOVE
+ trouve le . | FIND
+ supprime les . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ musique . | OPEN_music
+ peux tu supprime ça . | REMOVE
+ jeux . | OPEN_games
+ trouve les . | FIND
+ suivant chanson . | GO_NEXT
+ trouve ces photos . | FIND
+ précédent . | GO_PREV
+ navigateur . | OPEN_browser
+ aller au film suivant . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ trouve ces photos . | FIND
+ jeux . | OPEN_games
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ supprime ça . | REMOVE
+ trouve ça jeux . | FIND
+ supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu les supprimer images . | REMOVE
+ haut . | GO_UP
+ trouve les images . | FIND
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ précédent image . | GO_PREV
+ trouve ces musique . | FIND
+ précédent film . | GO_PREV
+ supprime le . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ trouve ces . | FIND
+ précédent game . | GO_PREV
+ haut . | GO_UP
+ trouve les . | FIND
+ haut . | GO_UP
+ images . | OPEN_photos
+ trouve ces . | FIND
+ peux tu supprime les . | REMOVE
+ photos . | OPEN_photos
+ précédent film . | GO_PREV
+ trouve le . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ aller à image suivante . | GO_NEXT
+ trouve le . | FIND
+ supprime les jeux . | REMOVE
+ pourrais tu trouver ça . | FIND
+ trouve ça . | FIND
+ trouve ça . | FIND
+ trouve le . | FIND
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ image suivante . | GO_NEXT
+ supprime les . | REMOVE
+ pourrais tu trouve ces . | FIND
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ musique . | OPEN_music
+ photos . | OPEN_photos
+ pourrais tu supprimer ça . | REMOVE
+ trouve ça . | FIND
+ page suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ page précédente . | GO_PREV
+ peux tu supprime les .hotos . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu supprimer ces . | REMOVE
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ pourrais tu trouver ça . | FIND
+ trouve ces musiques  . | FIND
+ trouve les . | FIND
+ jeux . | OPEN_games
+ pourrais tu supprimer ça films . | REMOVE
+ supprime ça . | REMOVE
+ précédent . | GO_PREV
+ supprime ça images . | REMOVE
+ peux tu les supprimer photos . | REMOVE
+ trouve ces musiques  . | FIND
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ trouve les photos . | FIND
+ pourrais tu trouve ces jeux . | FIND
+ aller à la page suivante . | GO_NEXT
+ trouve les . | FIND
+ trouve ça . | FIND
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ trouve les . | FIND
+ peux tu aller à jeux . | OPEN_games
+ va en haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ peux tu supprime ça . | REMOVE
+ page précédente . | GO_PREV
+ précédent . | GO_PREV
+ peux tu aller à précédent chanson . | GO_PREV
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ supprime ça images . | REMOVE
+ trouve ça . | FIND
+ trouve le . | FIND
+ trouve ces . | FIND
+ précédent film . | GO_PREV
+ peux tu les supprimer . | REMOVE
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ peux tu supprime ça jeux . | REMOVE
+ peux tu le trouver . | FIND
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ va en haut . | GO_UP
+ précédent . | GO_PREV
+ haut . | GO_UP
+ précédent . | GO_PREV
+ précédent . | GO_PREV
+ navigateur . | OPEN_browser
+ peux tu supprime les .hotos . | REMOVE
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ peux tu trouve ces photos . | FIND
+ aller à films . | OPEN_movies
+ trouve le . | FIND
+ peux tu aller à photos . | OPEN_photos
+ peux tu le supprimer . | REMOVE
+ images . | OPEN_photos
+ films . | OPEN_movies
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ supprime le . | REMOVE
+ trouve ces photos . | FIND
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ peux tu le supprimer . | REMOVE
+ suivant . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ aller à suivant chanson . | GO_NEXT
+ trouve les . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ jeux . | OPEN_games
+ pourrais tu supprimer ces . | REMOVE
+ supprime les photos . | REMOVE
+ pourrais tu supprimer ces musique . | REMOVE
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ pourrais tu va en haut . | GO_UP
+ supprime les . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ peux tu supprime ça . | REMOVE
+ musique . | OPEN_music
+ musique . | OPEN_music
+ haut . | GO_UP
+ supprime les . | REMOVE
+ trouve les . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve le . | FIND
+ précédent photo . | GO_PREV
+ trouve le . | FIND
+ supprime les . | REMOVE
+ supprime ça . | REMOVE
+ précédent . | GO_PREV
+ pourrais tu les supprimer musique . | REMOVE
+ trouve les . | FIND
+ trouve le . | FIND
+ trouve ces . | FIND
+ trouve ça . | FIND
+ supprime les .hotos . | REMOVE
+ pourrais tu le trouver . | FIND
+ haut . | GO_UP
+ trouve ces photos . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ trouve les . | FIND
+ précédent film . | GO_PREV
+ trouve le . | FIND
+ trouve ces musique . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve le . | FIND
+ pourrais tu aller à jeux . | OPEN_games
+ va en haut . | GO_UP
+ trouve ces . | FIND
+ trouve ça . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ aller à navigateur . | OPEN_browser
+ peux tu les supprimer . | REMOVE
+ peux tu le supprimer . | REMOVE
+ films . | OPEN_movies
+ jeux . | OPEN_games
+ pourrais tu supprimer ça . | REMOVE
+ trouve ça . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ peux tu le trouver films . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ haut . | GO_UP
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ photos . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ peux tu supprime ça . | REMOVE
+ peux tu aller à images . | OPEN_photos
+ supprime les . | REMOVE
+ trouve le . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ films . | OPEN_movies
+ trouve le . | FIND
+ images . | OPEN_photos
+ trouve le . | FIND
+ peux tu supprime ça films . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ peux tu va en bas . | GO_DOWN
+ images . | OPEN_photos
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu aller à jeux . | OPEN_games
+ images . | OPEN_photos
+ aller à précédent chanson . | GO_PREV
+ pourrais tu trouve ces . | FIND
+ suivant chanson . | GO_NEXT
+ va en bas . | GO_DOWN
+ trouve ça jeux . | FIND
+ peux tu aller à précédent image . | GO_PREV
+ supprime les . | REMOVE
+ aller au film précédent . | GO_PREV
+ précédent chanson . | GO_PREV
+ trouve ça images . | FIND
+ trouve ça . | FIND
+ suivant film . | GO_NEXT
+ pourrais tu aller au film suivant . | GO_NEXT
+ photos . | OPEN_photos
+ trouve ces photos . | FIND
+ images . | OPEN_photos
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ précédent . | GO_PREV
+ photo suivante . | GO_NEXT
+ jeux . | OPEN_games
+ trouve ça . | FIND
+ peux tu aller à musique . | OPEN_music
+ jeux . | OPEN_games
+ trouve les . | FIND
+ supprime les jeux . | REMOVE
+ photos . | OPEN_photos
+ peux tu les supprimer . | REMOVE
+ peux tu supprime les . | REMOVE
+ supprime le . | REMOVE
+ peux tu supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ pourrais tu le trouver . | FIND
+ précédent image . | GO_PREV
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ trouve ça jeux . | FIND
+ précédent . | GO_PREV
+ précédent chanson . | GO_PREV
+ page suivante . | GO_NEXT
+ supprime les . | REMOVE
+ peux tu va en haut . | GO_UP
+ trouve ces . | FIND
+ films . | OPEN_movies
+ films . | OPEN_movies
+ précédent . | GO_PREV
+ supprime les .hotos . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ pourrais tu supprimer ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ films . | OPEN_movies
+ aller à précédent image . | GO_PREV
+ aller à photo suivante . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu va en bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ peux tu le supprimer . | REMOVE
+ précédent . | GO_PREV
+ trouve les . | FIND
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ peux tu va en haut . | GO_UP
+ pourrais tu supprimer ça jeux . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ pourrais tu supprimer le . | REMOVE
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ jeux . | OPEN_games
+ films . | OPEN_movies
+ pourrais tu supprimer ces musiques  . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ peux tu supprime les .usique . | REMOVE
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ pourrais tu les supprimer photos . | REMOVE
+ musique . | OPEN_music
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ peux tu supprime les . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ peux tu trouver ce jeu . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ trouve ces photos . | FIND
+ peux tu supprime les . | REMOVE
+ peux tu supprime les . | REMOVE
+ suivant chanson . | GO_NEXT
+ trouve ça . | FIND
+ peux tu le trouver . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ trouve ça . | FIND
+ page suivante . | GO_NEXT
+ haut . | GO_UP
+ jeux . | OPEN_games
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve ça . | FIND
+ images . | OPEN_photos
+ aller à musique . | OPEN_music
+ trouve ça . | FIND
+ aller à précédent game . | GO_PREV
+ précédent . | GO_PREV
+ images . | OPEN_photos
+ jeux . | OPEN_games
+ image suivante . | GO_NEXT
+ trouve ces jeux . | FIND
+ bas . | GO_DOWN
+ page précédente . | GO_PREV
+ trouve les . | FIND
+ trouve les . | FIND
+ aller à précédent image . | GO_PREV
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime ça . | REMOVE
+ supprime les musique . | REMOVE
+ trouve les . | FIND
+ supprime les . | REMOVE
+ peux tu trouver ça . | FIND
+ bas . | GO_DOWN
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ musique . | OPEN_music
+ haut . | GO_UP
+ supprime le . | REMOVE
+ pourrais tu aller à la photo précédente . | GO_PREV
+ trouve les . | FIND
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ peux tu le trouver . | FIND
+ jeux . | OPEN_games
+ trouve ça . | FIND
+ supprime les .usique . | REMOVE
+ suivant chanson . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ trouve le . | FIND
+ haut . | GO_UP
+ trouve ça jeux . | FIND
+ supprime les . | REMOVE
+ photos . | OPEN_photos
+ trouve les . | FIND
+ trouve les images . | FIND
+ précédent . | GO_PREV
+ films . | OPEN_movies
+ musique . | OPEN_music
+ peux tu supprime les . | REMOVE
+ pourrais tu aller à jeux . | OPEN_games
+ pourrais tu va en bas . | GO_DOWN
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ images . | OPEN_photos
+ peux tu les supprimer films . | REMOVE
+ trouve ça . | FIND
+ peux tu va en haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ musique . | OPEN_music
+ page précédente . | GO_PREV
+ bas . | GO_DOWN
+ pourrais tu supprimer le . | REMOVE
+ musique . | OPEN_music
+ peux tu aller à films . | OPEN_movies
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ trouve ces musique . | FIND
+ navigateur . | OPEN_browser
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ suivant film . | GO_NEXT
+ bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ films . | OPEN_movies
+ haut . | GO_UP
+ précédent game . | GO_PREV
+ supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve les photos . | FIND
+ aller à la page suivante . | GO_NEXT
+ trouve ces . | FIND
+ peux tu aller à films . | OPEN_movies
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ précédent photo . | GO_PREV
+ trouve ça . | FIND
+ aller à jeux . | OPEN_games
+ trouve ces . | FIND
+ supprime le . | REMOVE
+ suivant . | GO_NEXT
+ trouve ces . | FIND
+ haut . | GO_UP
+ précédent film . | GO_PREV
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ photo suivante . | GO_NEXT
+ précédent . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ces images . | REMOVE
+ trouve les films . | FIND
+ jeux . | OPEN_games
+ supprime les .hotos . | REMOVE
+ supprime le . | REMOVE
+ trouve ces photos . | FIND
+ aller à photo suivante . | GO_NEXT
+ haut . | GO_UP
+ photos . | OPEN_photos
+ suivant chanson . | GO_NEXT
+ haut . | GO_UP
+ supprime les .ilms . | REMOVE
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ trouve ces . | FIND
+ pourrais tu supprimer le . | REMOVE
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ photos . | OPEN_photos
+ pourrais tu supprimer ça films . | REMOVE
+ trouve les images . | FIND
+ images . | OPEN_photos
+ musique . | OPEN_music
+ pourrais tu aller à jeux . | OPEN_games
+ haut . | GO_UP
+ bas . | GO_DOWN
+ trouve ces . | FIND
+ aller à navigateur . | OPEN_browser
+ films . | OPEN_movies
+ trouve ces . | FIND
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ précédent film . | GO_PREV
+ supprime ça jeux . | REMOVE
+ aller au film suivant . | GO_NEXT
+ trouve ça . | FIND
+ trouve ça jeux . | FIND
+ trouve ces musique . | FIND
+ trouve le . | FIND
+ pourrais tu supprimer le . | REMOVE
+ jeux . | OPEN_games
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ trouve ça films . | FIND
+ films . | OPEN_movies
+ pourrais tu supprimer ces . | REMOVE
+ trouve ça . | FIND
+ pourrais tu va en haut . | GO_UP
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ peux tu les supprimer photos . | REMOVE
+ supprime ça . | REMOVE
+ trouve ces photos . | FIND
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ peux tu supprime ça . | REMOVE
+ bas . | GO_DOWN
+ aller à jeux . | OPEN_games
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime le . | REMOVE
+ précédent . | GO_PREV
+ précédent . | GO_PREV
+ pourrais tu supprimer ces images . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ précédent image . | GO_PREV
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ aller à photos . | OPEN_photos
+ peux tu supprime les .ames . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve le . | FIND
+ pourrais tu supprimer ces photos . | REMOVE
+ pourrais tu le trouver . | FIND
+ précédent . | GO_PREV
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ précédent image . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu aller à photos . | OPEN_photos
+ supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ va en bas . | GO_DOWN
+ trouve ça . | FIND
+ page suivante . | GO_NEXT
+ haut . | GO_UP
+ peux tu le trouver . | FIND
+ trouve les . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve le . | FIND
+ peux tu le trouver . | FIND
+ supprime les musique . | REMOVE
+ précédent . | GO_PREV
+ trouve les . | FIND
+ précédent . | GO_PREV
+ trouve ces musiques  . | FIND
+ bas . | GO_DOWN
+ trouve ça images . | FIND
+ trouve les . | FIND
+ bas . | GO_DOWN
+ peux tu va en haut . | GO_UP
+ trouve le . | FIND
+ trouve ça . | FIND
+ trouve les films . | FIND
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ peux tu supprime les . | REMOVE
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ supprime le . | REMOVE
+ trouve les . | FIND
+ page suivante . | GO_NEXT
+ précédent . | GO_PREV
+ haut . | GO_UP
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ aller à précédent chanson . | GO_PREV
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ supprime ça . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ précédent photo . | GO_PREV
+ trouve les musique . | FIND
+ films . | OPEN_movies
+ va en bas . | GO_DOWN
+ précédent chanson . | GO_PREV
+ trouve le . | FIND
+ musique . | OPEN_music
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ trouve ça . | FIND
+ trouve le . | FIND
+ pourrais tu supprimer ça images . | REMOVE
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve ça jeux . | FIND
+ bas . | GO_DOWN
+ suivant chanson . | GO_NEXT
+ trouve le . | FIND
+ bas . | GO_DOWN
+ suivant film . | GO_NEXT
+ peux tu aller à jeux . | OPEN_games
+ haut . | GO_UP
+ musique . | OPEN_music
+ trouve les . | FIND
+ photos . | OPEN_photos
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ peux tu aller à suivant chanson . | GO_NEXT
+ peux tu aller à navigateur . | OPEN_browser
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ précédent photo . | GO_PREV
+ supprime ça films . | REMOVE
+ aller à photo suivante . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ haut . | GO_UP
+ aller à suivant game . | GO_NEXT
+ bas . | GO_DOWN
+ page suivante . | GO_NEXT
+ trouve ces . | FIND
+ trouve les . | FIND
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ pourrais tu aller à musique . | OPEN_music
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve ces . | FIND
+ pourrais tu aller à films . | OPEN_movies
+ trouve ça . | FIND
+ supprime ça . | REMOVE
+ pourrais tu supprimer ça jeux . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ suivant game . | GO_NEXT
+ trouve les . | FIND
+ trouve ça . | FIND
+ images . | OPEN_photos
+ pourrais tu aller à jeux . | OPEN_games
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ peux tu va en haut . | GO_UP
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ trouve les . | FIND
+ trouve le . | FIND
+ haut . | GO_UP
+ photos . | OPEN_photos
+ trouve ça . | FIND
+ aller à images . | OPEN_photos
+ trouve les . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ peux tu aller à images . | OPEN_photos
+ aller à la page précédente . | GO_PREV
+ bas . | GO_DOWN
+ haut . | GO_UP
+ précédent chanson . | GO_PREV
+ bas . | GO_DOWN
+ photo suivante . | GO_NEXT
+ trouve ça . | FIND
+ photo suivante . | GO_NEXT
+ haut . | GO_UP
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ trouve le . | FIND
+ supprime les . | REMOVE
+ trouve le . | FIND
+ trouve les . | FIND
+ image suivante . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ jeux . | OPEN_games
+ supprime les .ames . | REMOVE
+ trouve ces films . | FIND
+ supprime ça . | REMOVE
+ musique . | OPEN_music
+ navigateur . | OPEN_browser
+ trouve le . | FIND
+ aller à photo suivante . | GO_NEXT
+ précédent game . | GO_PREV
+ précédent . | GO_PREV
+ supprime les musique . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve les jeux . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ jeux . | OPEN_games
+ va en bas . | GO_DOWN
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ va en haut . | GO_UP
+ navigateur . | OPEN_browser
+ trouve ça images . | FIND
+ aller à précédent chanson . | GO_PREV
+ jeux . | OPEN_games
+ page précédente . | GO_PREV
+ navigateur . | OPEN_browser
+ photo suivante . | GO_NEXT
+ trouve ça films . | FIND
+ pourrais tu les supprimer . | REMOVE
+ photos . | OPEN_photos
+ trouve ça images . | FIND
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve le . | FIND
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ trouve les films . | FIND
+ images . | OPEN_photos
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ films . | OPEN_movies
+ jeux . | OPEN_games
+ précédent photo . | GO_PREV
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ trouve les . | FIND
+ pourrais tu supprimer le . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu aller à la photo précédente . | GO_PREV
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ va en bas . | GO_DOWN
+ peux tu supprime les . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ peux tu supprime ça . | REMOVE
+ musique . | OPEN_music
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ musique . | OPEN_music
+ pourrais tu trouver ça . | FIND
+ trouve le . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve le . | FIND
+ supprime les . | REMOVE
+ suivant game . | GO_NEXT
+ trouve les . | FIND
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ suivant chanson . | GO_NEXT
+ trouve les . | FIND
+ peux tu aller à photos . | OPEN_photos
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ pourrais tu trouve ces films . | FIND
+ trouve ça . | FIND
+ trouve ces . | FIND
+ navigateur . | OPEN_browser
+ trouve ces . | FIND
+ pourrais tu aller à images . | OPEN_photos
+ musique . | OPEN_music
+ trouve ça . | FIND
+ photos . | OPEN_photos
+ aller à musique . | OPEN_music
+ navigateur . | OPEN_browser
+ jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ peux tu aller à navigateur . | OPEN_browser
+ aller à image suivante . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ peux tu supprime les .hotos . | REMOVE
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ peux tu aller au film suivant . | GO_NEXT
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ supprime ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ trouve le . | FIND
+ précédent chanson . | GO_PREV
+ bas . | GO_DOWN
+ peux tu aller à photos . | OPEN_photos
+ trouve ces . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ trouve les films . | FIND
+ précédent chanson . | GO_PREV
+ trouve les . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ images . | OPEN_photos
+ photos . | OPEN_photos
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ va en haut . | GO_UP
+ pourrais tu trouver ça . | FIND
+ navigateur . | OPEN_browser
+ photos . | OPEN_photos
+ supprime les . | REMOVE
+ aller à photos . | OPEN_photos
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ haut . | GO_UP
+ images . | OPEN_photos
+ trouve les . | FIND
+ supprime le . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ page précédente . | GO_PREV
+ supprime ça . | REMOVE
+ photo suivante . | GO_NEXT
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ peux tu va en bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ photos . | OPEN_photos
+ haut . | GO_UP
+ supprime le . | REMOVE
+ trouve ça . | FIND
+ suivant film . | GO_NEXT
+ films . | OPEN_movies
+ précédent . | GO_PREV
+ va en haut . | GO_UP
+ jeux . | OPEN_games
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ musique . | OPEN_music
+ supprime les images . | REMOVE
+ images . | OPEN_photos
+ peux tu trouve ces photos . | FIND
+ peux tu supprime les .usique . | REMOVE
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ musique . | OPEN_music
+ photo suivante . | GO_NEXT
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ précédent image . | GO_PREV
+ peux tu le supprimer . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ jeux . | OPEN_games
+ page précédente . | GO_PREV
+ trouve les . | FIND
+ aller à navigateur . | OPEN_browser
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ précédent . | GO_PREV
+ haut . | GO_UP
+ précédent . | GO_PREV
+ trouve le . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ trouve le . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ peux tu les supprimer jeux . | REMOVE
+ aller à images . | OPEN_photos
+ trouve les . | FIND
+ peux tu supprime ça images . | REMOVE
+ image suivante . | GO_NEXT
+ trouve les . | FIND
+ trouve ça . | FIND
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ trouve les . | FIND
+ bas . | GO_DOWN
+ photo suivante . | GO_NEXT
+ précédent game . | GO_PREV
+ précédent game . | GO_PREV
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ haut . | GO_UP
+ supprime les .usiques  . | REMOVE
+ supprime les . | REMOVE
+ photo suivante . | GO_NEXT
+ aller à la photo précédente . | GO_PREV
+ pourrais tu supprimer ces photos . | REMOVE
+ pourrais tu supprimer ces films . | REMOVE
+ trouve ces photos . | FIND
+ suivant . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ peux tu aller au film suivant . | GO_NEXT
+ bas . | GO_DOWN
+ haut . | GO_UP
+ aller à la photo précédente . | GO_PREV
+ navigateur . | OPEN_browser
+ supprime les . | REMOVE
+ peux tu le supprimer . | REMOVE
+ pourrais tu supprimer ça images . | REMOVE
+ peux tu le trouver . | FIND
+ photo suivante . | GO_NEXT
+ bas . | GO_DOWN
+ pourrais tu aller à musique . | OPEN_music
+ trouve ça . | FIND
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve les musique . | FIND
+ musique . | OPEN_music
+ suivant film . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ aller à suivant game . | GO_NEXT
+ précédent chanson . | GO_PREV
+ aller à navigateur . | OPEN_browser
+ trouve ces . | FIND
+ peux tu va en haut . | GO_UP
+ musique . | OPEN_music
+ peux tu le trouver . | FIND
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ haut . | GO_UP
+ trouve les . | FIND
+ trouve le . | FIND
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve le . | FIND
+ trouve ça . | FIND
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ peux tu aller à films . | OPEN_movies
+ page précédente . | GO_PREV
+ haut . | GO_UP
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ précédent film . | GO_PREV
+ image suivante . | GO_NEXT
+ supprime ça . | REMOVE
+ trouve ça films . | FIND
+ aller au film suivant . | GO_NEXT
+ trouve le . | FIND
+ trouve les musique . | FIND
+ pourrais tu les supprimer jeux . | REMOVE
+ images . | OPEN_photos
+ peux tu aller à précédent chanson . | GO_PREV
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ pourrais tu va en haut . | GO_UP
+ pourrais tu les supprimer images . | REMOVE
+ musique . | OPEN_music
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ trouve ça . | FIND
+ trouve ces jeux . | FIND
+ trouve le . | FIND
+ trouve ça . | FIND
+ films . | OPEN_movies
+ trouve le . | FIND
+ aller à photos . | OPEN_photos
+ trouve ça images . | FIND
+ pourrais tu trouver ça . | FIND
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ supprime ça . | REMOVE
+ peux tu le supprimer . | REMOVE
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve le . | FIND
+ supprime les . | REMOVE
+ précédent game . | GO_PREV
+ suivant . | GO_NEXT
+ suivant film . | GO_NEXT
+ pourrais tu aller à jeux . | OPEN_games
+ trouve ces . | FIND
+ trouve ces . | FIND
+ peux tu le trouver . | FIND
+ trouve ces . | FIND
+ supprime le . | REMOVE
+ va en haut . | GO_UP
+ peux tu trouve ces photos . | FIND
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ jeux . | OPEN_games
+ pourrais tu aller à suivant game . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu aller au film suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ pourrais tu aller à suivant game . | GO_NEXT
+ peux tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ jeux . | OPEN_games
+ haut . | GO_UP
+ supprime ça . | REMOVE
+ films . | OPEN_movies
+ trouve ces . | FIND
+ pourrais tu supprimer ces photos . | REMOVE
+ peux tu supprime ça . | REMOVE
+ va en bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ précédent . | GO_PREV
+ précédent photo . | GO_PREV
+ page suivante . | GO_NEXT
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu aller à suivant game . | GO_NEXT
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ bas . | GO_DOWN
+ trouve les . | FIND
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ pourrais tu aller à photos . | OPEN_photos
+ trouve le . | FIND
+ bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ peux tu le supprimer . | REMOVE
+ images . | OPEN_photos
+ supprime le . | REMOVE
+ trouve le . | FIND
+ trouve ces . | FIND
+ navigateur . | OPEN_browser
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ précédent chanson . | GO_PREV
+ haut . | GO_UP
+ précédent . | GO_PREV
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ peux tu aller à photos . | OPEN_photos
+ précédent . | GO_PREV
+ trouve le . | FIND
+ haut . | GO_UP
+ supprime ça images . | REMOVE
+ peux tu les supprimer . | REMOVE
+ pourrais tu va en bas . | GO_DOWN
+ navigateur . | OPEN_browser
+ pourrais tu aller au film suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ films . | OPEN_movies
+ image suivante . | GO_NEXT
+ peux tu supprime les . | REMOVE
+ peux tu supprime ça images . | REMOVE
+ supprime les .usiques  . | REMOVE
+ trouve le . | FIND
+ musique . | OPEN_music
+ peux tu aller à photo suivante . | GO_NEXT
+ supprime ça . | REMOVE
+ supprime le . | REMOVE
+ suivant . | GO_NEXT
+ aller à navigateur . | OPEN_browser
+ trouve ces musique . | FIND
+ peux tu va en haut . | GO_UP
+ trouve ça films . | FIND
+ pourrais tu les supprimer . | REMOVE
+ image suivante . | GO_NEXT
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve ça images . | FIND
+ photo suivante . | GO_NEXT
+ musique . | OPEN_music
+ trouve le . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ suivant game . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ précédent film . | GO_PREV
+ pourrais tu trouver ça . | FIND
+ trouve les . | FIND
+ images . | OPEN_photos
+ trouve ça . | FIND
+ images . | OPEN_photos
+ pourrais tu les supprimer . | REMOVE
+ trouve le . | FIND
+ haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ images . | OPEN_photos
+ trouve ça . | FIND
+ précédent . | GO_PREV
+ photos . | OPEN_photos
+ jeux . | OPEN_games
+ musique . | OPEN_music
+ pourrais tu supprimer ça images . | REMOVE
+ pourrais tu le trouver . | FIND
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ peux tu aller à navigateur . | OPEN_browser
+ photos . | OPEN_photos
+ peux tu supprime les .mages . | REMOVE
+ haut . | GO_UP
+ trouve les . | FIND
+ peux tu le supprimer . | REMOVE
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ musique . | OPEN_music
+ pourrais tu trouve ces . | FIND
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ trouve les films . | FIND
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ peux tu aller au film suivant . | GO_NEXT
+ précédent . | GO_PREV
+ haut . | GO_UP
+ pourrais tu aller au film suivant . | GO_NEXT
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ jeux . | OPEN_games
+ suivant film . | GO_NEXT
+ films . | OPEN_movies
+ haut . | GO_UP
+ bas . | GO_DOWN
+ pourrais tu supprimer ces . | REMOVE
+ trouve le . | FIND
+ trouve ça . | FIND
+ trouve ça . | FIND
+ trouve le . | FIND
+ trouve le . | FIND
+ supprime ça jeux . | REMOVE
+ trouve les . | FIND
+ pourrais tu aller à jeux . | OPEN_games
+ peux tu aller à films . | OPEN_movies
+ haut . | GO_UP
+ bas . | GO_DOWN
+ haut . | GO_UP
+ suivant film . | GO_NEXT
+ pourrais tu aller à image suivante . | GO_NEXT
+ trouve ces musique . | FIND
+ supprime ça . | REMOVE
+ va en bas . | GO_DOWN
+ supprime les .usiques  . | REMOVE
+ photos . | OPEN_photos
+ supprime ça . | REMOVE
+ pourrais tu aller à films . | OPEN_movies
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ va en bas . | GO_DOWN
+ films . | OPEN_movies
+ supprime le . | REMOVE
+ aller à précédent image . | GO_PREV
+ pourrais tu supprimer ces photos . | REMOVE
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ peux tu va en bas . | GO_DOWN
+ pourrais tu supprimer ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ films . | OPEN_movies
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ peux tu supprime les . | REMOVE
+ peux tu le trouver . | FIND
+ photos . | OPEN_photos
+ trouve ça . | FIND
+ trouve ça films . | FIND
+ pourrais tu aller à précédent chanson . | GO_PREV
+ jeux . | OPEN_games
+ peux tu trouver ça . | FIND
+ photos . | OPEN_photos
+ photo suivante . | GO_NEXT
+ jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ photos . | OPEN_photos
+ trouve ça . | FIND
+ trouve ces images . | FIND
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ pourrais tu trouve ces . | FIND
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ trouve ces . | FIND
+ trouve ça films . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve ces . | FIND
+ trouve le . | FIND
+ trouve ces . | FIND
+ navigateur . | OPEN_browser
+ films . | OPEN_movies
+ précédent image . | GO_PREV
+ précédent chanson . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ trouve ça films . | FIND
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ images . | OPEN_photos
+ jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ pourrais tu aller à jeux . | OPEN_games
+ peux tu va en haut . | GO_UP
+ trouve les . | FIND
+ pourrais tu aller à précédent image . | GO_PREV
+ précédent image . | GO_PREV
+ trouve ça images . | FIND
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ jeux . | OPEN_games
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu aller à musique . | OPEN_music
+ trouve ça . | FIND
+ peux tu supprime ça . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ trouve ces images . | FIND
+ page suivante . | GO_NEXT
+ pourrais tu aller à images . | OPEN_photos
+ trouve ces photos . | FIND
+ précédent . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ aller à musique . | OPEN_music
+ pourrais tu aller à films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ trouve les images . | FIND
+ peux tu aller à jeux . | OPEN_games
+ pourrais tu aller à musique . | OPEN_music
+ peux tu le supprimer . | REMOVE
+ trouve le . | FIND
+ films . | OPEN_movies
+ trouve le . | FIND
+ trouve le . | FIND
+ pourrais tu trouver ça films . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ page précédente . | GO_PREV
+ suivant game . | GO_NEXT
+ trouve le . | FIND
+ trouve le . | FIND
+ page précédente . | GO_PREV
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu le supprimer . | REMOVE
+ supprime les . | REMOVE
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ va en haut . | GO_UP
+ photo suivante . | GO_NEXT
+ bas . | GO_DOWN
+ trouve les . | FIND
+ bas . | GO_DOWN
+ supprime les .hotos . | REMOVE
+ peux tu les supprimer musique . | REMOVE
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ pourrais tu aller à précédent image . | GO_PREV
+ musique . | OPEN_music
+ trouve ça . | FIND
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ pourrais tu aller à la photo précédente . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ peux tu aller à la photo précédente . | GO_PREV
+ trouve les . | FIND
+ précédent game . | GO_PREV
+ trouve ça . | FIND
+ pourrais tu aller au film précédent . | GO_PREV
+ trouve les . | FIND
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ supprime les .usique . | REMOVE
+ peux tu le supprimer . | REMOVE
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve ces musiques  . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ aller à photos . | OPEN_photos
+ trouve les . | FIND
+ pourrais tu le trouver . | FIND
+ trouve les . | FIND
+ trouve ces films . | FIND
+ films . | OPEN_movies
+ bas . | GO_DOWN
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ va en haut . | GO_UP
+ aller à image suivante . | GO_NEXT
+ suivant game . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ photos . | OPEN_photos
+ supprime le . | REMOVE
+ images . | OPEN_photos
+ images . | OPEN_photos
+ va en haut . | GO_UP
+ page précédente . | GO_PREV
+ pourrais tu le trouver . | FIND
+ peux tu les supprimer . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ va en haut . | GO_UP
+ supprime les images . | REMOVE
+ précédent image . | GO_PREV
+ haut . | GO_UP
+ trouve ces photos . | FIND
+ peux tu supprime les . | REMOVE
+ bas . | GO_DOWN
+ aller à précédent game . | GO_PREV
+ supprime les . | REMOVE
+ haut . | GO_UP
+ trouve ça images . | FIND
+ trouve ça . | FIND
+ supprime les .hotos . | REMOVE
+ précédent photo . | GO_PREV
+ supprime le . | REMOVE
+ supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ images . | OPEN_photos
+ aller à suivant chanson . | GO_NEXT
+ suivant game . | GO_NEXT
+ musique . | OPEN_music
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve les . | FIND
+ photo suivante . | GO_NEXT
+ peux tu supprime les . | REMOVE
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ supprime les jeux . | REMOVE
+ musique . | OPEN_music
+ peux tu trouve ces musiques  . | FIND
+ photos . | OPEN_photos
+ peux tu les supprimer photos . | REMOVE
+ précédent . | GO_PREV
+ supprime le . | REMOVE
+ trouve les musique . | FIND
+ trouve les jeux . | FIND
+ aller à précédent game . | GO_PREV
+ trouve les jeux . | FIND
+ précédent . | GO_PREV
+ suivant . | GO_NEXT
+ photos . | OPEN_photos
+ jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ peux tu le supprimer . | REMOVE
+ suivant . | GO_NEXT
+ aller à précédent image . | GO_PREV
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ pourrais tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ jeux . | OPEN_games
+ trouve ça images . | FIND
+ trouve le . | FIND
+ trouve ces photos . | FIND
+ supprime le . | REMOVE
+ peux tu supprime les . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ aller à la page suivante . | GO_NEXT
+ trouve ça images . | FIND
+ peux tu les supprimer . | REMOVE
+ va en bas . | GO_DOWN
+ image suivante . | GO_NEXT
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ aller au film suivant . | GO_NEXT
+ photos . | OPEN_photos
+ trouve ces photos . | FIND
+ pourrais tu les supprimer . | REMOVE
+ supprime le . | REMOVE
+ suivant game . | GO_NEXT
+ suivant . | GO_NEXT
+ peux tu le trouver photos . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve ces musiques  . | FIND
+ suivant . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ image suivante . | GO_NEXT
+ trouve les photos . | FIND
+ navigateur . | OPEN_browser
+ supprime ça . | REMOVE
+ supprime le . | REMOVE
+ haut . | GO_UP
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ aller à photos . | OPEN_photos
+ suivant . | GO_NEXT
+ trouve ça images . | FIND
+ peux tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ pourrais tu supprimer le . | REMOVE
+ trouve les . | FIND
+ pourrais tu aller à la page suivante . | GO_NEXT
+ haut . | GO_UP
+ images . | OPEN_photos
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ aller à musique . | OPEN_music
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ images . | OPEN_photos
+ films . | OPEN_movies
+ supprime le . | REMOVE
+ trouve les . | FIND
+ peux tu supprime les . | REMOVE
+ peux tu supprime les .usiques  . | REMOVE
+ précédent . | GO_PREV
+ page précédente . | GO_PREV
+ trouve ces . | FIND
+ peux tu supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ peux tu supprime les . | REMOVE
+ images . | OPEN_photos
+ trouve les . | FIND
+ aller à image suivante . | GO_NEXT
+ supprime les .usiques  . | REMOVE
+ peux tu le supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ suivant . | GO_NEXT
+ pourrais tu va en haut . | GO_UP
+ haut . | GO_UP
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ haut . | GO_UP
+ peux tu supprime ça films . | REMOVE
+ précédent . | GO_PREV
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ jeux . | OPEN_games
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve les . | FIND
+ supprime les .ilms . | REMOVE
+ image suivante . | GO_NEXT
+ supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ trouve les musique . | FIND
+ trouve les . | FIND
+ images . | OPEN_photos
+ trouve ces musiques  . | FIND
+ trouve ces photos . | FIND
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ supprime le . | REMOVE
+ trouve ces photos . | FIND
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ peux tu supprime ça . | REMOVE
+ haut . | GO_UP
+ trouve les films . | FIND
+ précédent film . | GO_PREV
+ précédent photo . | GO_PREV
+ pourrais tu supprimer le . | REMOVE
+ précédent . | GO_PREV
+ trouve le . | FIND
+ peux tu trouver ça . | FIND
+ peux tu le supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ trouve ça images . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ supprime les . | REMOVE
+ peux tu le trouver . | FIND
+ suivant . | GO_NEXT
+ pourrais tu aller à musique . | OPEN_music
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ bas . | GO_DOWN
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ jeux . | OPEN_games
+ trouve ça . | FIND
+ peux tu le supprimer . | REMOVE
+ va en bas . | GO_DOWN
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ peux tu supprime les .hotos . | REMOVE
+ trouve ces . | FIND
+ précédent photo . | GO_PREV
+ aller à photo suivante . | GO_NEXT
+ trouve les . | FIND
+ trouve le . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ supprime les images . | REMOVE
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ précédent photo . | GO_PREV
+ supprime le . | REMOVE
+ peux tu trouver ça . | FIND
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ va en bas . | GO_DOWN
+ haut . | GO_UP
+ précédent . | GO_PREV
+ peux tu trouver ça . | FIND
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ précédent chanson . | GO_PREV
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ peux tu aller à jeux . | OPEN_games
+ pourrais tu supprimer ça . | REMOVE
+ trouve les musique . | FIND
+ supprime le . | REMOVE
+ haut . | GO_UP
+ photos . | OPEN_photos
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ trouve les jeux . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ pourrais tu les supprimer images . | REMOVE
+ photo suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ peux tu aller à photos . | OPEN_photos
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ haut . | GO_UP
+ trouve les . | FIND
+ haut . | GO_UP
+ musique . | OPEN_music
+ précédent chanson . | GO_PREV
+ trouve ça images . | FIND
+ aller à la page précédente . | GO_PREV
+ bas . | GO_DOWN
+ pourrais tu supprimer le . | REMOVE
+ images . | OPEN_photos
+ trouve ces . | FIND
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ aller à suivant game . | GO_NEXT
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu supprimer le . | REMOVE
+ précédent . | GO_PREV
+ aller à précédent image . | GO_PREV
+ supprime ça . | REMOVE
+ films . | OPEN_movies
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ images . | OPEN_photos
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ trouve les photos . | FIND
+ bas . | GO_DOWN
+ supprime ça images . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ haut . | GO_UP
+ supprime les .hotos . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ trouve ça . | FIND
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ trouve ça . | FIND
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ trouve le . | FIND
+ photos . | OPEN_photos
+ trouve ces . | FIND
+ supprime les images . | REMOVE
+ navigateur . | OPEN_browser
+ trouve ces . | FIND
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ trouve ça . | FIND
+ trouve les . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ supprime le . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ haut . | GO_UP
+ supprime les . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ pourrais tu supprimer ces images . | REMOVE
+ trouve les . | FIND
+ peux tu aller à films . | OPEN_movies
+ précédent image . | GO_PREV
+ supprime le . | REMOVE
+ trouve ces . | FIND
+ haut . | GO_UP
+ aller à navigateur . | OPEN_browser
+ pourrais tu supprimer ces . | REMOVE
+ pourrais tu aller à navigateur . | OPEN_browser
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ trouve les images . | FIND
+ pourrais tu le trouver . | FIND
+ images . | OPEN_photos
+ trouve ces . | FIND
+ pourrais tu les supprimer photos . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu supprimer ces . | REMOVE
+ photos . | OPEN_photos
+ trouve ces films . | FIND
+ pourrais tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ aller à photos . | OPEN_photos
+ trouve les . | FIND
+ trouve le . | FIND
+ supprime les .hotos . | REMOVE
+ trouve les films . | FIND
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve ces . | FIND
+ supprime les photos . | REMOVE
+ supprime ça . | REMOVE
+ page suivante . | GO_NEXT
+ trouve le . | FIND
+ bas . | GO_DOWN
+ haut . | GO_UP
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ trouve ces musique . | FIND
+ trouve le . | FIND
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ pourrais tu aller à jeux . | OPEN_games
+ navigateur . | OPEN_browser
+ trouve ça images . | FIND
+ photo suivante . | GO_NEXT
+ trouve le . | FIND
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ peux tu trouve ces . | FIND
+ trouve ça . | FIND
+ haut . | GO_UP
+ trouve ça films . | FIND
+ aller à navigateur . | OPEN_browser
+ trouve ces . | FIND
+ haut . | GO_UP
+ trouve ça films . | FIND
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ image suivante . | GO_NEXT
+ trouve ça films . | FIND
+ haut . | GO_UP
+ suivant film . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ précédent . | GO_PREV
+ images . | OPEN_photos
+ pourrais tu supprimer ça . | REMOVE
+ haut . | GO_UP
+ peux tu trouver ça . | FIND
+ supprime ça . | REMOVE
+ supprime ça images . | REMOVE
+ bas . | GO_DOWN
+ aller à jeux . | OPEN_games
+ va en bas . | GO_DOWN
+ pourrais tu aller au film suivant . | GO_NEXT
+ précédent . | GO_PREV
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ image suivante . | GO_NEXT
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ supprime ça . | REMOVE
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ pourrais tu supprimer ça images . | REMOVE
+ supprime le . | REMOVE
+ va en haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ peux tu le supprimer . | REMOVE
+ précédent photo . | GO_PREV
+ peux tu aller à musique . | OPEN_music
+ pourrais tu les supprimer . | REMOVE
+ films . | OPEN_movies
+ images . | OPEN_photos
+ musique . | OPEN_music
+ peux tu supprime les . | REMOVE
+ pourrais tu aller à images . | OPEN_photos
+ supprime les . | REMOVE
+ peux tu les supprimer photos . | REMOVE
+ page précédente . | GO_PREV
+ trouve ça . | FIND
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve ça . | FIND
+ précédent . | GO_PREV
+ pourrais tu supprimer ça jeux . | REMOVE
+ peux tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ images . | OPEN_photos
+ trouve les images . | FIND
+ précédent . | GO_PREV
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu les supprimer images . | REMOVE
+ haut . | GO_UP
+ trouve les . | FIND
+ musique . | OPEN_music
+ va en haut . | GO_UP
+ trouve ces images . | FIND
+ films . | OPEN_movies
+ va en haut . | GO_UP
+ supprime les images . | REMOVE
+ aller à images . | OPEN_photos
+ trouve ces jeux . | FIND
+ navigateur . | OPEN_browser
+ aller à suivant game . | GO_NEXT
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu va en haut . | GO_UP
+ pourrais tu va en haut . | GO_UP
+ précédent . | GO_PREV
+ aller à photo suivante . | GO_NEXT
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ supprime ça . | REMOVE
+ musique . | OPEN_music
+ peux tu trouver ça . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ trouve ces . | FIND
+ aller au film précédent . | GO_PREV
+ suivant . | GO_NEXT
+ musique . | OPEN_music
+ haut . | GO_UP
+ précédent . | GO_PREV
+ trouve les jeux . | FIND
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ pourrais tu supprimer le . | REMOVE
+ trouve ces . | FIND
+ musique . | OPEN_music
+ trouve ça images . | FIND
+ peux tu le trouver . | FIND
+ supprime le . | REMOVE
+ supprime les . | REMOVE
+ trouve ça . | FIND
+ précédent film . | GO_PREV
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ page suivante . | GO_NEXT
+ pourrais tu aller au film précédent . | GO_PREV
+ supprime les . | REMOVE
+ trouve le . | FIND
+ va en haut . | GO_UP
+ supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ suivant . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ trouve ça jeux . | FIND
+ haut . | GO_UP
+ trouve ça . | FIND
+ trouve ça . | FIND
+ peux tu aller à la page précédente . | GO_PREV
+ images . | OPEN_photos
+ trouve le . | FIND
+ trouve les films . | FIND
+ peux tu aller à précédent image . | GO_PREV
+ supprime ça . | REMOVE
+ supprime le . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu le supprimer . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ haut . | GO_UP
+ musique . | OPEN_music
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ trouve les . | FIND
+ images . | OPEN_photos
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ trouve les . | FIND
+ précédent film . | GO_PREV
+ pourrais tu le trouver films . | FIND
+ images . | OPEN_photos
+ trouve ça images . | FIND
+ trouve ça . | FIND
+ peux tu aller à suivant chanson . | GO_NEXT
+ aller à jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ pourrais tu trouve ces musiques  . | FIND
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ peux tu va en bas . | GO_DOWN
+ musique . | OPEN_music
+ précédent . | GO_PREV
+ trouve le . | FIND
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ trouve ces jeux . | FIND
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ précédent photo . | GO_PREV
+ pourrais tu supprimer le . | REMOVE
+ trouve ça images . | FIND
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ précédent photo . | GO_PREV
+ haut . | GO_UP
+ pourrais tu supprimer ces . | REMOVE
+ trouve ces . | FIND
+ précédent . | GO_PREV
+ peux tu trouver ça . | FIND
+ supprime ça . | REMOVE
+ suivant film . | GO_NEXT
+ pourrais tu supprimer ces musiques  . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ jeux . | OPEN_games
+ trouve les . | FIND
+ haut . | GO_UP
+ suivant film . | GO_NEXT
+ films . | OPEN_movies
+ haut . | GO_UP
+ bas . | GO_DOWN
+ trouve le . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ pourrais tu les supprimer . | REMOVE
+ trouve ces . | FIND
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ photos . | OPEN_photos
+ précédent image . | GO_PREV
+ précédent chanson . | GO_PREV
+ haut . | GO_UP
+ jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ pourrais tu supprimer ces photos . | REMOVE
+ haut . | GO_UP
+ aller à précédent chanson . | GO_PREV
+ images . | OPEN_photos
+ photo suivante . | GO_NEXT
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ haut . | GO_UP
+ précédent image . | GO_PREV
+ trouve ça . | FIND
+ peux tu aller à la photo précédente . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ navigateur . | OPEN_browser
+ aller à photos . | OPEN_photos
+ trouve le . | FIND
+ haut . | GO_UP
+ précédent photo . | GO_PREV
+ bas . | GO_DOWN
+ peux tu supprime les .hotos . | REMOVE
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ trouve le . | FIND
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ aller à précédent image . | GO_PREV
+ films . | OPEN_movies
+ photos . | OPEN_photos
+ navigateur . | OPEN_browser
+ trouve ça . | FIND
+ trouve ça . | FIND
+ navigateur . | OPEN_browser
+ musique . | OPEN_music
+ va en haut . | GO_UP
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ précédent . | GO_PREV
+ jeux . | OPEN_games
+ va en haut . | GO_UP
+ peux tu supprime les . | REMOVE
+ aller au film précédent . | GO_PREV
+ supprime le . | REMOVE
+ supprime les films . | REMOVE
+ précédent chanson . | GO_PREV
+ photos . | OPEN_photos
+ haut . | GO_UP
+ trouve ça films . | FIND
+ aller à image suivante . | GO_NEXT
+ supprime les .mages . | REMOVE
+ photos . | OPEN_photos
+ musique . | OPEN_music
+ précédent chanson . | GO_PREV
+ trouve les . | FIND
+ supprime le . | REMOVE
+ trouve ça . | FIND
+ peux tu le trouver . | FIND
+ bas . | GO_DOWN
+ peux tu trouve ces . | FIND
+ trouve ces . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ suivant game . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu aller à photo suivante . | GO_NEXT
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ va en haut . | GO_UP
+ navigateur . | OPEN_browser
+ peux tu supprime ça . | REMOVE
+ trouve ça . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ peux tu trouve ces . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ peux tu supprime ça . | REMOVE
+ va en haut . | GO_UP
+ trouve ça . | FIND
+ précédent image . | GO_PREV
+ haut . | GO_UP
+ trouve ça . | FIND
+ supprime les .hotos . | REMOVE
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ peux tu va en bas . | GO_DOWN
+ trouve le . | FIND
+ trouve le . | FIND
+ supprime les .usiques  . | REMOVE
+ aller à films . | OPEN_movies
+ supprime les images . | REMOVE
+ peux tu trouver ça . | FIND
+ trouve le . | FIND
+ pourrais tu aller à la page précédente . | GO_PREV
+ haut . | GO_UP
+ jeux . | OPEN_games
+ trouve ça . | FIND
+ trouve le . | FIND
+ pourrais tu supprimer ça jeux . | REMOVE
+ bas . | GO_DOWN
+ trouve ces musique . | FIND
+ trouve ces . | FIND
+ trouve ça . | FIND
+ musique . | OPEN_music
+ pourrais tu supprimer ces . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ précédent . | GO_PREV
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ page précédente . | GO_PREV
+ trouve ça images . | FIND
+ pourrais tu aller à photos . | OPEN_photos
+ pourrais tu aller à la page suivante . | GO_NEXT
+ pourrais tu va en bas . | GO_DOWN
+ pourrais tu aller à la page précédente . | GO_PREV
+ page suivante . | GO_NEXT
+ trouve le . | FIND
+ photos . | OPEN_photos
+ photo suivante . | GO_NEXT
+ peux tu va en bas . | GO_DOWN
+ images . | OPEN_photos
+ page suivante . | GO_NEXT
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ page précédente . | GO_PREV
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu supprime ça jeux . | REMOVE
+ trouve les films . | FIND
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ trouve les . | FIND
+ supprime ça jeux . | REMOVE
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ trouve ça films . | FIND
+ musique . | OPEN_music
+ précédent chanson . | GO_PREV
+ trouve les images . | FIND
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ images . | OPEN_photos
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ trouve ces . | FIND
+ précédent film . | GO_PREV
+ bas . | GO_DOWN
+ pourrais tu supprimer le . | REMOVE
+ peux tu supprime ça films . | REMOVE
+ trouve le . | FIND
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ jeux . | OPEN_games
+ haut . | GO_UP
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ supprime les . | REMOVE
+ peux tu trouver ça images . | FIND
+ images . | OPEN_photos
+ peux tu les supprimer musique . | REMOVE
+ pourrais tu les supprimer photos . | REMOVE
+ trouve le . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ aller à musique . | OPEN_music
+ précédent . | GO_PREV
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ précédent game . | GO_PREV
+ pourrais tu supprimer ces films . | REMOVE
+ pourrais tu trouve ces . | FIND
+ supprime le . | REMOVE
+ trouve ces musique . | FIND
+ trouve les . | FIND
+ supprime les .ilms . | REMOVE
+ haut . | GO_UP
+ peux tu le supprimer . | REMOVE
+ supprime les . | REMOVE
+ images . | OPEN_photos
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ trouve le . | FIND
+ aller à jeux . | OPEN_games
+ supprime les .ames . | REMOVE
+ supprime les .hotos . | REMOVE
+ photo suivante . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu supprimer le . | REMOVE
+ page suivante . | GO_NEXT
+ peux tu aller à suivant chanson . | GO_NEXT
+ trouve le . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu les supprimer films . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu le trouver . | FIND
+ haut . | GO_UP
+ musique . | OPEN_music
+ trouve les photos . | FIND
+ haut . | GO_UP
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ pourrais tu aller à navigateur . | OPEN_browser
+ va en bas . | GO_DOWN
+ jeux . | OPEN_games
+ trouve ces musique . | FIND
+ jeux . | OPEN_games
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ peux tu aller à navigateur . | OPEN_browser
+ images . | OPEN_photos
+ image suivante . | GO_NEXT
+ supprime ça . | REMOVE
+ peux tu aller au film suivant . | GO_NEXT
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ trouve les photos . | FIND
+ peux tu aller à films . | OPEN_movies
+ navigateur . | OPEN_browser
+ films . | OPEN_movies
+ va en haut . | GO_UP
+ précédent . | GO_PREV
+ pourrais tu le trouver musique . | FIND
+ précédent . | GO_PREV
+ va en bas . | GO_DOWN
+ pourrais tu supprimer le . | REMOVE
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ trouve ces photos . | FIND
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ jeux . | OPEN_games
+ peux tu le supprimer . | REMOVE
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ pourrais tu supprimer ça . | REMOVE
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ trouve ça images . | FIND
+ précédent film . | GO_PREV
+ trouve ces . | FIND
+ précédent photo . | GO_PREV
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ suivant . | GO_NEXT
+ trouve les photos . | FIND
+ supprime le . | REMOVE
+ peux tu supprime ça . | REMOVE
+ photos . | OPEN_photos
+ suivant . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ pourrais tu les supprimer images . | REMOVE
+ pourrais tu trouver ce jeu . | FIND
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ trouve ces . | FIND
+ bas . | GO_DOWN
+ suivant game . | GO_NEXT
+ photos . | OPEN_photos
+ trouve ça films . | FIND
+ jeux . | OPEN_games
+ aller à musique . | OPEN_music
+ peux tu les supprimer . | REMOVE
+ trouve le . | FIND
+ trouve le . | FIND
+ supprime les . | REMOVE
+ trouve ça films . | FIND
+ précédent . | GO_PREV
+ suivant game . | GO_NEXT
+ peux tu supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve ces musiques  . | FIND
+ trouve les . | FIND
+ précédent image . | GO_PREV
+ haut . | GO_UP
+ musique . | OPEN_music
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ haut . | GO_UP
+ trouve ça jeux . | FIND
+ trouve ça jeux . | FIND
+ trouve ça . | FIND
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ précédent image . | GO_PREV
+ haut . | GO_UP
+ bas . | GO_DOWN
+ supprime les .usiques  . | REMOVE
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ haut . | GO_UP
+ pourrais tu aller à la page précédente . | GO_PREV
+ suivant chanson . | GO_NEXT
+ trouve le . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve ces jeux . | FIND
+ trouve ça images . | FIND
+ peux tu le supprimer . | REMOVE
+ musique . | OPEN_music
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ précédent . | GO_PREV
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ films . | OPEN_movies
+ suivant . | GO_NEXT
+ supprime ça images . | REMOVE
+ suivant chanson . | GO_NEXT
+ trouve ça . | FIND
+ navigateur . | OPEN_browser
+ trouve le . | FIND
+ va en haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ trouve ça jeux . | FIND
+ haut . | GO_UP
+ trouve ces . | FIND
+ trouve ça . | FIND
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ aller à jeux . | OPEN_games
+ suivant chanson . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ va en bas . | GO_DOWN
+ haut . | GO_UP
+ trouve les images . | FIND
+ trouve les . | FIND
+ navigateur . | OPEN_browser
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ suivant game . | GO_NEXT
+ pourrais tu va en haut . | GO_UP
+ pourrais tu supprimer ces jeux . | REMOVE
+ bas . | GO_DOWN
+ peux tu va en bas . | GO_DOWN
+ bas . | GO_DOWN
+ trouve le . | FIND
+ haut . | GO_UP
+ jeux . | OPEN_games
+ trouve les . | FIND
+ suivant chanson . | GO_NEXT
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve ça . | FIND
+ précédent chanson . | GO_PREV
+ haut . | GO_UP
+ peux tu trouve ces musiques  . | FIND
+ aller à précédent image . | GO_PREV
+ trouve ça jeux . | FIND
+ peux tu trouver ça . | FIND
+ supprime ça . | REMOVE
+ peux tu supprime ça . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve le . | FIND
+ pourrais tu aller à images . | OPEN_photos
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ pourrais tu trouver ça . | FIND
+ navigateur . | OPEN_browser
+ peux tu supprime les . | REMOVE
+ précédent . | GO_PREV
+ précédent . | GO_PREV
+ pourrais tu supprimer ces . | REMOVE
+ suivant . | GO_NEXT
+ suivant . | GO_NEXT
+ films . | OPEN_movies
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ jeux . | OPEN_games
+ précédent . | GO_PREV
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu aller à précédent game . | GO_PREV
+ précédent film . | GO_PREV
+ films . | OPEN_movies
+ jeux . | OPEN_games
+ supprime ça . | REMOVE
+ trouve ça films . | FIND
+ précédent chanson . | GO_PREV
+ trouve ces photos . | FIND
+ trouve les . | FIND
+ pourrais tu le trouver . | FIND
+ haut . | GO_UP
+ bas . | GO_DOWN
+ trouve le . | FIND
+ navigateur . | OPEN_browser
+ peux tu le supprimer . | REMOVE
+ peux tu supprime ça films . | REMOVE
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ peux tu le trouver . | FIND
+ peux tu trouver ce jeu . | FIND
+ navigateur . | OPEN_browser
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ musique . | OPEN_music
+ trouve ça images . | FIND
+ pourrais tu le trouver . | FIND
+ peux tu supprime ça . | REMOVE
+ aller à images . | OPEN_photos
+ suivant . | GO_NEXT
+ aller à la photo précédente . | GO_PREV
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ photo suivante . | GO_NEXT
+ photos . | OPEN_photos
+ peux tu supprime les .ilms . | REMOVE
+ trouve ça . | FIND
+ trouve ces films . | FIND
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ trouve ces photos . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime ça jeux . | REMOVE
+ pourrais tu aller à image suivante . | GO_NEXT
+ supprime le . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer ça jeux . | REMOVE
+ pourrais tu supprimer ces musiques  . | REMOVE
+ suivant . | GO_NEXT
+ trouve le . | FIND
+ images . | OPEN_photos
+ peux tu supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve ça films . | FIND
+ haut . | GO_UP
+ trouve le . | FIND
+ pourrais tu les supprimer jeux . | REMOVE
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ peux tu le supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ supprime les . | REMOVE
+ trouve les . | FIND
+ trouve ça . | FIND
+ images . | OPEN_photos
+ aller au film précédent . | GO_PREV
+ peux tu trouve ces . | FIND
+ va en haut . | GO_UP
+ peux tu aller à photos . | OPEN_photos
+ haut . | GO_UP
+ trouve le . | FIND
+ pourrais tu trouver ça . | FIND
+ trouve ça jeux . | FIND
+ trouve ça . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu aller à musique . | OPEN_music
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve les . | FIND
+ précédent . | GO_PREV
+ supprime les .hotos . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ pourrais tu va en haut . | GO_UP
+ suivant game . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ aller à suivant game . | GO_NEXT
+ jeux . | OPEN_games
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ supprime les .mages . | REMOVE
+ haut . | GO_UP
+ films . | OPEN_movies
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ pourrais tu supprimer ça . | REMOVE
+ jeux . | OPEN_games
+ supprime ça films . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ navigateur . | OPEN_browser
+ supprime le . | REMOVE
+ précédent chanson . | GO_PREV
+ trouve ces musique . | FIND
+ trouve ces films . | FIND
+ peux tu les supprimer . | REMOVE
+ peux tu aller à musique . | OPEN_music
+ peux tu aller à précédent chanson . | GO_PREV
+ haut . | GO_UP
+ navigateur . | OPEN_browser
+ navigateur . | OPEN_browser
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime les .mages . | REMOVE
+ pourrais tu va en haut . | GO_UP
+ trouve ça . | FIND
+ photo suivante . | GO_NEXT
+ trouve les . | FIND
+ précédent . | GO_PREV
+ supprime les . | REMOVE
+ page précédente . | GO_PREV
+ peux tu aller à images . | OPEN_photos
+ trouve ça . | FIND
+ supprime le . | REMOVE
+ jeux . | OPEN_games
+ pourrais tu va en bas . | GO_DOWN
+ supprime les . | REMOVE
+ supprime le . | REMOVE
+ navigateur . | OPEN_browser
+ films . | OPEN_movies
+ supprime ça . | REMOVE
+ pourrais tu supprimer ces films . | REMOVE
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ films . | OPEN_movies
+ peux tu supprime les . | REMOVE
+ supprime les . | REMOVE
+ précédent . | GO_PREV
+ peux tu le supprimer . | REMOVE
+ bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ photo suivante . | GO_NEXT
+ précédent film . | GO_PREV
+ trouve ces jeux . | FIND
+ supprime les . | REMOVE
+ trouve ces . | FIND
+ trouve les films . | FIND
+ haut . | GO_UP
+ trouve ces musiques  . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ aller à photos . | OPEN_photos
+ supprime les .hotos . | REMOVE
+ trouve ces musiques  . | FIND
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ peux tu le supprimer . | REMOVE
+ trouve ça . | FIND
+ haut . | GO_UP
+ peux tu les supprimer . | REMOVE
+ suivant film . | GO_NEXT
+ suivant . | GO_NEXT
+ supprime les .ilms . | REMOVE
+ aller à précédent chanson . | GO_PREV
+ suivant . | GO_NEXT
+ suivant game . | GO_NEXT
+ trouve ça . | FIND
+ peux tu supprime ça . | REMOVE
+ trouve ça . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ supprime les . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve ça . | FIND
+ films . | OPEN_movies
+ trouve ces films . | FIND
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu les supprimer films . | REMOVE
+ trouve ça . | FIND
+ supprime ça . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ peux tu les supprimer films . | REMOVE
+ précédent photo . | GO_PREV
+ jeux . | OPEN_games
+ haut . | GO_UP
+ photos . | OPEN_photos
+ trouve le . | FIND
+ image suivante . | GO_NEXT
+ aller à la page suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ peux tu va en haut . | GO_UP
+ bas . | GO_DOWN
+ trouve le . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ peux tu le trouver . | FIND
+ peux tu le supprimer . | REMOVE
+ jeux . | OPEN_games
+ haut . | GO_UP
+ aller à films . | OPEN_movies
+ peux tu trouver ça . | FIND
+ trouve les . | FIND
+ page précédente . | GO_PREV
+ trouve ça . | FIND
+ supprime le . | REMOVE
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ films . | OPEN_movies
+ photos . | OPEN_photos
+ trouve les . | FIND
+ haut . | GO_UP
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu trouver ça . | FIND
+ pourrais tu supprimer ces films . | REMOVE
+ va en haut . | GO_UP
+ supprime le . | REMOVE
+ peux tu aller à la page suivante . | GO_NEXT
+ trouve ces musiques  . | FIND
+ supprime le . | REMOVE
+ pourrais tu le trouver . | FIND
+ pourrais tu supprimer ça jeux . | REMOVE
+ peux tu aller à la page précédente . | GO_PREV
+ trouve les . | FIND
+ précédent image . | GO_PREV
+ trouve ça jeux . | FIND
+ peux tu le supprimer . | REMOVE
+ suivant chanson . | GO_NEXT
+ pourrais tu supprimer ces . | REMOVE
+ musique . | OPEN_music
+ précédent photo . | GO_PREV
+ aller au film précédent . | GO_PREV
+ pourrais tu les supprimer . | REMOVE
+ précédent chanson . | GO_PREV
+ pourrais tu supprimer ces musiques  . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ précédent . | GO_PREV
+ films . | OPEN_movies
+ navigateur . | OPEN_browser
+ peux tu aller à films . | OPEN_movies
+ pourrais tu aller au film suivant . | GO_NEXT
+ haut . | GO_UP
+ trouve le . | FIND
+ aller à précédent game . | GO_PREV
+ photo suivante . | GO_NEXT
+ supprime le . | REMOVE
+ trouve ces jeux . | FIND
+ bas . | GO_DOWN
+ trouve ces musiques  . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime ça . | REMOVE
+ pourrais tu le trouver . | FIND
+ haut . | GO_UP
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ pourrais tu aller au film suivant . | GO_NEXT
+ page suivante . | GO_NEXT
+ trouve ça . | FIND
+ musique . | OPEN_music
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ trouve ça jeux . | FIND
+ jeux . | OPEN_games
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ images . | OPEN_photos
+ supprime les .ames . | REMOVE
+ supprime ça . | REMOVE
+ peux tu supprime les . | REMOVE
+ aller à photos . | OPEN_photos
+ supprime les . | REMOVE
+ images . | OPEN_photos
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ supprime le . | REMOVE
+ trouve le . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ suivant game . | GO_NEXT
+ suivant . | GO_NEXT
+ précédent . | GO_PREV
+ films . | OPEN_movies
+ musique . | OPEN_music
+ photo suivante . | GO_NEXT
+ bas . | GO_DOWN
+ trouve les . | FIND
+ trouve le . | FIND
+ trouve ça images . | FIND
+ trouve les . | FIND
+ trouve ça . | FIND
+ photos . | OPEN_photos
+ précédent film . | GO_PREV
+ peux tu les supprimer musique . | REMOVE
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ supprime le . | REMOVE
+ trouve ces . | FIND
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ trouve les . | FIND
+ peux tu supprime ça images . | REMOVE
+ image suivante . | GO_NEXT
+ peux tu aller à précédent image . | GO_PREV
+ pourrais tu va en bas . | GO_DOWN
+ peux tu le trouver . | FIND
+ trouve les . | FIND
+ haut . | GO_UP
+ trouve les . | FIND
+ aller à précédent image . | GO_PREV
+ trouve ces . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ aller à image suivante . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu va en bas . | GO_DOWN
+ trouve ça films . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ peux tu supprime les .mages . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve ces . | FIND
+ haut . | GO_UP
+ aller à navigateur . | OPEN_browser
+ peux tu supprime ça . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ supprime les . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ trouve les . | FIND
+ supprime les .usiques  . | REMOVE
+ navigateur . | OPEN_browser
+ images . | OPEN_photos
+ trouve ça . | FIND
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ page suivante . | GO_NEXT
+ photo suivante . | GO_NEXT
+ supprime les . | REMOVE
+ précédent photo . | GO_PREV
+ supprime les . | REMOVE
+ peux tu supprime ça . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ images . | OPEN_photos
+ navigateur . | OPEN_browser
+ précédent . | GO_PREV
+ peux tu trouver ça . | FIND
+ aller à photos . | OPEN_photos
+ trouve les . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ musique . | OPEN_music
+ précédent chanson . | GO_PREV
+ page suivante . | GO_NEXT
+ jeux . | OPEN_games
+ trouve les jeux . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ aller au film précédent . | GO_PREV
+ précédent . | GO_PREV
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ va en haut . | GO_UP
+ trouve ces . | FIND
+ haut . | GO_UP
+ trouve les images . | FIND
+ supprime le . | REMOVE
+ suivant film . | GO_NEXT
+ précédent . | GO_PREV
+ trouve les . | FIND
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ trouve ça . | FIND
+ trouve le . | FIND
+ supprime le . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ films . | OPEN_movies
+ trouve ces jeux . | FIND
+ pourrais tu supprimer ces . | REMOVE
+ aller à navigateur . | OPEN_browser
+ navigateur . | OPEN_browser
+ supprime ça films . | REMOVE
+ aller à jeux . | OPEN_games
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ aller à images . | OPEN_photos
+ images . | OPEN_photos
+ trouve ça . | FIND
+ trouve ces . | FIND
+ pourrais tu aller à suivant chanson . | GO_NEXT
+ trouve ces . | FIND
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ pourrais tu les supprimer . | REMOVE
+ haut . | GO_UP
+ peux tu le trouver . | FIND
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ pourrais tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ peux tu le trouver . | FIND
+ pourrais tu supprimer le . | REMOVE
+ films . | OPEN_movies
+ images . | OPEN_photos
+ supprime le . | REMOVE
+ image suivante . | GO_NEXT
+ précédent . | GO_PREV
+ pourrais tu supprimer le . | REMOVE
+ trouve les . | FIND
+ suivant chanson . | GO_NEXT
+ haut . | GO_UP
+ trouve ça films . | FIND
+ supprime les .hotos . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ suivant . | GO_NEXT
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu supprimer ces . | REMOVE
+ haut . | GO_UP
+ pourrais tu va en bas . | GO_DOWN
+ haut . | GO_UP
+ trouve les . | FIND
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ trouve les . | FIND
+ va en haut . | GO_UP
+ supprime le . | REMOVE
+ précédent image . | GO_PREV
+ trouve les images . | FIND
+ va en haut . | GO_UP
+ bas . | GO_DOWN
+ peux tu le supprimer . | REMOVE
+ haut . | GO_UP
+ peux tu les supprimer jeux . | REMOVE
+ bas . | GO_DOWN
+ suivant chanson . | GO_NEXT
+ haut . | GO_UP
+ précédent game . | GO_PREV
+ jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ supprime ça . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ trouve le . | FIND
+ trouve ces photos . | FIND
+ trouve ça . | FIND
+ navigateur . | OPEN_browser
+ trouve les . | FIND
+ trouve le . | FIND
+ trouve ces images . | FIND
+ trouve le . | FIND
+ supprime les . | REMOVE
+ musique . | OPEN_music
+ aller à suivant game . | GO_NEXT
+ trouve ça . | FIND
+ trouve ces . | FIND
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ bas . | GO_DOWN
+ haut . | GO_UP
+ pourrais tu les supprimer jeux . | REMOVE
+ supprime le . | REMOVE
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND
+ bas . | GO_DOWN
+ aller à jeux . | OPEN_games
+ supprime ça . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ trouve ça films . | FIND
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ peux tu aller à navigateur . | OPEN_browser
+ trouve ces musique . | FIND
+ images . | OPEN_photos
+ trouve les . | FIND
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ supprime les . | REMOVE
+ jeux . | OPEN_games
+ supprime les . | REMOVE
+ pourrais tu aller à navigateur . | OPEN_browser
+ peux tu supprime ça . | REMOVE
+ trouve ça films . | FIND
+ photos . | OPEN_photos
+ trouve le . | FIND
+ précédent chanson . | GO_PREV
+ trouve les . | FIND
+ pourrais tu supprimer ces photos . | REMOVE
+ bas . | GO_DOWN
+ supprime les . | REMOVE
+ pourrais tu aller à image suivante . | GO_NEXT
+ bas . | GO_DOWN
+ aller à musique . | OPEN_music
+ suivant . | GO_NEXT
+ peux tu les supprimer . | REMOVE
+ peux tu les supprimer . | REMOVE
+ haut . | GO_UP
+ peux tu supprime les . | REMOVE
+ supprime les . | REMOVE
+ supprime ça . | REMOVE
+ trouve les . | FIND
+ trouve le . | FIND
+ peux tu les supprimer films . | REMOVE
+ supprime le . | REMOVE
+ trouve les . | FIND
+ supprime les . | REMOVE
+ aller à navigateur . | OPEN_browser
+ suivant game . | GO_NEXT
+ précédent . | GO_PREV
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ haut . | GO_UP
+ trouve ces jeux . | FIND
+ aller à la page précédente . | GO_PREV
+ bas . | GO_DOWN
+ photo suivante . | GO_NEXT
+ va en bas . | GO_DOWN
+ peux tu les supprimer . | REMOVE
+ bas . | GO_DOWN
+ page suivante . | GO_NEXT
+ bas . | GO_DOWN
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ pourrais tu supprimer ces photos . | REMOVE
+ supprime le . | REMOVE
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ précédent . | GO_PREV
+ précédent film . | GO_PREV
+ supprime le . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ trouve ça . | FIND
+ peux tu aller à image suivante . | GO_NEXT
+ trouve le . | FIND
+ images . | OPEN_photos
+ trouve ces . | FIND
+ pourrais tu supprimer ça jeux . | REMOVE
+ trouve les . | FIND
+ page suivante . | GO_NEXT
+ trouve les . | FIND
+ musique . | OPEN_music
+ supprime les . | REMOVE
+ navigateur . | OPEN_browser
+ trouve ces . | FIND
+ pourrais tu supprimer le . | REMOVE
+ supprime les .usiques  . | REMOVE
+ trouve ça films . | FIND
+ bas . | GO_DOWN
+ trouve les . | FIND
+ peux tu trouver ça films . | FIND
+ trouve les . | FIND
+ trouve ces musiques  . | FIND
+ musique . | OPEN_music
+ haut . | GO_UP
+ pourrais tu va en haut . | GO_UP
+ bas . | GO_DOWN
+ va en haut . | GO_UP
+ peux tu le trouver . | FIND
+ peux tu les supprimer . | REMOVE
+ supprime les . | REMOVE
+ suivant . | GO_NEXT
+ trouve ces images . | FIND
+ page suivante . | GO_NEXT
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ trouve le . | FIND
+ peux tu les supprimer . | REMOVE
+ trouve ces photos . | FIND
+ précédent . | GO_PREV
+ pourrais tu supprimer ça . | REMOVE
+ pourrais tu aller à la photo précédente . | GO_PREV
+ bas . | GO_DOWN
+ musique . | OPEN_music
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ précédent . | GO_PREV
+ trouve ces . | FIND
+ trouve ça . | FIND
+ navigateur . | OPEN_browser
+ aller au film suivant . | GO_NEXT
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ supprime ça . | REMOVE
+ pourrais tu supprimer le . | REMOVE
+ haut . | GO_UP
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ pourrais tu aller à images . | OPEN_photos
+ bas . | GO_DOWN
+ peux tu supprime ça . | REMOVE
+ suivant . | GO_NEXT
+ image suivante . | GO_NEXT
+ navigateur . | OPEN_browser
+ haut . | GO_UP
+ pourrais tu supprimer le . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ supprime les . | REMOVE
+ aller à la page précédente . | GO_PREV
+ bas . | GO_DOWN
+ suivant . | GO_NEXT
+ jeux . | OPEN_games
+ trouve ces musique . | FIND
+ précédent chanson . | GO_PREV
+ suivant game . | GO_NEXT
+ supprime les . | REMOVE
+ haut . | GO_UP
+ trouve ça . | FIND
+ trouve les . | FIND
+ bas . | GO_DOWN
+ aller à la page suivante . | GO_NEXT
+ photos . | OPEN_photos
+ trouve les . | FIND
+ films . | OPEN_movies
+ trouve ça . | FIND
+ trouve les . | FIND
+ trouve ça images . | FIND
+ pourrais tu supprimer ça films . | REMOVE
+ page suivante . | GO_NEXT
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ page suivante . | GO_NEXT
+ bas . | GO_DOWN
+ trouve le . | FIND
+ suivant . | GO_NEXT
+ trouve ces photos . | FIND
+ précédent chanson . | GO_PREV
+ précédent game . | GO_PREV
+ précédent . | GO_PREV
+ photos . | OPEN_photos
+ précédent . | GO_PREV
+ supprime ça . | REMOVE
+ trouve ça . | FIND
+ peux tu trouve ces . | FIND
+ bas . | GO_DOWN
+ films . | OPEN_movies
+ peux tu aller à la photo précédente . | GO_PREV
+ trouve ces . | FIND
+ peux tu le supprimer . | REMOVE
+ supprime les .hotos . | REMOVE
+ supprime le . | REMOVE
+ pourrais tu le trouver . | FIND
+ supprime les . | REMOVE
+ peux tu les supprimer . | REMOVE
+ jeux . | OPEN_games
+ peux tu supprime les .mages . | REMOVE
+ bas . | GO_DOWN
+ suivant chanson . | GO_NEXT
+ trouve les films . | FIND
+ photo suivante . | GO_NEXT
+ supprime les films . | REMOVE
+ supprime les .usiques  . | REMOVE
+ peux tu va en haut . | GO_UP
+ pourrais tu aller à suivant game . | GO_NEXT
+ bas . | GO_DOWN
+ peux tu les supprimer photos . | REMOVE
+ images . | OPEN_photos
+ trouve les . | FIND
+ trouve ça . | FIND
+ trouve ces . | FIND
+ images . | OPEN_photos
+ bas . | GO_DOWN
+ supprime les musique . | REMOVE
+ supprime les images . | REMOVE
+ supprime ça films . | REMOVE
+ bas . | GO_DOWN
+ trouve le . | FIND
+ pourrais tu les supprimer . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ peux tu aller à précédent game . | GO_PREV
+ photo suivante . | GO_NEXT
+ musique . | OPEN_music
+ peux tu le supprimer . | REMOVE
+ trouve les . | FIND
+ aller à la page précédente . | GO_PREV
+ trouve ces . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu les supprimer images . | REMOVE
+ pourrais tu aller à images . | OPEN_photos
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ aller à images . | OPEN_photos
+ précédent . | GO_PREV
+ haut . | GO_UP
+ photos . | OPEN_photos
+ trouve les jeux . | FIND
+ images . | OPEN_photos
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ peux tu trouver ça . | FIND
+ supprime les . | REMOVE
+ haut . | GO_UP
+ haut . | GO_UP
+ haut . | GO_UP
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ jeux . | OPEN_games
+ page précédente . | GO_PREV
+ précédent film . | GO_PREV
+ photo suivante . | GO_NEXT
+ bas . | GO_DOWN
+ haut . | GO_UP
+ trouve les images . | FIND
+ peux tu supprime les . | REMOVE
+ trouve ces . | FIND
+ page suivante . | GO_NEXT
+ suivant . | GO_NEXT
+ suivant chanson . | GO_NEXT
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ jeux . | OPEN_games
+ peux tu supprime ça . | REMOVE
+ pourrais tu supprimer ça images . | REMOVE
+ jeux . | OPEN_games
+ jeux . | OPEN_games
+ précédent film . | GO_PREV
+ précédent film . | GO_PREV
+ musique . | OPEN_music
+ pourrais tu supprimer ça . | REMOVE
+ images . | OPEN_photos
+ trouve les . | FIND
+ films . | OPEN_movies
+ trouve ça . | FIND
+ bas . | GO_DOWN
+ aller au film suivant . | GO_NEXT
+ bas . | GO_DOWN
+ pourrais tu aller à photo suivante . | GO_NEXT
+ peux tu le trouver . | FIND
+ trouve ça . | FIND
+ peux tu aller à musique . | OPEN_music
+ trouve ça . | FIND
+ peux tu le supprimer . | REMOVE
+ haut . | GO_UP
+ suivant . | GO_NEXT
+ trouve ça . | FIND
+ supprime les . | REMOVE
+ trouve les . | FIND
+ précédent chanson . | GO_PREV
+ supprime ça . | REMOVE
+ trouve le . | FIND
+ bas . | GO_DOWN
+ trouve ça . | FIND
+ jeux . | OPEN_games
+ va en bas . | GO_DOWN
+ bas . | GO_DOWN
+ peux tu aller à navigateur . | OPEN_browser
+ peux tu le supprimer . | REMOVE
+ trouve ces images . | FIND
+ peux tu le supprimer . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ musique . | OPEN_music
+ précédent . | GO_PREV
+ navigateur . | OPEN_browser
+ supprime les . | REMOVE
+ supprime les . | REMOVE
+ bas . | GO_DOWN
+ photos . | OPEN_photos
+ bas . | GO_DOWN
+ haut . | GO_UP
+ peux tu aller à la page suivante . | GO_NEXT
+ peux tu supprime les musique . | REMOVE
+ trouve les . | FIND
+ trouve les . | FIND
+ trouve le . | FIND
+ peux tu aller à suivant chanson . | GO_NEXT
+ pourrais tu supprimer ces photos . | REMOVE
+ peux tu va en bas . | GO_DOWN
+ supprime le . | REMOVE
+ trouve les . | FIND
+ pourrais tu supprimer ces photos . | REMOVE
+ trouve le . | FIND
+ images . | OPEN_photos
+ supprime les . | REMOVE
+ peux tu trouver ce jeu . | FIND
+ films . | OPEN_movies
+ images . | OPEN_photos
+ haut . | GO_UP
+ bas . | GO_DOWN
+ pourrais tu aller à musique . | OPEN_music
+ trouve ça . | FIND
+ trouve ça films . | FIND
+ trouve ces images . | FIND
+ trouve les . | FIND
+ suivant . | GO_NEXT
+ peux tu le supprimer . | REMOVE
+ trouve ça films . | FIND
+ aller à films . | OPEN_movies
+ trouve les . | FIND
+ peux tu les supprimer . | REMOVE
+ pourrais tu supprimer ça . | REMOVE
+ trouve les . | FIND
+ pourrais tu supprimer ça . | REMOVE
+ aller à la photo précédente . | GO_PREV
+ pourrais tu trouver ça . | FIND
+ aller au film suivant . | GO_NEXT
+ pourrais tu les supprimer . | REMOVE
+ trouve les . | FIND

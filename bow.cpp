@@ -163,10 +163,9 @@ bool Init() {
     return false;
 }
 
-Document BuildDocument(const char* filename) {
+Document BuildDocument(std::ifstream& input) {
     Document doc;
 
-    std::ifstream input(filename);
     std::string w;
     std::string pos;
     unsigned int max_word_id = 0;
@@ -195,34 +194,25 @@ Document BuildDocument(const char* filename) {
     return doc;
 }
 
-void Train(const Document& doc, size_t job_id) {
-    for (int epoch = 0; epoch < 50; ++epoch) {
-        double nll = 0;
-        double probas[labels.size()];
-        int nb_correct = 0;
-        int nb_tokens = 0;
-        for (size_t i = 0; i < doc.size(); ++i) {
-            Label predicted = ComputeClass(doc[i].first, probas);
-            nb_correct += predicted == doc[i].second ? 1 : 0;
-            ++nb_tokens;
+int Train(const Document& doc) {
+    double nll = 0;
+    double probas[labels.size()];
+    int nb_correct = 0;
+    int nb_tokens = 0;
+    for (size_t i = 0; i < doc.size(); ++i) {
+        Label predicted = ComputeClass(doc[i].first, probas);
+        nb_correct += predicted == doc[i].second ? 1 : 0;
+        ++nb_tokens;
 
-            nll += ComputeNLL(probas);
+        nll += ComputeNLL(probas);
 
-            Backprop(doc[i].first, doc[i].second, probas);
+        Backprop(doc[i].first, doc[i].second, probas);
 
-            if (i % 1000 == 0) {
-                std::cout << nb_correct << " / " << nb_tokens << " (" << ((double) nb_correct *100 / nb_tokens) << "%)" << std::endl;
-            }
-
-            if (predicted != doc[i].second) {
-                for (auto& w : doc[i].first)
-                    std::cout << w << " ";
-                std::cout << POSToText(predicted) << " instead of " << POSToText(doc[i].second) << "\n";
-            }
+        if (predicted != doc[i].second) {
+            std::cout << POSToText(predicted) << " instead of " << POSToText(doc[i].second) << "\n";
         }
-        LogData("accuracy", nb_correct * 100 / nb_tokens, job_id);
-        LogData("iter", epoch, job_id);
     }
+    return  nb_correct * 100 / nb_tokens;
 }
 
 static const JobDesc classify = {
@@ -232,7 +222,7 @@ static const JobDesc classify = {
     "Classify the input text to one of the categories",  // longer description
     true /* synchronous */,
     true /* reentrant */,
-    [](const std::vector<std::string>& vs, size_t) { // the actual function
+    [](const std::vector<std::string>& vs, JobStatus&) { // the actual function
         std::istringstream input(vs[0]);
         std::string w;
         std::vector<unsigned int> ws;
@@ -240,7 +230,6 @@ static const JobDesc classify = {
         while (w != "." && input) {
             auto res = dict.find(w);
             ws.push_back(res == dict.end() ? kNotFound : res->second);
-            std::cout << "wid: " << ws.back() << "\n";
             input >> w;
         }
 
@@ -278,16 +267,29 @@ static const JobDesc train = {
     "Train the model on the specified dataset",
     false /* synchronous */,
     false /* reentrant */,
-    [](const std::vector<std::string>& vs, size_t id) {
-        Document doc = BuildDocument(vs[0].c_str());
-        bool need_training = Init();
+    [](const std::vector<std::string>& vs, JobStatus& job) {
+        Chart accuracy_chart("accuracy");
+        accuracy_chart.Label("iter").Value("accuracy");
 
-        if (need_training) {
-            Train(doc, id);
+        std::ifstream input(vs[0].c_str());
+        if (!input) {
+            return Html() << "Error: training set file not found";
         }
+
+        Document doc = BuildDocument(input);
+        input.close();
+        Init();
+
+        for (int epoch = 0; epoch < 50; ++epoch) {
+            int accuracy = Train(doc);
+
+            accuracy_chart.Log("accuracy", accuracy);
+            accuracy_chart.Log("iter", epoch);
+            job.SetPage(Html() << accuracy_chart.Get());
+        }
+
         return Html();
     },
-    { Chart("progression").Label("iter").Value("accuracy") }
 };
 
 

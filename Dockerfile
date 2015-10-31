@@ -32,15 +32,16 @@ RUN git clone https://github.com/Metaswitch/libmicrohttpd --depth=1 && \
 
 RUN apt-get install -y gdb valgrind
 
-RUN git clone https://github.com/Vermeille/http-interface --depth=1 && \
+RUN git clone https://github.com/Vermeille/http-interface && \
     cd http-interface && \
+    git checkout b0e9e3210a7d7bbe6436eb05e222f15d07d05ab5 && \
     mkdir build && \
     cd build && \
     cmake .. && \
     make && \
     make install && \
     cd ../.. && \
-    rm -rf http-interface && echo lol
+    rm -rf http-interface
 
 EXPOSE 8888
 

@@ -45,9 +45,8 @@ struct Document {
 
 class BagOfWords {
     std::vector<std::vector<double>> word_weight_;
-    std::map<std::string, int> dict_;
+    boost::bimap<std::string, int> dict_;
     LabelSet labels_;
-
 
     void ZeroInit() {
         word_weight_.resize(labels_.size());
@@ -86,6 +85,7 @@ class BagOfWords {
 
     public:
     LabelSet& labels() { return labels_; }
+    const std::vector<std::vector<double>>& weights() const { return word_weight_; }
 
     double ComputeNLL(double* probas) {
         double nll = 0;
@@ -96,17 +96,22 @@ class BagOfWords {
     }
 
     size_t GetWordId(const std::string& w) {
-        auto res = dict_.insert(std::make_pair(w, dict_.size()));
-        return res.first->second;
+        return dict_.insert(decltype (dict_)::value_type(w, dict_.size())).first->right;
     }
 
-    size_t GetWordIdOrUnk(const std::string& w) {
-        auto res = dict_.find(w);
-        if (res == dict_.end()) {
+    size_t GetWordIdOrUnk(const std::string& w) const {
+        auto res = dict_.left.find(w);
+        if (res == dict_.left.end()) {
             return kNotFound;
         } else {
             return res->second;
         }
+    }
+
+    size_t GetVocabSize() const { return dict_.size(); }
+
+    const std::string& WordFromId(size_t id) {
+        return dict_.right.at(id);
     }
 
     bool Init() {
@@ -262,7 +267,14 @@ static const JobDesc classify = {
             html <<
                 Tag("tr") <<
                     Tag("td") << g_bow.labels().GetString(i) << Close() <<
-                    Tag("td") << std::to_string(probas[i]) << Close() <<
+                    Tag("td") <<
+                        Div().Attr("style",
+                                "width: " + std::to_string(200 * probas[i]) + "px;"
+                                "padding-left: 2px;"
+                                "background-color: lightgreen;") <<
+                            std::to_string(probas[i] * 100) <<
+                        Close() <<
+                    Close() <<
                 Close();
         }
         html << Close();
@@ -290,7 +302,7 @@ static const JobDesc train = {
         input.close();
         g_bow.Init();
 
-        for (int epoch = 0; epoch < 50; ++epoch) {
+        for (int epoch = 0; epoch < 10; ++epoch) {
             int accuracy = g_bow.Train(doc);
 
             accuracy_chart.Log("accuracy", accuracy);
@@ -302,11 +314,59 @@ static const JobDesc train = {
     },
 };
 
+Html DisplayWeights(const std::string&, const POSTValues&) {
+    Html html;
+    for (int label = 0; label < g_bow.labels().size(); ++label) {
+        html << H2() << g_bow.labels().GetString(label) << Close();
+
+        auto minmax = std::minmax_element(g_bow.weights()[label].begin(), g_bow.weights()[label].end());
+        double max = std::max(std::abs(*minmax.first), std::abs(*minmax.second));
+
+        html <<
+        Tag("table").AddClass("table") <<
+            Tag("tr") <<
+                Tag("th") << "Word" << Close() <<
+                Tag("th") << "Score" << Close() <<
+                Tag("th") << "Word" << Close() <<
+                Tag("th") << "Score" << Close() <<
+            Close();
+
+        int vocab = g_bow.GetVocabSize() / 2;
+        for (int w = 0; w < g_bow.GetVocabSize() / 2; ++w) {
+            html <<
+            Tag("tr") <<
+                Tag("td") << g_bow.WordFromId(w) << Close() <<
+                Tag("td") <<
+                    Div().Attr("style",
+                            "width: " + std::to_string(200 * std::abs(g_bow.weights()[label][w] / max)) + "px;"
+                            "padding-left: 2px;"
+                            "background-color: " +
+                            std::string(g_bow.weights()[label][w] > 0 ? "lightgreen;" : "salmon;")) <<
+                        std::to_string(g_bow.weights()[label][w] * 100) <<
+                    Close() <<
+                Close() <<
+                Tag("td") << g_bow.WordFromId(w + vocab) << Close() <<
+                Tag("td") <<
+                    Div().Attr("style",
+                            "width: " + std::to_string(200 * std::abs(g_bow.weights()[label][w + vocab] / max)) + "px;"
+                            "padding-left: 2px;"
+                            "background-color: " +
+                            std::string(g_bow.weights()[label][w + vocab] > 0 ? "lightgreen;" : "salmon;")) <<
+                        std::to_string(g_bow.weights()[label][w + vocab] * 100) <<
+                    Close() <<
+                Close() <<
+            Close();
+        }
+        html << Close();
+    }
+    return html;
+}
 
 int main(int argc, char** argv) {
     InitHttpInterface();  // Init the http server
     RegisterJob(classify);
     RegisterJob(train);
+    RegisterUrl("/weigth", DisplayWeights);
     ServiceLoopForever();  // infinite loop ending only on SIGINT / SIGTERM / SIGKILL
     StopHttpInterface();  // clear resources
     return 0;

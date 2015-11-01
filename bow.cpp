@@ -55,7 +55,7 @@ double ComputeNLL(double* probas) {
 
 class BagOfWords {
     std::vector<std::vector<double>> word_weight_;
-    std::map<std::string, int> dict;
+    std::map<std::string, int> dict_;
 
     void ZeroInit() {
         word_weight_.resize(labels.size());
@@ -94,13 +94,13 @@ class BagOfWords {
 
     public:
     size_t GetWordId(const std::string& w) {
-        auto res = dict.insert(std::make_pair(w, dict.size()));
+        auto res = dict_.insert(std::make_pair(w, dict_.size()));
         return res.first->second;
     }
 
     size_t GetWordIdOrUnk(const std::string& w) {
-        auto res = dict.find(w);
-        if (res == dict.end()) {
+        auto res = dict_.find(w);
+        if (res == dict_.end()) {
             return kNotFound;
         } else {
             return res->second;

@@ -34,7 +34,7 @@ RUN apt-get install -y gdb valgrind
 
 RUN git clone https://github.com/Vermeille/http-interface && \
     cd http-interface && \
-    git checkout b0e9e3210a7d7bbe6436eb05e222f15d07d05ab5 && \
+    git checkout 2c91f5450 && \
     mkdir build && \
     cd build && \
     cmake .. && \

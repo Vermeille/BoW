@@ -17,90 +17,33 @@ static const double kLearningRate = 0.001;
 static const unsigned int kNotFound = -1;
 
 typedef unsigned int Label;
-boost::bimap<std::string, Label> labels;
 
-Label TextToPOS(const std::string& str) {
-    return labels.insert(decltype (labels)::value_type(str, labels.size())).first->right;
+class LabelSet {
+  public:
+    Label GetLabel(const std::string& str) {
+        return labels_.insert(decltype (labels_)::value_type(str, labels_.size())).first->right;
+    };
+
+    std::string GetString(Label pos) {
+        return labels_.right.at(pos);
+    };
+
+    size_t size() const { return labels_.size(); }
+
+  private:
+    boost::bimap<std::string, Label> labels_;
 };
 
-std::string POSToText(Label pos) {
-    return labels.right.at(pos);
+LabelSet labels;
+
+struct TrainingExample {
+    std::vector<unsigned int> inputs;
+    Label output;
 };
 
-typedef std::vector<std::pair<std::vector<unsigned int>, Label> > Document;
-
-struct WordFeatures {
-    std::string as_string;
-    unsigned int idx;
-
-    WordFeatures() {}
-    WordFeatures(const std::string& str) : as_string(str) {}
+struct Document {
+    std::vector<TrainingExample> examples;
 };
-
-inline bool ends_with(std::string const & value, std::string const & ending)
-{
-    if (ending.size() > value.size())
-        return false;
-    return std::equal(ending.rbegin(), ending.rend(), value.rbegin());
-}
-
-inline bool starts_with(std::string const & value, std::string const & ending)
-{
-    if (ending.size() > value.size())
-        return false;
-    return std::equal(ending.begin(), ending.end(), value.begin());
-}
-/* WORD WEIGHT */
-
-std::vector<std::vector<double>> word_weight;
-
-double WordF(Label target, unsigned int w) {
-    if (w == kNotFound)
-        return 0;
-
-    return word_weight[target][w];
-}
-
-void WordF_Backprop(unsigned int w, Label truth, const double* probabilities) {
-    if (w == kNotFound)
-        return;
-
-    for (int k = 0; k < labels.size(); ++k) {
-        double target = (truth == k) ? 1 : 0;
-        word_weight[k][w] += kLearningRate * (target - probabilities[k]);
-    }
-}
-
-double RunAllFeatures(Label k, const std::vector<unsigned int>& ws) {
-    double sum = 0;
-    for (int i = 0; i < ws.size(); ++i) {
-        sum += WordF(k, ws[i]);
-    }
-    return sum;
-}
-
-Label ComputeClass(const std::vector<unsigned int>& ws, double* probabilities) {
-    double total = 0;
-    for (int k = 0; k < labels.size(); ++k) {
-        probabilities[k] = std::exp(RunAllFeatures(k, ws));
-        total += probabilities[k];
-    }
-
-    int max = 0;
-    for (int k = 0; k < labels.size(); ++k) {
-        probabilities[k] /= total;
-        if (probabilities[k] > probabilities[max]) {
-            max = k;
-        }
-    }
-    return max;
-}
-
-void Backprop(const std::vector<unsigned int>& ws, Label truth, const double* probabilities) {
-    for (int i = 0; i < ws.size(); ++i) {
-        WordF_Backprop(ws[i], truth, probabilities);
-    }
-}
 
 double ComputeNLL(double* probas) {
     double nll = 0;
@@ -110,17 +53,137 @@ double ComputeNLL(double* probas) {
     return -nll;
 }
 
-std::map<std::string, int> dict;
+class BagOfWords {
+    std::vector<std::vector<double>> word_weight_;
+    std::map<std::string, int> dict;
 
-void ZeroInit() {
-    for (int i = 0; i < labels.size(); ++i) {
-        word_weight[i].resize(kVocabSize);
-        for (int j = 0; j < kVocabSize; ++j) {
-            word_weight[i][j] = 0;
+    void ZeroInit() {
+        word_weight_.resize(labels.size());
+        for (int i = 0; i < labels.size(); ++i) {
+            word_weight_[i].resize(kVocabSize);
+            for (int j = 0; j < kVocabSize; ++j) {
+                word_weight_[i][j] = 0;
+            }
         }
     }
-}
 
+    double WordF(Label target, unsigned int w) {
+        if (w == kNotFound)
+            return 0;
+
+        return word_weight_[target][w];
+    }
+
+    void WordF_Backprop(unsigned int w, Label truth, const double* probabilities) {
+        if (w == kNotFound)
+            return;
+
+        for (int k = 0; k < labels.size(); ++k) {
+            double target = (truth == k) ? 1 : 0;
+            word_weight_[k][w] += kLearningRate * (target - probabilities[k]);
+        }
+    }
+
+    double RunAllFeatures(Label k, const std::vector<unsigned int>& ws) {
+        double sum = 0;
+        for (int i = 0; i < ws.size(); ++i) {
+            sum += WordF(k, ws[i]);
+        }
+        return sum;
+    }
+
+    public:
+    size_t GetWordId(const std::string& w) {
+        auto res = dict.insert(std::make_pair(w, dict.size()));
+        return res.first->second;
+    }
+
+    size_t GetWordIdOrUnk(const std::string& w) {
+        auto res = dict.find(w);
+        if (res == dict.end()) {
+            return kNotFound;
+        } else {
+            return res->second;
+        }
+    }
+
+    bool Init() {
+        std::ifstream in("params.bow");
+
+        if (!in) {
+            ZeroInit();
+            return true;
+        }
+
+        /*
+        unsigned int size;
+        std::string w;
+        in >> size;
+        for (int i = 0; i < size; ++i) {
+            in >> w;
+            in >> dict[w];
+        }
+
+        for (int i = 0; i < labels.size(); ++i) {
+            word_weight[i].resize(kVocabSize);
+            for (int j = 0; j < kVocabSize; ++j) {
+                in >> word_weight[i][j];
+            }
+        }
+        */
+        return false;
+    }
+
+    Label ComputeClass(const std::vector<unsigned int>& ws, double* probabilities) {
+        double total = 0;
+        for (int k = 0; k < labels.size(); ++k) {
+            probabilities[k] = std::exp(RunAllFeatures(k, ws));
+            total += probabilities[k];
+        }
+
+        int max = 0;
+        for (int k = 0; k < labels.size(); ++k) {
+            probabilities[k] /= total;
+            if (probabilities[k] > probabilities[max]) {
+                max = k;
+            }
+        }
+        return max;
+    }
+
+    void Backprop(const std::vector<unsigned int>& ws, Label truth, const double* probabilities) {
+        for (int i = 0; i < ws.size(); ++i) {
+            WordF_Backprop(ws[i], truth, probabilities);
+        }
+    }
+
+    int Train(const Document& doc) {
+        double nll = 0;
+        double probas[labels.size()];
+        int nb_correct = 0;
+        int nb_tokens = 0;
+
+        for (auto& ex : doc.examples) {
+            Label predicted = ComputeClass(ex.inputs, probas);
+            nb_correct += predicted == ex.output ? 1 : 0;
+            ++nb_tokens;
+
+            nll += ComputeNLL(probas);
+
+            Backprop(ex.inputs, ex.output, probas);
+
+            if (predicted != ex.output) {
+                std::cout << labels.GetString(predicted)
+                    << " instead of " << labels.GetString(ex.output) << "\n";
+            }
+        }
+        return  nb_correct * 100 / nb_tokens;
+    }
+};
+
+BagOfWords g_bow;
+
+/*
 void Save() {
     std::ofstream out("params.bow");
 
@@ -137,82 +200,28 @@ void Save() {
         out << "\n";
     }
 }
+*/
 
-bool Init() {
-    std::ifstream in("params.bow");
-
-    if (!in) {
-        ZeroInit();
-        return true;
-    }
-
-    unsigned int size;
-    std::string w;
-    in >> size;
-    for (int i = 0; i < size; ++i) {
-        in >> w;
-        in >> dict[w];
-    }
-
-    for (int i = 0; i < labels.size(); ++i) {
-        word_weight[i].resize(kVocabSize);
-        for (int j = 0; j < kVocabSize; ++j) {
-            in >> word_weight[i][j];
-        }
-    }
-    return false;
-}
-
-Document BuildDocument(std::ifstream& input) {
+Document BuildDocument(std::ifstream& input, BagOfWords& bow) {
     Document doc;
 
     std::string w;
     std::string pos;
-    unsigned int max_word_id = 0;
 
-    doc.push_back(std::make_pair(std::vector<unsigned int>(), 0));
+    TrainingExample ex;
     while (input) {
-        unsigned word_id = max_word_id;
-        input >> w;
 
         if (w == "|") {
             input >> w;
-            doc.back().second = TextToPOS(w);
-            doc.push_back(std::make_pair(std::vector<unsigned int>(), 0));
+            ex.output = labels.GetLabel(w);
+            doc.examples.push_back(ex);
+            ex = TrainingExample();
         } else {
-            auto res = dict.insert(std::make_pair(w, max_word_id));
-            if (!res.second) {
-                word_id = res.first->second;
-            } else {
-                ++max_word_id;
-            }
-
-            doc.back().first.push_back(word_id);
+            input >> w;
+            ex.inputs.push_back(bow.GetWordId(w));
         }
     }
-    word_weight.resize(labels.size());
     return doc;
-}
-
-int Train(const Document& doc) {
-    double nll = 0;
-    double probas[labels.size()];
-    int nb_correct = 0;
-    int nb_tokens = 0;
-    for (size_t i = 0; i < doc.size(); ++i) {
-        Label predicted = ComputeClass(doc[i].first, probas);
-        nb_correct += predicted == doc[i].second ? 1 : 0;
-        ++nb_tokens;
-
-        nll += ComputeNLL(probas);
-
-        Backprop(doc[i].first, doc[i].second, probas);
-
-        if (predicted != doc[i].second) {
-            std::cout << POSToText(predicted) << " instead of " << POSToText(doc[i].second) << "\n";
-        }
-    }
-    return  nb_correct * 100 / nb_tokens;
 }
 
 static const JobDesc classify = {
@@ -222,24 +231,23 @@ static const JobDesc classify = {
     "Classify the input text to one of the categories",  // longer description
     true /* synchronous */,
     true /* reentrant */,
-    [](const std::vector<std::string>& vs, JobStatus&) { // the actual function
+    [](const std::vector<std::string>& vs, JobResult& job) { // the actual function
         std::istringstream input(vs[0]);
         std::string w;
         std::vector<unsigned int> ws;
         input >> w;
         while (w != "." && input) {
-            auto res = dict.find(w);
-            ws.push_back(res == dict.end() ? kNotFound : res->second);
+            ws.push_back(g_bow.GetWordIdOrUnk(w));
             input >> w;
         }
 
         std::vector<double> probas(labels.size());
 
-        Label k = ComputeClass(ws, probas.data());
+        Label k = g_bow.ComputeClass(ws, probas.data());
 
         Html html;
         html << P() <<"input: " << vs[0] << Close() <<
-            P() << "best prediction: " << POSToText(k) << " " << std::to_string(probas[k] * 100)
+            P() << "best prediction: " << labels.GetString(k) << " " << std::to_string(probas[k] * 100)
                 << Close() <<
 
             Tag("table").AddClass("table") <<
@@ -251,12 +259,12 @@ static const JobDesc classify = {
         for (int i = 0; i < labels.size(); ++i) {
             html <<
                 Tag("tr") <<
-                    Tag("td") << POSToText(i) << Close() <<
+                    Tag("td") << labels.GetString(i) << Close() <<
                     Tag("td") << std::to_string(probas[i]) << Close() <<
                 Close();
         }
         html << Close();
-        return html;
+        job.SetPage(html);
     },
 };
 
@@ -267,7 +275,7 @@ static const JobDesc train = {
     "Train the model on the specified dataset",
     false /* synchronous */,
     false /* reentrant */,
-    [](const std::vector<std::string>& vs, JobStatus& job) {
+    [](const std::vector<std::string>& vs, JobResult& job) {
         Chart accuracy_chart("accuracy");
         accuracy_chart.Label("iter").Value("accuracy");
 
@@ -276,12 +284,12 @@ static const JobDesc train = {
             return Html() << "Error: training set file not found";
         }
 
-        Document doc = BuildDocument(input);
+        Document doc = BuildDocument(input, g_bow);
         input.close();
-        Init();
+        g_bow.Init();
 
         for (int epoch = 0; epoch < 50; ++epoch) {
-            int accuracy = Train(doc);
+            int accuracy = g_bow.Train(doc);
 
             accuracy_chart.Log("accuracy", accuracy);
             accuracy_chart.Log("iter", epoch);

@@ -34,8 +34,6 @@ class LabelSet {
     boost::bimap<std::string, Label> labels_;
 };
 
-LabelSet labels;
-
 struct TrainingExample {
     std::vector<unsigned int> inputs;
     Label output;
@@ -45,21 +43,15 @@ struct Document {
     std::vector<TrainingExample> examples;
 };
 
-double ComputeNLL(double* probas) {
-    double nll = 0;
-    for (int i = 0; i < labels.size(); ++i) {
-        nll += std::log(probas[i]);
-    }
-    return -nll;
-}
-
 class BagOfWords {
     std::vector<std::vector<double>> word_weight_;
     std::map<std::string, int> dict_;
+    LabelSet labels_;
+
 
     void ZeroInit() {
-        word_weight_.resize(labels.size());
-        for (int i = 0; i < labels.size(); ++i) {
+        word_weight_.resize(labels_.size());
+        for (int i = 0; i < labels_.size(); ++i) {
             word_weight_[i].resize(kVocabSize);
             for (int j = 0; j < kVocabSize; ++j) {
                 word_weight_[i][j] = 0;
@@ -78,7 +70,7 @@ class BagOfWords {
         if (w == kNotFound)
             return;
 
-        for (int k = 0; k < labels.size(); ++k) {
+        for (int k = 0; k < labels_.size(); ++k) {
             double target = (truth == k) ? 1 : 0;
             word_weight_[k][w] += kLearningRate * (target - probabilities[k]);
         }
@@ -93,6 +85,16 @@ class BagOfWords {
     }
 
     public:
+    LabelSet& labels() { return labels_; }
+
+    double ComputeNLL(double* probas) {
+        double nll = 0;
+        for (int i = 0; i < labels_.size(); ++i) {
+            nll += std::log(probas[i]);
+        }
+        return -nll;
+    }
+
     size_t GetWordId(const std::string& w) {
         auto res = dict_.insert(std::make_pair(w, dict_.size()));
         return res.first->second;
@@ -136,13 +138,13 @@ class BagOfWords {
 
     Label ComputeClass(const std::vector<unsigned int>& ws, double* probabilities) {
         double total = 0;
-        for (int k = 0; k < labels.size(); ++k) {
+        for (int k = 0; k < labels_.size(); ++k) {
             probabilities[k] = std::exp(RunAllFeatures(k, ws));
             total += probabilities[k];
         }
 
         int max = 0;
-        for (int k = 0; k < labels.size(); ++k) {
+        for (int k = 0; k < labels_.size(); ++k) {
             probabilities[k] /= total;
             if (probabilities[k] > probabilities[max]) {
                 max = k;
@@ -159,7 +161,7 @@ class BagOfWords {
 
     int Train(const Document& doc) {
         double nll = 0;
-        double probas[labels.size()];
+        double probas[labels_.size()];
         int nb_correct = 0;
         int nb_tokens = 0;
 
@@ -173,8 +175,8 @@ class BagOfWords {
             Backprop(ex.inputs, ex.output, probas);
 
             if (predicted != ex.output) {
-                std::cout << labels.GetString(predicted)
-                    << " instead of " << labels.GetString(ex.output) << "\n";
+                std::cout << labels_.GetString(predicted)
+                    << " instead of " << labels_.GetString(ex.output) << "\n";
             }
         }
         return  nb_correct * 100 / nb_tokens;
@@ -213,7 +215,7 @@ Document BuildDocument(std::ifstream& input, BagOfWords& bow) {
 
         if (w == "|") {
             input >> w;
-            ex.output = labels.GetLabel(w);
+            ex.output = bow.labels().GetLabel(w);
             doc.examples.push_back(ex);
             ex = TrainingExample();
         } else {
@@ -241,13 +243,13 @@ static const JobDesc classify = {
             input >> w;
         }
 
-        std::vector<double> probas(labels.size());
+        std::vector<double> probas(g_bow.labels().size());
 
         Label k = g_bow.ComputeClass(ws, probas.data());
 
         Html html;
         html << P() <<"input: " << vs[0] << Close() <<
-            P() << "best prediction: " << labels.GetString(k) << " " << std::to_string(probas[k] * 100)
+            P() << "best prediction: " << g_bow.labels().GetString(k) << " " << std::to_string(probas[k] * 100)
                 << Close() <<
 
             Tag("table").AddClass("table") <<
@@ -256,10 +258,10 @@ static const JobDesc classify = {
                     Tag("th") << "Confidence" << Close() <<
                 Close();
 
-        for (int i = 0; i < labels.size(); ++i) {
+        for (int i = 0; i < g_bow.labels().size(); ++i) {
             html <<
                 Tag("tr") <<
-                    Tag("td") << labels.GetString(i) << Close() <<
+                    Tag("td") << g_bow.labels().GetString(i) << Close() <<
                     Tag("td") << std::to_string(probas[i]) << Close() <<
                 Close();
         }

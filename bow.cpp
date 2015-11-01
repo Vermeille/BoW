@@ -216,6 +216,7 @@ Document BuildDocument(std::ifstream& input, BagOfWords& bow) {
     std::string pos;
 
     TrainingExample ex;
+    input >> w;
     while (input) {
 
         if (w == "|") {
@@ -224,9 +225,9 @@ Document BuildDocument(std::ifstream& input, BagOfWords& bow) {
             doc.examples.push_back(ex);
             ex = TrainingExample();
         } else {
-            input >> w;
             ex.inputs.push_back(bow.GetWordId(w));
         }
+        input >> w;
     }
     return doc;
 }

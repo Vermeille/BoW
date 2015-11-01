@@ -19,10 +19,14 @@ dataset from the web interface.
 
 The Classify page lets you give an input and see how it's classified.
 
+![usage example](classify.png)
+
 # Visualizing the word scores
 
 The Weight page shows you, for each class, each word and its score. Very cute
 graphs, wow, much art, such beautiful.
+
+![weights](weight.png)
 
 # Help me
 

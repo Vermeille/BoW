@@ -110,8 +110,13 @@ class BagOfWords {
 
     size_t GetVocabSize() const { return dict_.size(); }
 
-    const std::string& WordFromId(size_t id) {
-        return dict_.right.at(id);
+    std::string WordFromId(size_t id) {
+        auto res = dict_.right.find(id);
+        return res == dict_.right.end() ? "<UNK>" : res->second;
+    }
+
+    bool IsInVocab(const std::string& w) {
+        return dict_.left.find(w) != dict_.left.end();
     }
 
     bool Init() {
@@ -244,7 +249,7 @@ static const JobDesc classify = {
         std::string w;
         std::vector<unsigned int> ws;
         input >> w;
-        while (w != "." && input) {
+        while (input) {
             ws.push_back(g_bow.GetWordIdOrUnk(w));
             input >> w;
         }
@@ -253,11 +258,24 @@ static const JobDesc classify = {
 
         Label k = g_bow.ComputeClass(ws, probas.data());
 
+        // Header
         Html html;
-        html << P() <<"input: " << vs[0] << Close() <<
+        for (auto w : ws) {
+            if (w != kNotFound) {
+                html <<
+                    Tag("span").Attr("style",
+                        "font-size: " + std::to_string((1 + std::log(1 + std::abs(g_bow.weights()[k][w]))) * 30) + "px;"
+                        "color: " + std::string(g_bow.weights()[k][w] > 0 ? "green" : "red") + ";")
+                        << g_bow.WordFromId(w) << " " << Close();
+            } else {
+                html << Tag("span") << "<UNK> " << Close();
+            }
+        }
+        html <<
             P() << "best prediction: " << g_bow.labels().GetString(k) << " " << std::to_string(probas[k] * 100)
                 << Close() <<
 
+        // table of global confidence
             Tag("table").AddClass("table") <<
                 Tag("tr") <<
                     Tag("th") << "Label" << Close() <<
@@ -266,17 +284,17 @@ static const JobDesc classify = {
 
         for (int i = 0; i < g_bow.labels().size(); ++i) {
             html <<
-                Tag("tr") <<
-                    Tag("td") << g_bow.labels().GetString(i) << Close() <<
-                    Tag("td") <<
-                        Div().Attr("style",
-                                "width: " + std::to_string(200 * probas[i]) + "px;"
-                                "padding-left: 2px;"
-                                "background-color: lightgreen;") <<
-                            std::to_string(probas[i] * 100) <<
-                        Close() <<
+            Tag("tr") <<
+                Tag("td") << g_bow.labels().GetString(i) << Close() <<
+                Tag("td") <<
+                    Div().Attr("style",
+                            "width: " + std::to_string(200 * probas[i]) + "px;"
+                            "padding-left: 2px;"
+                            "background-color: lightgreen;") <<
+                        std::to_string(probas[i] * 100) <<
                     Close() <<
-                Close();
+                Close() <<
+            Close();
         }
         html << Close();
         job.SetPage(html);

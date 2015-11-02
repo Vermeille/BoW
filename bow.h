@@ -21,6 +21,8 @@ class BagOfWords {
   public:
     LabelSet& labels() { return labels_; }
     const std::vector<std::vector<double>>& weights() const { return word_weight_; }
+    const std::vector<double>& weights(size_t label) const { return word_weight_[label]; }
+    double weight(size_t label, size_t w) const { return word_weight_[label][w]; }
 
     double ComputeNLL(double* probas) const;
     size_t GetWordId(const std::string& w);

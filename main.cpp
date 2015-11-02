@@ -17,25 +17,6 @@ static const unsigned int kNotFound = -1;
 
 BagOfWords g_bow;
 
-/*
-void Save() {
-    std::ofstream out("params.bow");
-
-    out << dict.size() << "\n";
-    for (auto& w : dict) {
-        out << w.first << " " << w.second << "\n";
-    }
-
-    for (int i = 0; i < labels.size(); ++i) {
-        word_weight[i].resize(kVocabSize);
-        for (int j = 0; j < kVocabSize; ++j) {
-            out << word_weight[i][j] << " ";
-        }
-        out << "\n";
-    }
-}
-*/
-
 Document BuildDocument(std::ifstream& input, BagOfWords& bow) {
     Document doc;
 
@@ -86,8 +67,8 @@ static const JobDesc classify = {
             if (w != kNotFound) {
                 html <<
                     Tag("span").Attr("style",
-                        "font-size: " + std::to_string((1 + std::log(1 + std::abs(g_bow.weights()[k][w]))) * 30) + "px;"
-                        "color: " + std::string(g_bow.weights()[k][w] > 0 ? "green" : "red") + ";")
+                        "font-size: " + std::to_string((1 + std::log(1 + std::abs(g_bow.weight(k, w)))) * 30) + "px;"
+                        "color: " + std::string(g_bow.weight(k, w) > 0 ? "green" : "red") + ";")
                         << g_bow.WordFromId(w) << " " << Close();
             } else {
                 html << Tag("span") << "_UNK_ " << Close();
@@ -155,12 +136,37 @@ static const JobDesc train = {
     },
 };
 
+Html Save(const std::string&, const POSTValues&) {
+    std::ostringstream out;
+    for (int i = 0; i < g_bow.labels().size(); ++i) {
+        out << g_bow.labels().GetString(i) << " ";
+    }
+    out << std::endl;
+
+    for (int w = 0; w < g_bow.GetVocabSize(); ++w) {
+        out << g_bow.WordFromId(w) << " ";
+        for (int i = 0; i < g_bow.labels().size(); ++i) {
+            out << g_bow.weight(i, w) << " ";
+        }
+        out << std::endl;
+    }
+    return Html() << A().Id("dl") << "Download Model" << Close() <<
+        Tag("textarea").Id("content").Attr("style", "display: none") << out.str() << Close() <<
+        Tag("script") <<
+            "window.onload = function() {"
+                "var txt = document.getElementById('dl');"
+                "txt.href = 'data:text/plain;charset=utf-8,' "
+                    "+ encodeURIComponent(document.getElementById('content').value);"
+                "};" <<
+        Close();
+}
+
 Html DisplayWeights(const std::string&, const POSTValues&) {
     Html html;
     for (int label = 0; label < g_bow.labels().size(); ++label) {
         html << H2() << g_bow.labels().GetString(label) << Close();
 
-        auto minmax = std::minmax_element(g_bow.weights()[label].begin(), g_bow.weights()[label].end());
+        auto minmax = std::minmax_element(g_bow.weights(label).begin(), g_bow.weights(label).end());
         double max = std::max(std::abs(*minmax.first), std::abs(*minmax.second));
 
         html <<
@@ -179,21 +185,21 @@ Html DisplayWeights(const std::string&, const POSTValues&) {
                 Tag("td") << g_bow.WordFromId(w) << Close() <<
                 Tag("td") <<
                     Div().Attr("style",
-                            "width: " + std::to_string(200 * std::abs(g_bow.weights()[label][w] / max)) + "px;"
+                            "width: " + std::to_string(200 * std::abs(g_bow.weight(label, w) / max)) + "px;"
                             "padding-left: 2px;"
                             "background-color: " +
-                            std::string(g_bow.weights()[label][w] > 0 ? "lightgreen;" : "salmon;")) <<
-                        std::to_string(g_bow.weights()[label][w] * 100) <<
+                            std::string(g_bow.weight(label, w) > 0 ? "lightgreen;" : "salmon;")) <<
+                        std::to_string(g_bow.weight(label, w) * 100) <<
                     Close() <<
                 Close() <<
                 Tag("td") << g_bow.WordFromId(w + vocab) << Close() <<
                 Tag("td") <<
                     Div().Attr("style",
-                            "width: " + std::to_string(200 * std::abs(g_bow.weights()[label][w + vocab] / max)) + "px;"
+                            "width: " + std::to_string(200 * std::abs(g_bow.weight(label, w + vocab) / max)) + "px;"
                             "padding-left: 2px;"
                             "background-color: " +
-                            std::string(g_bow.weights()[label][w + vocab] > 0 ? "lightgreen;" : "salmon;")) <<
-                        std::to_string(g_bow.weights()[label][w + vocab] * 100) <<
+                            std::string(g_bow.weight(label, w + vocab) > 0 ? "lightgreen;" : "salmon;")) <<
+                        std::to_string(g_bow.weight(label, w + vocab) * 100) <<
                     Close() <<
                 Close() <<
             Close();
@@ -207,7 +213,8 @@ int main(int argc, char** argv) {
     InitHttpInterface();  // Init the http server
     RegisterJob(classify);
     RegisterJob(train);
-    RegisterUrl("/weigth", DisplayWeights);
+    RegisterUrl("/weights", DisplayWeights);
+    RegisterUrl("/save", Save);
     ServiceLoopForever();  // infinite loop ending only on SIGINT / SIGTERM / SIGKILL
     StopHttpInterface();  // clear resources
     return 0;

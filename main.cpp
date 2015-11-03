@@ -17,7 +17,7 @@ static const unsigned int kNotFound = -1;
 
 BagOfWords g_bow;
 
-Document BuildDocument(std::ifstream& input, BagOfWords& bow) {
+Document BuildDocument(std::istream& input, BagOfWords& bow) {
     Document doc;
 
     std::string w;
@@ -105,26 +105,27 @@ static const JobDesc classify = {
 };
 
 static const JobDesc train = {
-    { { "training set", "text", "A relative or absolute filepath to the training set" } },
+    { { "trainingset", "file", "A training set" },
+      { "epochs", "number", "How many iterations?" } },
     "Train",
     "/train",
     "Train the model on the specified dataset",
     false /* synchronous */,
     false /* reentrant */,
     [](const std::vector<std::string>& vs, JobResult& job) {
+        const size_t nb_epoch = std::atoi(vs[1].c_str());
         Chart accuracy_chart("accuracy");
         accuracy_chart.Label("iter").Value("accuracy");
 
-        std::ifstream input(vs[0].c_str());
+        std::istringstream input(vs[0]);
         if (!input) {
             return Html() << "Error: training set file not found";
         }
 
         Document doc = BuildDocument(input, g_bow);
-        input.close();
         g_bow.Init();
 
-        for (int epoch = 0; epoch < 10; ++epoch) {
+        for (int epoch = 0; epoch < nb_epoch; ++epoch) {
             int accuracy = g_bow.Train(doc);
 
             accuracy_chart.Log("accuracy", accuracy);

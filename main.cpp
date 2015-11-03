@@ -150,6 +150,22 @@ static const JobDesc load = {
     },
 };
 
+static const JobDesc training_single = {
+    { { "input", "text", "An input sentence" },
+      { "label", "text", "The label" } },
+    "Single example",
+    "/training_single",
+    "Load a model",
+    false /* synchronous */,
+    false /* reentrant */,
+    [](const std::vector<std::string>& vs, JobResult& job) {
+        std::istringstream example(vs[0] + " | " + vs[1]);
+        Document doc = BuildDocument(example, g_bow);
+        g_bow.Train(doc);
+        job.SetPage(Html() << "done");
+    },
+};
+
 Html Save(const std::string&, const POSTValues&) {
     return Html() << A().Id("dl").Attr("download", "bow_model.bin") << "Download Model" << Close() <<
         Tag("textarea").Id("content").Attr("style", "display: none") << g_bow.Serialize() << Close() <<
@@ -214,6 +230,7 @@ int main(int argc, char** argv) {
     InitHttpInterface();  // Init the http server
     RegisterJob(classify);
     RegisterJob(train);
+    RegisterJob(training_single);
     RegisterJob(load);
     RegisterUrl("/weights", DisplayWeights);
     RegisterUrl("/save", Save);

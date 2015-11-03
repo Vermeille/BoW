@@ -136,22 +136,22 @@ static const JobDesc train = {
     },
 };
 
-Html Save(const std::string&, const POSTValues&) {
-    std::ostringstream out;
-    for (int i = 0; i < g_bow.labels().size(); ++i) {
-        out << g_bow.labels().GetString(i) << " ";
-    }
-    out << std::endl;
+static const JobDesc load = {
+    { { "model", "file", "The model file" } },
+    "Load",
+    "/load",
+    "Load a model",
+    false /* synchronous */,
+    false /* reentrant */,
+    [](const std::vector<std::string>& vs, JobResult& job) {
+        g_bow = BagOfWords::FromSerialized(vs[0]);
+        job.SetPage(Html() << "done");
+    },
+};
 
-    for (int w = 0; w < g_bow.GetVocabSize(); ++w) {
-        out << g_bow.WordFromId(w) << " ";
-        for (int i = 0; i < g_bow.labels().size(); ++i) {
-            out << g_bow.weight(i, w) << " ";
-        }
-        out << std::endl;
-    }
-    return Html() << A().Id("dl") << "Download Model" << Close() <<
-        Tag("textarea").Id("content").Attr("style", "display: none") << out.str() << Close() <<
+Html Save(const std::string&, const POSTValues&) {
+    return Html() << A().Id("dl").Attr("download", "bow_model.bin") << "Download Model" << Close() <<
+        Tag("textarea").Id("content").Attr("style", "display: none") << g_bow.Serialize() << Close() <<
         Tag("script") <<
             "window.onload = function() {"
                 "var txt = document.getElementById('dl');"
@@ -213,6 +213,7 @@ int main(int argc, char** argv) {
     InitHttpInterface();  // Init the http server
     RegisterJob(classify);
     RegisterJob(train);
+    RegisterJob(load);
     RegisterUrl("/weights", DisplayWeights);
     RegisterUrl("/save", Save);
     ServiceLoopForever();  // infinite loop ending only on SIGINT / SIGTERM / SIGKILL

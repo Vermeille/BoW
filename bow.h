@@ -24,12 +24,16 @@ class BagOfWords {
     const std::vector<double>& weights(size_t label) const { return word_weight_[label]; }
     double weight(size_t label, size_t w) const { return word_weight_[label][w]; }
 
+    std::string Serialize() const;
+
     double ComputeNLL(double* probas) const;
     size_t GetWordId(const std::string& w);
     size_t GetWordIdOrUnk(const std::string& w) const;
     size_t GetVocabSize() const { return dict_.size(); }
 
-    std::string WordFromId(size_t id);
+    std::string WordFromId(size_t id) const;
+
+    static BagOfWords FromSerialized(const std::string& file);
 
     bool IsInVocab(const std::string& w) { return dict_.left.find(w) != dict_.left.end(); }
     bool Init();

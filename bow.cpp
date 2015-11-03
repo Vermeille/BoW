@@ -1,4 +1,5 @@
 #include <fstream>
+#include <glog/logging.h>
 
 #include "bow.h"
 
@@ -63,7 +64,7 @@ size_t BagOfWords::GetWordIdOrUnk(const std::string& w) const {
     }
 }
 
-std::string BagOfWords::WordFromId(size_t id) {
+std::string BagOfWords::WordFromId(size_t id) const {
     auto res = dict_.right.find(id);
     return res == dict_.right.end() ? "<UNK>" : res->second;
 }
@@ -146,3 +147,49 @@ int BagOfWords::Train(const Document& doc) {
     return  nb_correct * 100 / nb_tokens;
 }
 
+std::string BagOfWords::Serialize() const {
+    std::ostringstream out;
+    out << labels_.size() << " " << dict_.size() << std::endl;
+    for (int i = 0; i < labels_.size(); ++i) {
+        out << labels_.GetString(i) << " ";
+    }
+    out << std::endl;
+
+    for (int w = 0; w < GetVocabSize(); ++w) {
+        out << WordFromId(w) << " ";
+        for (int i = 0; i < labels_.size(); ++i) {
+            out << weight(i, w) << " ";
+        }
+        out << std::endl;
+    }
+    return out.str();
+}
+
+BagOfWords BagOfWords::FromSerialized(const std::string& file) {
+    BagOfWords bow;
+    std::istringstream in(file);
+
+    size_t nb_labels;
+    size_t nb_words;
+    std::string tok;
+    in >> nb_labels >> nb_words;
+
+    for (int i = 0; i < nb_labels; ++i) {
+        in >> tok;
+        bow.labels_.AddLabel(tok);
+
+        bow.word_weight_.push_back({});
+    }
+
+    for (int w = 0; w < nb_words; ++w) {
+        in >> tok;
+        LOG_IF(FATAL, bow.GetWordId(tok) != w) << "incoherence in word index while deserializing";
+        for (int i = 0; i < nb_labels; ++i) {
+            double score;
+            in >> score;
+            bow.word_weight_[i].push_back(score);
+        }
+    }
+
+    return bow;
+}

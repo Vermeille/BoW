@@ -1,44 +1,32 @@
 #pragma once
 
-#include <vector>
-#include <string>
+#include <nlp-common/bow.h>
+#include <nlp-common/dict.h>
+#include <nlp-common/document.h>
 
-#include <boost/bimap.hpp>
-
-#include "document.h"
-
-class BagOfWords {
-    std::vector<std::vector<double>> word_weight_;
-    boost::bimap<std::string, int> dict_;
-    LabelSet labels_;
-
-    void ZeroInit();
-
-    double WordF(Label target, unsigned int w) const;
-    void WordF_Backprop(unsigned int w, Label truth, const double* probabilities);
-    double RunAllFeatures(Label k, const std::vector<unsigned int>& ws) const;
-
+class BoWClassifier {
   public:
-    LabelSet& labels() { return labels_; }
-    const std::vector<std::vector<double>>& weights() const { return word_weight_; }
-    const std::vector<double>& weights(size_t label) const { return word_weight_[label]; }
-    double weight(size_t label, size_t w) const { return word_weight_[label][w]; }
+    size_t Train(const Document& doc);
+    std::pair<Label, std::vector<WordFeatures>> ComputeClass(const std::string& ws, double *p);
 
-    std::string Serialize() const;
+    Document Parse(const std::string& str);
 
-    double ComputeNLL(double* probas) const;
-    size_t GetWordId(const std::string& w);
-    size_t GetWordIdOrUnk(const std::string& w) const;
-    size_t GetVocabSize() const { return dict_.size(); }
+    LabelSet& labels() { return ls_; }
 
-    std::string WordFromId(size_t id) const;
+    const std::vector<std::vector<double>>& weights() const { return bow_.weights(); }
+    const std::vector<double>& weights(size_t label) const { return bow_.weights(label); }
+    double weight(size_t label, size_t w) const { return bow_.weight(label, w); }
 
-    static BagOfWords FromSerialized(const std::string& file);
+    std::string WordFromId(size_t id) const { return ngram_.WordFromId(id); }
 
-    bool IsInVocab(const std::string& w) { return dict_.left.find(w) != dict_.left.end(); }
-    bool Init();
-    Label ComputeClass(const std::vector<unsigned int>& ws, double* probabilities) const;
-    void Backprop(const std::vector<unsigned int>& ws, Label truth, const double* probabilities);
-    int Train(const Document& doc);
+    size_t OutputSize() const { return ls_.size(); }
+    size_t GetVocabSize() const { return ngram_.dict().size(); }
+
+    BoWClassifier() : bow_(0, 0) {}
+
+  private:
+    NGramMaker ngram_;
+    BagOfWords bow_;
+    LabelSet ls_;
 };
 

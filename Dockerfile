@@ -34,7 +34,7 @@ RUN apt-get install -y gdb valgrind
 
 RUN git clone https://github.com/Vermeille/http-interface && \
     cd http-interface && \
-    git checkout 0fb990df9 && \
+    git checkout ff9093e34 && \
     mkdir build && \
     cd build && \
     cmake .. && \
@@ -43,10 +43,23 @@ RUN git clone https://github.com/Vermeille/http-interface && \
     cd ../.. && \
     rm -rf http-interface
 
-EXPOSE 8888
+
+RUN locale-gen fr_FR.UTF-8
+RUN git clone https://github.com/Vermeille/nlp-common && \
+    cd nlp-common && \
+    git checkout 56e8c14c91 && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make && \
+    make install && \
+    cd ../.. && \
+    rm -rf nlp-common && echo i
 
 ADD . /root
 
+EXPOSE 8888
+
 RUN mkdir build && cd build && cmake .. && make
 
-ENTRYPOINT ["valgrind", "./build/bow", "dataset.txt"]
+ENTRYPOINT ["valgrind", "./build/bow"]

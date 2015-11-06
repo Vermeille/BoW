@@ -8,37 +8,13 @@
 #include <fstream>
 
 #include "bow.h"
-#include "document.h"
 
 #include <httpi/job.h>
 #include <httpi/displayer.h>
 
 static const unsigned int kNotFound = -1;
 
-BagOfWords g_bow;
-
-Document BuildDocument(std::istream& input, BagOfWords& bow) {
-    Document doc;
-
-    std::string w;
-    std::string pos;
-
-    TrainingExample ex;
-    input >> w;
-    while (input) {
-
-        if (w == "|") {
-            input >> w;
-            ex.output = bow.labels().GetLabel(w);
-            doc.examples.push_back(ex);
-            ex = TrainingExample();
-        } else {
-            ex.inputs.push_back(bow.GetWordId(w));
-        }
-        input >> w;
-    }
-    return doc;
-}
+BoWClassifier g_bow;
 
 static const JobDesc classify = {
     { { "input", "text", "Text to classify" } },
@@ -48,28 +24,20 @@ static const JobDesc classify = {
     true /* synchronous */,
     true /* reentrant */,
     [](const std::vector<std::string>& vs, JobResult& job) { // the actual function
-        std::istringstream input(vs[0]);
-        std::string w;
-        std::vector<unsigned int> ws;
-        input >> w;
-        while (input) {
-            ws.push_back(g_bow.GetWordIdOrUnk(w));
-            input >> w;
-        }
-
-        std::vector<double> probas(g_bow.labels().size());
-
-        Label k = g_bow.ComputeClass(ws, probas.data());
+        std::vector<double> probas(g_bow.OutputSize());
+        auto pair = g_bow.ComputeClass(vs[0], probas.data());
+        Label k = pair.first;
+        auto& ws = pair.second;
 
         // Header
         Html html;
         for (auto w : ws) {
-            if (w != kNotFound) {
+            if (w.idx != kNotFound) {
                 html <<
                     Tag("span").Attr("style",
-                        "font-size: " + std::to_string((1 + std::log(1 + std::abs(g_bow.weight(k, w)))) * 30) + "px;"
-                        "color: " + std::string(g_bow.weight(k, w) > 0 ? "green" : "red") + ";")
-                        << g_bow.WordFromId(w) << " " << Close();
+                        "font-size: " + std::to_string((1 + std::log(1 + std::abs(g_bow.weight(k, w.idx)))) * 30) + "px;"
+                        "color: " + std::string(g_bow.weight(k, w.idx) > 0 ? "green" : "red") + ";")
+                        << g_bow.WordFromId(w.idx) << " " << Close();
             } else {
                 html << Tag("span") << "_UNK_ " << Close();
             }
@@ -85,7 +53,7 @@ static const JobDesc classify = {
                     Tag("th") << "Confidence" << Close() <<
                 Close();
 
-        for (int i = 0; i < g_bow.labels().size(); ++i) {
+        for (size_t i = 0; i < g_bow.labels().size(); ++i) {
             html <<
             Tag("tr") <<
                 Tag("td") << g_bow.labels().GetString(i) << Close() <<
@@ -114,41 +82,35 @@ static const JobDesc train = {
     false /* reentrant */,
     [](const std::vector<std::string>& vs, JobResult& job) {
         const size_t nb_epoch = std::atoi(vs[1].c_str());
+        std::cout << "epochs: " << nb_epoch << "\n";
+        Document doc = g_bow.Parse(vs[0]);
         Chart accuracy_chart("accuracy");
         accuracy_chart.Label("iter").Value("accuracy");
 
-        std::istringstream input(vs[0]);
-        if (!input) {
-            return Html() << "Error: training set file not found";
-        }
-
-        Document doc = BuildDocument(input, g_bow);
-        g_bow.Init();
-
-        for (int epoch = 0; epoch < nb_epoch; ++epoch) {
+        for (size_t epoch = 0; epoch < nb_epoch; ++epoch) {
             int accuracy = g_bow.Train(doc);
 
             accuracy_chart.Log("accuracy", accuracy);
             accuracy_chart.Log("iter", epoch);
             job.SetPage(Html() << accuracy_chart.Get());
         }
-
-        return Html();
     },
 };
 
+#if 0
 static const JobDesc load = {
     { { "model", "file", "The model file" } },
     "Load",
     "/load",
     "Load a model",
-    false /* synchronous */,
+    true /* synchronous */,
     false /* reentrant */,
     [](const std::vector<std::string>& vs, JobResult& job) {
         g_bow = BagOfWords::FromSerialized(vs[0]);
         job.SetPage(Html() << "done");
     },
 };
+#endif
 
 static const JobDesc training_single = {
     { { "input", "text", "An input sentence" },
@@ -156,16 +118,15 @@ static const JobDesc training_single = {
     "Single example",
     "/training_single",
     "Load a model",
-    false /* synchronous */,
+    true /* synchronous */,
     false /* reentrant */,
     [](const std::vector<std::string>& vs, JobResult& job) {
-        std::istringstream example(vs[0] + " | " + vs[1]);
-        Document doc = BuildDocument(example, g_bow);
-        g_bow.Train(doc);
+        g_bow.Train(g_bow.Parse(vs[0] + " | " +  vs[1]));
         job.SetPage(Html() << "done");
     },
 };
 
+#if 0
 Html Save(const std::string&, const POSTValues&) {
     return Html() << A().Id("dl").Attr("download", "bow_model.bin") << "Download Model" << Close() <<
         Tag("textarea").Id("content").Attr("style", "display: none") << g_bow.Serialize() << Close() <<
@@ -177,10 +138,11 @@ Html Save(const std::string&, const POSTValues&) {
                 "};" <<
         Close();
 }
+#endif
 
 Html DisplayWeights(const std::string&, const POSTValues&) {
     Html html;
-    for (int label = 0; label < g_bow.labels().size(); ++label) {
+    for (size_t label = 0; label < g_bow.labels().size(); ++label) {
         html << H2() << g_bow.labels().GetString(label) << Close();
 
         auto minmax = std::minmax_element(g_bow.weights(label).begin(), g_bow.weights(label).end());
@@ -196,7 +158,7 @@ Html DisplayWeights(const std::string&, const POSTValues&) {
             Close();
 
         int vocab = g_bow.GetVocabSize() / 2;
-        for (int w = 0; w < g_bow.GetVocabSize() / 2; ++w) {
+        for (size_t w = 0; w < g_bow.GetVocabSize() / 2; ++w) {
             html <<
             Tag("tr") <<
                 Tag("td") << g_bow.WordFromId(w) << Close() <<
@@ -226,14 +188,14 @@ Html DisplayWeights(const std::string&, const POSTValues&) {
     return html;
 }
 
-int main(int argc, char** argv) {
+int main() {
     InitHttpInterface();  // Init the http server
     RegisterJob(classify);
     RegisterJob(train);
     RegisterJob(training_single);
-    RegisterJob(load);
+    // RegisterJob(load);
     RegisterUrl("/weights", DisplayWeights);
-    RegisterUrl("/save", Save);
+    // RegisterUrl("/save", Save);
     ServiceLoopForever();  // infinite loop ending only on SIGINT / SIGTERM / SIGKILL
     StopHttpInterface();  // clear resources
     return 0;

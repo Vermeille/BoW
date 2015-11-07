@@ -37,3 +37,10 @@ BoWClassifier::ComputeClass(const std::string& data, double *probas) {
     return std::make_pair(bow_.ComputeClass(toks, probas), toks);
 }
 
+BoWClassifier BoWClassifier::FromSerialized(std::istream& in) {
+    BoWClassifier bow;
+    bow.ngram_ = NGramMaker::FromSerialized(in);
+    bow.bow_ = BagOfWords::FromSerialized(in);
+    bow.ls_ = LabelSet::FromSerialized(in);
+    return bow;
+}

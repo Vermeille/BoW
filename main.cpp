@@ -97,7 +97,6 @@ static const JobDesc train = {
     },
 };
 
-#if 0
 static const JobDesc load = {
     { { "model", "file", "The model file" } },
     "Load",
@@ -106,11 +105,11 @@ static const JobDesc load = {
     true /* synchronous */,
     false /* reentrant */,
     [](const std::vector<std::string>& vs, JobResult& job) {
-        g_bow = BagOfWords::FromSerialized(vs[0]);
+        std::istringstream in(vs[0]);
+        g_bow = BoWClassifier::FromSerialized(in);
         job.SetPage(Html() << "done");
     },
 };
-#endif
 
 static const JobDesc training_single = {
     { { "input", "text", "An input sentence" },
@@ -126,7 +125,6 @@ static const JobDesc training_single = {
     },
 };
 
-#if 0
 Html Save(const std::string&, const POSTValues&) {
     return Html() << A().Id("dl").Attr("download", "bow_model.bin") << "Download Model" << Close() <<
         Tag("textarea").Id("content").Attr("style", "display: none") << g_bow.Serialize() << Close() <<
@@ -138,7 +136,6 @@ Html Save(const std::string&, const POSTValues&) {
                 "};" <<
         Close();
 }
-#endif
 
 Html DisplayWeights(const std::string&, const POSTValues&) {
     Html html;
@@ -193,9 +190,9 @@ int main() {
     RegisterJob(classify);
     RegisterJob(train);
     RegisterJob(training_single);
-    // RegisterJob(load);
+    RegisterJob(load);
     RegisterUrl("/weights", DisplayWeights);
-    // RegisterUrl("/save", Save);
+    RegisterUrl("/save", Save);
     ServiceLoopForever();  // infinite loop ending only on SIGINT / SIGTERM / SIGKILL
     StopHttpInterface();  // clear resources
     return 0;

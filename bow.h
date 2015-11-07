@@ -1,5 +1,9 @@
 #pragma once
 
+#include <vector>
+#include <string>
+#include <sstream>
+
 #include <nlp-common/bow.h>
 #include <nlp-common/dict.h>
 #include <nlp-common/document.h>
@@ -21,6 +25,12 @@ class BoWClassifier {
 
     size_t OutputSize() const { return ls_.size(); }
     size_t GetVocabSize() const { return ngram_.dict().size(); }
+
+    static BoWClassifier FromSerialized(std::istream& in);
+
+    std::string Serialize() const {
+        return ngram_.Serialize() + bow_.Serialize() + ls_.Serialize();
+    }
 
     BoWClassifier() : bow_(0, 0) {}
 

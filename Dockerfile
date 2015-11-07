@@ -43,11 +43,9 @@ RUN git clone https://github.com/Vermeille/http-interface && \
     cd ../.. && \
     rm -rf http-interface
 
-
-RUN locale-gen fr_FR.UTF-8
 RUN git clone https://github.com/Vermeille/nlp-common && \
     cd nlp-common && \
-    git checkout 56e8c14c91 && \
+    git checkout 4d0c817d1 && \
     mkdir build && \
     cd build && \
     cmake .. && \
@@ -55,6 +53,9 @@ RUN git clone https://github.com/Vermeille/nlp-common && \
     make install && \
     cd ../.. && \
     rm -rf nlp-common && echo i
+
+# Mandatory: generate the locales of the languages the library uses.
+RUN locale-gen fr_FR.UTF-8
 
 ADD . /root
 

@@ -11,7 +11,9 @@
 #include "bow.h"
 #include "pages/pages.h"
 
+#include <httpi/rest-helpers.h>
 #include <httpi/html/html.h>
+#include <httpi/html/json.h>
 #include <httpi/html/form-gen.h>
 #include <httpi/html/chart.h>
 #include <httpi/webjob.h>
@@ -19,16 +21,6 @@
 #include <httpi/monitoring.h>
 
 namespace htmli = httpi::html;
-
-static const htmli::FormDescriptor train_form_desc = {
-    "Train",
-    "Train the model on the specified dataset",
-    { { "trainingset", "file", "A training set" },
-      { "epochs", "number", "How many iterations?" } }
-};
-
-static const std::string train_form = train_form_desc
-        .MakeForm("/dataset?action=train", "POST").Get();
 
 class TrainJob : public WebJob {
     BoWClassifier& bow_;
@@ -55,33 +47,14 @@ class TrainJob : public WebJob {
     virtual std::string name() const { return "Train"; }
 };
 
-static const htmli::FormDescriptor load_form_desc = {
-    "Load",
-    "Load a model",
-    { { "model", "file", "The model file" } }
-};
-
-static const std::string load_form = load_form_desc
-        .MakeForm("/model", "POST").Get();
+void TrainSingle(BoWClassifier& bow, const std::string& example,
+        const std::string& label) {
+    bow.Train(bow.Parse(example + " | " +  label));
+}
 
 BoWClassifier Load(const std::string& input_str) {
     std::istringstream in(input_str);
     return BoWClassifier::FromSerialized(in);
-}
-
-static const htmli::FormDescriptor training_single_form_desc = {
-    "Single example",
-    "Add a single training example",
-    { { "input", "text", "An input sentence" },
-      { "label", "text", "The label" } }
-};
-
-static const std::string training_single_form = training_single_form_desc
-        .MakeForm("/dataset?action=train_single", "POST").Get();
-
-void TrainSingle(BoWClassifier& bow, const std::string& example,
-        const std::string& label) {
-    bow.Train(bow.Parse(example + " | " +  label));
 }
 
 htmli::Html Save(const BoWClassifier& bow) {
@@ -110,63 +83,102 @@ int main() {
             return PageGlobal(*monitoring_job->job_data().page());
         });
 
-    RegisterUrl("/prediction",
-            std::bind(Classify,
-                std::ref(bow),
-                std::placeholders::_1,
-                std::placeholders::_2)
-            );
+    RegisterUrl("/prediction", httpi::RestPageMaker(PageGlobal)
+        .AddResource("GET", httpi::RestResource(
+            htmli::FormDescriptor<std::string> {
+                "GET", "/prediction",
+                "Classify",
+                "Classify the input text to one of the categories",
+                { { "input", "text", "Text to classify" } }
+            },
+            [&bow](const std::string& input) {
+                return bow.ComputeClass(input);
+            },
+            [&bow](const BowResult& res) {
+                return ClassifyResult(bow, res);
+            },
+            [&bow](const BowResult& res) {
+                return JsonBuilder()
+                    .Append("confidence", res.confidence[res.label])
+                    .Append("label", bow.labels().GetString(res.label))
+                    .Build();
+            })));
 
-    RegisterUrl("/dataset",
-            [&jp, &bow](const std::string& method, const POSTValues& args) {
-                htmli::Html html;
-
-                auto action_iter = args.find("action");
-                std::string action = action_iter == args.end()
-                        ? "none" : action_iter->second;
-                if (action == "train") {
-                    auto vargs = train_form_desc.ValidateParams(args);
-                    if (std::get<0>(vargs)) {
-                        html << std::get<1>(vargs);
-                    } else {
-                        jp.StartJob(std::unique_ptr<TrainJob>(
-                                new TrainJob(
-                                    bow,
-                                    std::atoi(std::get<2>(vargs)[1].c_str()),
-                                    std::get<2>(vargs)[0])));
-                        html << "learning started";
-                    }
-                } else if (action == "train_single") {
-                    auto vargs = training_single_form_desc.ValidateParams(args);
-                    if (std::get<0>(vargs)) {
-                        html << std::get<1>(vargs);
-                    } else {
-                        auto& form_args = std::get<2>(vargs);
-                        TrainSingle(bow, form_args[0], form_args[1]);
-                        html << "learning started";
-                    }
-                }
-                html << train_form << training_single_form;
-                return PageGlobal(html.Get());
-            });
-
-    RegisterUrl("/model",
-            [&bow](const std::string& method, const POSTValues& args) {
+    RegisterUrl("/model", httpi::RestPageMaker(PageGlobal)
+        .AddResource("POST", httpi::RestResource(
+            htmli::FormDescriptor<std::string> {
+                "POST", "/model",
+                "Load",
+                "Load a model",
+                { { "model", "file", "The model file" } }
+            },
+            [&bow](const std::string& model) {
                 htmli::Html html;
                 html << Save(bow);
-                if (method == "POST") {
-                    auto vargs = load_form_desc.ValidateParams(args);
-                    if (std::get<0>(vargs)) {
-                        html << std::get<1>(vargs);
-                    } else {
-                        bow = Load(std::get<2>(vargs)[0]);
-                        html << "learning started";
-                    }
-                }
-                html << load_form;
-                html << DisplayWeights(bow);
-                return PageGlobal(html.Get());
-            });
+                bow = Load(model);
+                return 0;
+            },
+            [](int) {
+                return htmli::Html() << "Model loaded";
+            },
+            [](int) {
+                return JsonBuilder().Append("result", 0).Build();
+            }))
+        .AddResource("GET", httpi::RestResource(
+            htmli::FormDescriptor<>{},
+            [](){ return 0; },
+            [&bow](int) {
+                return Save(bow) << DisplayWeights(bow);
+            },
+            [](int) {
+                // FIXME: not implemented. The model is serialized with
+                // newlines and multilines strings are forbidden in JSON.
+                return JsonBuilder().Append("result", 1).Build();
+            })));
+
+    RegisterUrl("/dataset", httpi::RestPageMaker(PageGlobal)
+        .AddResource("PUT", httpi::RestResource(
+            htmli::FormDescriptor<std::string, std::string> {
+                "PUT", "/dataset",
+                "Single example",
+                "Add a single training example",
+                { { "input", "text", "An input sentence" },
+                  { "label", "text", "The label" } }
+            },
+            [&jp, &bow](const std::string& input, const std::string& label) {
+                TrainSingle(bow, input, label);
+                return 0;
+            },
+            [](int) { return htmli::Html() << "Learning started"; },
+            [](int) { return JsonBuilder().Append("result", 0).Build(); }))
+        .AddResource("POST", httpi::RestResource(
+            htmli::FormDescriptor<std::string, int> {
+                "POST", "/dataset",
+                "Train",
+                "Train the model on the specified dataset",
+                { { "trainingset", "file", "A training set" },
+                  { "epochs", "number", "How many iterations?" } }
+            },
+            [&jp, &bow](const std::string& trainingset, int epoch) {
+                return jp.StartJob(
+                        std::make_unique<TrainJob>(bow, epoch, trainingset));
+            },
+            [](int id) {
+                using namespace htmli;
+                return Html() <<
+                    A().Attr("href", "/jobs?id=" + std::to_string(id)) <<
+                        "Learning started" <<
+                    Close();
+            },
+            [](int id) {
+                return JsonBuilder().Append("job_id", id).Build();
+            }))
+        .AddResource("GET", httpi::RestResource(
+                htmli::FormDescriptor<> {},
+                [](){ return 0; },
+                [](int){ return htmli::Html();},
+                [](int){ return ""; }
+            )));
 
     RegisterUrl("/jobs", [&jp](const std::string&, const POSTValues& args) {
             using namespace httpi::html;

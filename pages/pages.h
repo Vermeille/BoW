@@ -8,6 +8,5 @@
 #include <httpi/displayer.h>
 
 std::string PageGlobal(const std::string& content);
-std::string Classify(BoWClassifier& bow, const std::string&,
-        const POSTValues& args);
+httpi::html::Html ClassifyResult(BoWClassifier& bow, const BowResult& bowr);
 httpi::html::Html DisplayWeights(BoWClassifier& bow);

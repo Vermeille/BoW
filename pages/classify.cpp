@@ -4,26 +4,14 @@
 
 static const unsigned int kNotFound = -1;
 
-static const httpi::html::FormDescriptor classify_form_desc = {
-    "Classify",
-    "Classify the input text to one of the categories",
-    { { "input", "text", "Text to classify" } }
-};
-
-static const std::string classify_form = classify_form_desc
-        .MakeForm("/prediction", "GET").Get();
-
-static httpi::html::Html ClassifyResult(BoWClassifier& bow, const std::string& input) {
+httpi::html::Html ClassifyResult(BoWClassifier& bow, const BowResult& bowr) {
     using namespace httpi::html;
-
-    std::vector<double> probas(bow.OutputSize());
-    auto pair = bow.ComputeClass(input, probas.data());
-    Label k = pair.first;
-    auto& ws = pair.second;
+    Label k = bowr.label;
+    auto& probas = bowr.confidence;
 
     // Header
     Html html;
-    for (auto w : ws) {
+    for (auto w : bowr.words) {
         if (w.idx != kNotFound) {
             html <<
                 Tag("span").Attr("style",
@@ -36,7 +24,7 @@ static httpi::html::Html ClassifyResult(BoWClassifier& bow, const std::string& i
     }
     html <<
         P() << "best prediction: " << bow.labels().GetString(k) << " " << std::to_string(probas[k] * 100)
-            << Close() <<
+        << Close() <<
 
     // table of global confidence
         Tag("table").AddClass("table") <<
@@ -63,17 +51,3 @@ static httpi::html::Html ClassifyResult(BoWClassifier& bow, const std::string& i
     return html;
 }
 
-std::string Classify(BoWClassifier& bow, const std::string&,
-        const POSTValues& args) {
-    using namespace httpi::html;
-    Html html;
-
-    auto vargs = classify_form_desc.ValidateParams(args);
-    if (std::get<0>(vargs)) {
-        html << P().AddClass("alert") << "No input" << Close();
-    } else {
-        html << ClassifyResult(bow, std::get<2>(vargs)[0]);
-    }
-    html << classify_form;
-    return PageGlobal(html.Get());
-}

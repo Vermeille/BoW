@@ -8,10 +8,16 @@
 #include <nlp-common/dict.h>
 #include <nlp-common/document.h>
 
+struct BowResult {
+    std::vector<double> confidence;
+    Label label;
+    std::vector<WordFeatures> words;
+};
+
 class BoWClassifier {
   public:
     size_t Train(const Document& doc);
-    std::pair<Label, std::vector<WordFeatures>> ComputeClass(const std::string& ws, double *p);
+    BowResult ComputeClass(const std::string& ws);
 
     Document Parse(const std::string& str);
 

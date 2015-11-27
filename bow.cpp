@@ -29,12 +29,13 @@ Document BoWClassifier::Parse(const std::string& str) {
     return doc;
 }
 
-std::pair<Label, std::vector<WordFeatures>>
-BoWClassifier::ComputeClass(const std::string& data, double *probas) {
+BowResult BoWClassifier::ComputeClass(const std::string& data) {
     auto toks = Tokenizer::FR(data);
     ngram_.Annotate(toks);
 
-    return std::make_pair(bow_.ComputeClass(toks, probas), toks);
+    std::vector<double> probas(OutputSize());
+    Label label_res = bow_.ComputeClass(toks, probas.data());
+    return {probas, label_res, toks};
 }
 
 BoWClassifier BoWClassifier::FromSerialized(std::istream& in) {

@@ -25,19 +25,19 @@ namespace htmli = httpi::html;
 class TrainJob : public WebJob {
     BoWClassifier& bow_;
     size_t nb_epoch_;
-    std::string dataset_;
+    const Document& trainingset_;
 
     public:
-    TrainJob(BoWClassifier& bow, size_t nb_epoch, const std::string& dataset)
-        : bow_(bow), nb_epoch_(nb_epoch), dataset_(dataset) {}
+    TrainJob(BoWClassifier& bow, const Document& ts,
+            size_t nb_epoch)
+        : bow_(bow), nb_epoch_(nb_epoch), trainingset_(ts) {}
 
     void Do() {
-        Document doc = bow_.Parse(dataset_);
         htmli::Chart accuracy_chart("accuracy");
         accuracy_chart.Label("iter").Value("accuracy");
 
         for (size_t epoch = 0; epoch < nb_epoch_; ++epoch) {
-            int accuracy = bow_.Train(doc);
+            int accuracy = bow_.Train(trainingset_);
 
             accuracy_chart.Log("accuracy", accuracy);
             accuracy_chart.Log("iter", epoch);
@@ -47,9 +47,17 @@ class TrainJob : public WebJob {
     virtual std::string name() const { return "Train"; }
 };
 
-void TrainSingle(BoWClassifier& bow, const std::string& example,
-        const std::string& label) {
-    bow.Train(bow.Parse(example + " | " +  label));
+void AddExample(BoWClassifier& bow, Document& ts, const std::string& example,
+        const std::string& label, size_t nb_epoch) {
+
+    Document minibatch = bow.Parse(example + " | " +  label);
+    ts.examples.push_back(minibatch.examples[0]);
+    std::copy_n(ts.examples.rbegin(),
+            std::min(ts.examples.size(), 9ul),
+            std::back_inserter(minibatch.examples));
+    for (size_t epoch = 0; epoch < nb_epoch; ++epoch) {
+        bow.Train(minibatch);
+    }
 }
 
 BoWClassifier Load(const std::string& input_str) {
@@ -70,6 +78,35 @@ htmli::Html Save(const BoWClassifier& bow) {
         Close();
 }
 
+std::string SerializeDataset(BoWClassifier& bow, const Document& doc) {
+    std::ostringstream out;
+    for (auto& ex : doc.examples) {
+        for (auto& w : ex.inputs) {
+            out << w.str << " ";
+        }
+        out << "| " << bow.labels().GetString(ex.output) << std::endl;
+    }
+    return out.str();
+}
+
+htmli::Html SaveDataset(BoWClassifier& bow, const Document& doc) {
+    using namespace httpi::html;
+    return Html() <<
+        A().Id("dl").Attr("download", "bow_dataset.bin") <<
+            "Download dataset" <<
+        Close() <<
+        Tag("textarea").Id("content").Attr("style", "display: none") <<
+            SerializeDataset(bow, doc) <<
+        Close() <<
+        Tag("script") <<
+            "window.onload = function() {"
+                "var txt = document.getElementById('dl');"
+                "txt.href = 'data:text/plain;charset=utf-8,' "
+                    "+ encodeURIComponent(document.getElementById('content').value);"
+                "};" <<
+        Close();
+}
+
 int main() {
     InitHttpInterface();  // Init the http server
 
@@ -78,6 +115,7 @@ int main() {
     auto monitoring_job = jp.GetId(t1);
 
     BoWClassifier bow;
+    Document trainingset;
 
     RegisterUrl("/", [&monitoring_job](const std::string&, const POSTValues&) {
             return PageGlobal(*monitoring_job->job_data().page());
@@ -138,15 +176,17 @@ int main() {
 
     RegisterUrl("/dataset", httpi::RestPageMaker(PageGlobal)
         .AddResource("PUT", httpi::RestResource(
-            htmli::FormDescriptor<std::string, std::string> {
+            htmli::FormDescriptor<std::string, std::string, int> {
                 "PUT", "/dataset",
                 "Single example",
                 "Add a single training example",
                 { { "input", "text", "An input sentence" },
-                  { "label", "text", "The label" } }
+                  { "label", "text", "The label" },
+                  { "epoch", "number", "How many iterations?" } }
             },
-            [&jp, &bow](const std::string& input, const std::string& label) {
-                TrainSingle(bow, input, label);
+            [&jp, &bow, &trainingset](const std::string& input,
+                    const std::string& label, int epoch) {
+                AddExample(bow, trainingset, input, label, epoch);
                 return 0;
             },
             [](int) { return htmli::Html() << "Learning started"; },
@@ -154,14 +194,19 @@ int main() {
         .AddResource("POST", httpi::RestResource(
             htmli::FormDescriptor<std::string, int> {
                 "POST", "/dataset",
-                "Train",
-                "Train the model on the specified dataset",
+                "Upload dataset",
+                "Uploads a new dataset",
                 { { "trainingset", "file", "A training set" },
-                  { "epochs", "number", "How many iterations?" } }
+                  { "epoch", "number", "Number of training epochs" } }
             },
-            [&jp, &bow](const std::string& trainingset, int epoch) {
+            [&jp, &bow, &trainingset](const std::string& str_trainingset,
+                    int epoch) {
+                trainingset = bow.Parse(str_trainingset);
                 return jp.StartJob(
-                        std::make_unique<TrainJob>(bow, epoch, trainingset));
+                        std::make_unique<TrainJob>(
+                            bow,
+                            trainingset,
+                            epoch));
             },
             [](int id) {
                 using namespace htmli;
@@ -174,11 +219,10 @@ int main() {
                 return JsonBuilder().Append("job_id", id).Build();
             }))
         .AddResource("GET", httpi::RestResource(
-                htmli::FormDescriptor<> {},
-                [](){ return 0; },
-                [](int){ return htmli::Html();},
-                [](int){ return ""; }
-            )));
+            htmli::FormDescriptor<> {},
+            [](){ return 0; },
+            [&bow, &trainingset](int){ return SaveDataset(bow, trainingset);},
+            [](int){ return ""; })));
 
     RegisterUrl("/jobs", [&jp](const std::string&, const POSTValues& args) {
             using namespace httpi::html;

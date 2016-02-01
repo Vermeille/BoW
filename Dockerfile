@@ -66,4 +66,4 @@ EXPOSE 8888
 
 RUN mkdir build && cd build && cmake .. && make
 
-ENTRYPOINT ["valgrind", "./build/bow"]
+ENTRYPOINT ["gdb", "./build/bow"]

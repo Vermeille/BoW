@@ -174,7 +174,7 @@ void BagOfWords::ResizeOutput(size_t out) {
     b_mat.conservativeResize(out, 1);
 
     for (unsigned row = output_size_; row < out; ++row) {
-        for (unsigned  col = 0, nb_cols = w_weights_->cols(); col < nb_cols; ++col) {
+        for (unsigned col = 0, nb_cols = w_weights_->cols(); col < nb_cols; ++col) {
             w_mat(row, col) = randr(-1, 1);
         }
     }
@@ -186,3 +186,14 @@ void BagOfWords::ResizeOutput(size_t out) {
     output_size_ = out;
 }
 
+double BagOfWords::weights(size_t label, size_t word) const {
+    return (*w_weights_)(label, word);
+}
+
+Eigen::MatrixXd& BagOfWords::weights() const {
+    return *w_weights_;
+}
+
+double BagOfWords::apriori(size_t label) const {
+    return (*b_weights_)(label, 0);
+}

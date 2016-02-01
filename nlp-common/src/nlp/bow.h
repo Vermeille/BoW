@@ -23,6 +23,10 @@ class BagOfWords {
     BagOfWords(size_t in_sz, size_t out_sz);
     BagOfWords();
 
+    double weights(size_t label, size_t word) const;
+    Eigen::MatrixXd& weights() const;
+    double apriori(size_t label) const;
+
     std::string Serialize() const;
     static BagOfWords FromSerialized(std::istream& file);
 

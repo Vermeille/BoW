@@ -7,8 +7,10 @@ httpi::html::Html DisplayWeights(BoWClassifier& bow) {
     for (size_t label = 0; label < bow.labels().size(); ++label) {
         html << H2() << bow.labels().GetString(label) << Close();
 
-        auto minmax = std::minmax_element(bow.weights(label).begin(), bow.weights(label).end());
-        double max = std::max(std::abs(*minmax.first), std::abs(*minmax.second));
+        auto label_row = bow.weights().row(label);
+        double max = std::max(
+                std::abs(label_row.minCoeff()),
+                std::abs(label_row.maxCoeff()));
 
         html <<
         Tag("table").AddClass("table") <<
@@ -26,21 +28,21 @@ httpi::html::Html DisplayWeights(BoWClassifier& bow) {
                 Tag("td") << bow.WordFromId(w) << Close() <<
                 Tag("td") <<
                     Div().Attr("style",
-                            "width: " + std::to_string(200 * std::abs(bow.weight(label, w) / max)) + "px;"
+                            "width: " + std::to_string(200 * std::abs(bow.weights(label, w) / max)) + "px;"
                             "padding-left: 2px;"
                             "background-color: " +
-                            std::string(bow.weight(label, w) > 0 ? "lightgreen;" : "salmon;")) <<
-                        std::to_string(bow.weight(label, w) * 100) <<
+                            std::string(bow.weights(label, w) > 0 ? "lightgreen;" : "salmon;")) <<
+                        std::to_string(bow.weights(label, w) * 100) <<
                     Close() <<
                 Close() <<
                 Tag("td") << bow.WordFromId(w + vocab) << Close() <<
                 Tag("td") <<
                     Div().Attr("style",
-                            "width: " + std::to_string(200 * std::abs(bow.weight(label, w + vocab) / max)) + "px;"
+                            "width: " + std::to_string(200 * std::abs(bow.weights(label, w + vocab) / max)) + "px;"
                             "padding-left: 2px;"
                             "background-color: " +
-                            std::string(bow.weight(label, w + vocab) > 0 ? "lightgreen;" : "salmon;")) <<
-                        std::to_string(bow.weight(label, w + vocab) * 100) <<
+                            std::string(bow.weights(label, w + vocab) > 0 ? "lightgreen;" : "salmon;")) <<
+                        std::to_string(bow.weights(label, w + vocab) * 100) <<
                     Close() <<
                 Close() <<
             Close();

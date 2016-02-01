@@ -15,15 +15,16 @@ httpi::html::Html ClassifyResult(BoWClassifier& bow, const BowResult& bowr) {
         if (w.idx != kNotFound) {
             html <<
                 Tag("span").Attr("style",
-                    "font-size: " + std::to_string((1 + std::log(1 + std::abs(bow.weight(k, w.idx)))) * 30) + "px;"
-                    "color: " + std::string(bow.weight(k, w.idx) > 0 ? "green" : "red") + ";")
+                    "font-size: " + std::to_string((1 + std::log(1 + std::abs(bow.weights(k, w.idx)))) * 30) + "px;"
+                    "color: " + std::string(bow.weights(k, w.idx) > 0 ? "green" : "red") + ";")
                     << bow.WordFromId(w.idx) << " " << Close();
         } else {
             html << Tag("span") << "_UNK_ " << Close();
         }
     }
     html <<
-        P() << "best prediction: " << bow.labels().GetString(k) << " " << std::to_string(probas[k] * 100)
+        P() << "best prediction: " << bow.labels().GetString(k) <<
+        " " << std::to_string(probas(k, 0) * 100)
         << Close() <<
 
     // table of global confidence
@@ -39,10 +40,10 @@ httpi::html::Html ClassifyResult(BoWClassifier& bow, const BowResult& bowr) {
             Tag("td") << bow.labels().GetString(i) << Close() <<
             Tag("td") <<
                 Div().Attr("style",
-                        "width: " + std::to_string(200 * probas[i]) + "px;"
+                        "width: " + std::to_string(200 * probas(i, 0)) + "px;"
                         "padding-left: 2px;"
                         "background-color: lightgreen;") <<
-                    std::to_string(probas[i] * 100) <<
+                    std::to_string(probas(i, 0) * 100) <<
                 Close() <<
             Close() <<
         Close();

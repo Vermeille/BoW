@@ -80,7 +80,7 @@ int BagOfWords::Train(const Document& doc) {
         Var h = ComputeModel(g, w, b, ex.inputs);
 
         // MSE is weirdly doing better than Cross Entropy
-        Var J = ad::MSE(y, h);
+        Var J = ad::MSE(y, h) + Sum(EltSquare(w)) + Sum(EltSquare(b));
 
         opt::SGD sgd(0.01);
         g.BackpropFrom(J);

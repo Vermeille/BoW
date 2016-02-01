@@ -1,12 +1,11 @@
 #include <fstream>
 #include <glog/logging.h>
 
-#include <nlp-common/tokenizer.h>
+#include <nlp/tokenizer.h>
 
 #include "bow.h"
 
 size_t BoWClassifier::Train(const Document& doc) {
-
     bow_.ResizeInput(ngram_.dict().size());
     bow_.ResizeOutput(ls_.size());
 

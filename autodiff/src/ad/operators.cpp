@@ -31,6 +31,24 @@ Var operator*(const Var& v1, const Var& v2) {
     return v1.graph()->CreateNode(v1.value() * v2.value(), v1, v2, MulBackprop);
 }
 
+static void CoeffMulBackprop(Var& val, Var* lhs, Var* rhs) {
+    lhs->derivative() +=  val.derivative() * rhs->value()(0, 0);
+}
+
+Var operator*(double a, const Var& v1) {
+    Eigen::MatrixXd coeff(1, 1);
+    coeff << a;
+    Var coeff_var = v1.graph()->CreateParam(coeff);
+    return v1.graph()->CreateNode(v1.value() * a, v1, coeff_var, CoeffMulBackprop);
+}
+
+Var operator*(const Var& v1, double a) {
+    Eigen::MatrixXd coeff(1, 1);
+    coeff << a;
+    Var coeff_var = v1.graph()->CreateParam(coeff);
+    return v1.graph()->CreateNode(v1.value() * a, v1, coeff_var, CoeffMulBackprop);
+}
+
 static void ReluBackprop(Var& val, Var* lhs, Var*) {
     double* da = lhs->derivative().data();
     const double* a = lhs->value().data();
@@ -112,7 +130,7 @@ Var NLog(const Var& x) {
 }
 
 Var CrossEntropy(const Var& y, const Var& h) {
-    return ad::ColSum(y ^ NLog(h));
+    return Sum(y ^ NLog(h));
 }
 
 static void ExpBackprop(Var& val, Var* lhs, Var*) {
@@ -168,18 +186,29 @@ Var Sigmoid(const Var& x) {
     return x.graph()->CreateNode(res, x, no_operand, SoftmaxBackprop);
 }
 
-void ColSumBackprop(Var& val, Var* lhs, Var*) {
+void SumBackprop(Var& val, Var* lhs, Var*) {
     lhs->derivative().array() += (double)val.derivative()(0, 0);
 }
 
-Var ColSum(const Var& a) {
+Var Sum(const Var& a) {
     Eigen::MatrixXd res(1, 1);
     res << a.value().sum();
-    return a.graph()->CreateNode(res, a, no_operand, ColSumBackprop);
+    return a.graph()->CreateNode(res, a, no_operand, SumBackprop);
+}
+
+void MeanBackprop(Var& val, Var* lhs, Var*) {
+    lhs->derivative().array() +=
+        (double)val.derivative()(0, 0) / val.value().size();
+}
+
+Var Mean(const Var& a) {
+    Eigen::MatrixXd res(1, 1);
+    res << a.value().sum() / a.value().size();
+    return a.graph()->CreateNode(res, a, no_operand, MeanBackprop);
 }
 
 Var MSE(const Var& h, const Var& y) {
-    return ColSum(EltSquare(h - y));
+    return Sum(EltSquare(h - y));
 }
 
 }

@@ -38,7 +38,7 @@ int main() {
         Var b = g.CreateParam(b_weights);
 
         Var h = a * x + b;
-        Var j = MSE(h, y);
+        Var j = MSE(h, y) + 0.001 * (Mean(EltSquare(a)) + Mean(EltSquare(b)));
 
         std::cout << "COST = " << j.value() << "\n";
 

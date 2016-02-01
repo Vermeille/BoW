@@ -80,7 +80,7 @@ int BagOfWords::Train(const Document& doc) {
         Var h = ComputeModel(g, w, b, ex.inputs);
 
         // MSE is weirdly doing better than Cross Entropy
-        Var J = ad::MSE(y, h);
+        Var J = ad::MSE(y, h) + 0.001 * (Mean(EltSquare(w)) * Mean(EltSquare(b)));
 
         opt::SGD sgd(0.01);
         g.BackpropFrom(J);
@@ -174,7 +174,7 @@ void BagOfWords::ResizeOutput(size_t out) {
     b_mat.conservativeResize(out, 1);
 
     for (unsigned row = output_size_; row < out; ++row) {
-        for (unsigned  col = 0, nb_cols = w_weights_->cols(); col < nb_cols; ++col) {
+        for (unsigned col = 0, nb_cols = w_weights_->cols(); col < nb_cols; ++col) {
             w_mat(row, col) = randr(-1, 1);
         }
     }
@@ -186,3 +186,14 @@ void BagOfWords::ResizeOutput(size_t out) {
     output_size_ = out;
 }
 
+double BagOfWords::weights(size_t label, size_t word) const {
+    return (*w_weights_)(label, word);
+}
+
+Eigen::MatrixXd& BagOfWords::weights() const {
+    return *w_weights_;
+}
+
+double BagOfWords::apriori(size_t label) const {
+    return (*b_weights_)(label, 0);
+}

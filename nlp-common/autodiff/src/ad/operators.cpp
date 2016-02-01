@@ -112,7 +112,7 @@ Var NLog(const Var& x) {
 }
 
 Var CrossEntropy(const Var& y, const Var& h) {
-    return ad::ColSum(y ^ NLog(h));
+    return Sum(y ^ NLog(h));
 }
 
 static void ExpBackprop(Var& val, Var* lhs, Var*) {
@@ -168,18 +168,18 @@ Var Sigmoid(const Var& x) {
     return x.graph()->CreateNode(res, x, no_operand, SoftmaxBackprop);
 }
 
-void ColSumBackprop(Var& val, Var* lhs, Var*) {
+void SumBackprop(Var& val, Var* lhs, Var*) {
     lhs->derivative().array() += (double)val.derivative()(0, 0);
 }
 
-Var ColSum(const Var& a) {
+Var Sum(const Var& a) {
     Eigen::MatrixXd res(1, 1);
     res << a.value().sum();
-    return a.graph()->CreateNode(res, a, no_operand, ColSumBackprop);
+    return a.graph()->CreateNode(res, a, no_operand, SumBackprop);
 }
 
 Var MSE(const Var& h, const Var& y) {
-    return ColSum(EltSquare(h - y));
+    return Sum(EltSquare(h - y));
 }
 
 }

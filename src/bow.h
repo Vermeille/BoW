@@ -4,12 +4,14 @@
 #include <string>
 #include <sstream>
 
-#include <nlp-common/bow.h>
-#include <nlp-common/dict.h>
-#include <nlp-common/document.h>
+#include <nlp/bow.h>
+#include <nlp/dict.h>
+#include <nlp/document.h>
+
+#include <Eigen/Dense>
 
 struct BowResult {
-    std::vector<double> confidence;
+    Eigen::MatrixXd confidence;
     Label label;
     std::vector<WordFeatures> words;
 };
@@ -23,9 +25,8 @@ class BoWClassifier {
 
     LabelSet& labels() { return ls_; }
 
-    const std::vector<std::vector<double>>& weights() const { return bow_.weights(); }
-    const std::vector<double>& weights(size_t label) const { return bow_.weights(label); }
-    double weight(size_t label, size_t w) const { return bow_.weight(label, w); }
+    double weights(size_t label, size_t w) const { return bow_.weights(label, w); }
+    Eigen::MatrixXd& weights() const { return bow_.weights(); }
 
     std::string WordFromId(size_t id) const { return ngram_.WordFromId(id); }
 

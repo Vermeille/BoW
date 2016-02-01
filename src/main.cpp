@@ -137,7 +137,7 @@ int main() {
             },
             [&bow](const BowResult& res) {
                 return JsonBuilder()
-                    .Append("confidence", res.confidence[res.label])
+                    .Append("confidence", res.confidence(res.label, 0))
                     .Append("label", bow.labels().GetString(res.label))
                     .Build();
             })));

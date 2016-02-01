@@ -33,8 +33,9 @@ BowResult BoWClassifier::ComputeClass(const std::string& data) {
     auto toks = Tokenizer::FR(data);
     ngram_.Annotate(toks);
 
-    std::vector<double> probas(OutputSize());
-    Label label_res = bow_.ComputeClass(toks, probas.data());
+    Eigen::MatrixXd probas = bow_.ComputeClass(toks);
+    Eigen::MatrixXd::Index label_res, dummy_zero;
+    probas.maxCoeff(&label_res, &dummy_zero);
     return {probas, label_res, toks};
 }
 

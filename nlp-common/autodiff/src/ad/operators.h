@@ -5,6 +5,7 @@
 #include "graph.h"
 
 namespace ad {
+
 Var operator+(const Var& v1, const Var& v2);
 Var operator-(const Var& v1, const Var& v2);
 Var operator*(const Var& v1, const Var& v2);
@@ -18,7 +19,7 @@ Var CrossEntropy(const Var& y, const Var& h);
 Var Exp(const Var& x);
 Var Softmax(const Var& x);
 Var Sigmoid(const Var& x);
-Var ColSum(const Var& a);
+Var Sum(const Var& a);
 Var MSE(const Var& h, const Var& y);
 
 }

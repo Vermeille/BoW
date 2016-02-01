@@ -1,0 +1,166 @@
+waffle - windows authentication framework | shit
+what is programming language and how programming works | shit
+ibms apache systemml  ( incubating  ) | shit
+how is the l  * algorithm applied in practice  ? | shit
+darpa alchemy  : open source ai | cool
+grasping haskell  : functors  , applicatives and monads  ( part 1  ) | cool
+real programming in functional languages  ( 1982  ) | cool
+ios instrumentation without jailbreak | shit
+chroma  . js  , a tiny javascript library for dealing with colors  ! | shit
+using cellular automata in  " subete ga f ni naru  " ending theme | shit
+where to start | shit
+the c11 and c  +  + 11 concurrency model  ( 2014  )  [ pdf  ] | cool
+ensembling using logistic regression | cool
+the silver bullet syndrome | shit
+eli5  : why should i care about deep generative models  ? | cool
+processing csv files with rfc 7111 selectors and javascript | shit
+where are quantopian algorithms used and what' s the hourly rate for someone with this type of knowledge  ? | shit
+o' reilly media' s annual cyber monday sale is on  , 50  % site-wide | shit
+finding bugs in the first c  +  + compiler - what does bjarne think  ! | shit
+how hard would it be to perform image recognition on lego pieces  ? | cool
+deer hunter 2016 android game | shit
+what' s the deal with rnns  ? are they as op as they sound  ? | shit
+web analytics tools you didnt know | shit
+why do most lstm implementations keep multiple copies of same rnn  ? | shit
+wt of  [ 1511  . 04119  ] action recognition using visual attention  ( u toronto  , w  / github code  ) | cool
+wt of  [ 1511  . 04119  ] action recognition using visual attention  ( u toronto  , w  / github code  ) | cool
+how to install  & amp  ; host ghost with nginx on ubuntu | shit
+dreamcoding my ideal language  . - 4 language features that don' t yet exist | shit
+til  : files starting with dot  ( like  . gitignore  ) are invisible to  *  .  * pattern | shit
+hello worg  , the org-mode community  ! | shit
+your app developers and designers could be at war  . | shit
+new immutable data structure that has a smaller memory footprint  , better locality  & amp  ; higher performance  ( especially iteration  !  ) compared to scala and clojure implementations | shit
+artificial intelligence  : the machines are coming but dont expect gods  . | cool
+w - a simple programming language  . | cool
+this week in programming - 19th to 26th october | shit
+build a desktop app with github electron and couchbase | shit
+pylatex 1  . 0  . 0  : generate latex files and snippets  . the first stable release  , now with lots of documentation and examples  .  [ x-post from  / r  / python  ] | shit
+middleware platform for context-aware smart buildings with software-defined sensor networks | cool
+efene  : an erlang vm language that embraces the zen of python | cool
+convergent learning  : do different neural networks learn the same representations  ? | cool
+compiling protocol buffers sources in maven | shit
+another example of why you shouldn' t roll-your-own crypto | shit
+a curated list of awesome nosql resources | shit
+a newbie' s question about preparation of data for machine learning | shit
+i  ( will  ) have tens  ( hundreds  , maybe  ) of hours of recording of just myself talking  . can deep learning help me transcribe them semi automatically  ? | shit
+the wind of change | shit
+ ( xpost from  / r  / computervision  ) finding grasp points on a new object | shit
+magit  : a git porcelain inside emacs | shit
+3d flocking simulation in haskell | cool
+holberton wants to be a different kind of coding school | shit
+why i hate spring | shit
+implementing custom loss functions with automatic differentiation  .  ( this is a lot easier than it sounds  )  . | shit
+applying deep learning to regression task | cool
+why rubys timeout is dangerous  ( and thread  . raise is terrifying  ) | shit
+80  + pci 3  . 0 lanes for 3 or more gpu' s | shit
+icon fonts for swift | shit
+how to  : easy projection mapping make  : | cool
+today is the 25th anniversary of arm ltd  .  , uk  . to celebrate and honor their amazing work  , we present the visual arm1  , created in collaboration with some of arm' s founding engineers  . | shit
+swift programming for beginners - part  : 17 intro | shit
+how hard is it to get research positions at google  / facebook  / microsoft for ai  / ml  ? | shit
+squashing docker images with btrfs | cool
+typematch  : pattern matching for typesscript with focus on type safety | cool
+es6 overview in one page | cool
+swift programming for beginners - part  : 34 intro | shit
+how udemy is profiting from piracy | cool
+brian kernighan  : perl is dying  , objective c will be killed off by swift | shit
+learn to craft at microsoft | shit
+swift programming for beginners - part  : 40 intro | shit
+can' t get a simple keras program to build  . | shit
+porting go to linux on ibm z architecture | cool
+why use ecc  ?  [ a response to atwood' s post  ]  ? | shit
+when children are breachedinside the massive vtech hack | shit
+codeanywhere  : a free cloud based ide that lets you code anywhere you have a browser  . | shit
+i' ve made some major updates to bagger  , a command-line utility that makes compressing with zip less of a hassle  . | shit
+electron based nodejs repl with coffeescript  , typescript and livescript support | shit
+machine learning libraries in c  # | shit
+stock market forecasting using deep learning  ? | cool
+ [ 1511  . 06464  ] unitary evolution recurrent neural networks  , proposed architecture generally outperforms lstms | cool
+sentence composition through averaging pre-trained  ( paraphrastic  ) word vectors outperform lstms across tasks  ( dl  ) | cool
+icymi black friday sales for cloudatcost are over  , but you can still get 60  % off  [ x-post from  / r  / vps  ] | shit
+demo of programming in self | shit
+angular 2 developer preview  : core concepts  , es and typescript | shit
+how to write fully automatic sudoku solver in c  +  + | cool
+if lisp is so great - paul graham | shit
+can a bachelors degree holder directly get into a phd program in ai at a top lab  [ montreal  , idsia etc  ] | shit
+wiktionary to json parser | shit
+grasping haskell  : functors  , applicatives and monads  ( part 2  ) | cool
+order matters - sequence to sequence for sets  ( google  ) - at wikitract | cool
+perl 6 introduction | shit
+datasets of one to one conversations  ? | shit
+awesome interview questions | cool
+' li-fi 100 times faster than wi-fi' - bbc news | cool
+get lamp | shit
+i' ve create a ' beautiful quotes' website based on pornhub comments and it' s the funniest thing ever | shit
+compression benchmarks  : brotli  , gzip  , xz  , bz2 | cool
+0 a  . d  .  : a free  , open-source game of ancient warfare | shit
+node os review - ultra-minimal linux distribution with node  . js  / javascript userspace | shit
+grow your own type system | cool
+the 2015 startup bubble explained | shit
+inspecting gnu coreutils whoami | cool
+qriollo  : an argentinian slang functional programming language | cool
+self-organizing maps with googles tensorflow | cool
+self-organizing maps with googles tensorflow | cool
+ [ c  +  +  ] guess the word | shit
+laplacian-modified naive bayesian classifier used in ligand-based virtual screen in combination with ensemble docking with data fusion discovers novel multitarget inhibitor for cancer | cool
+the programmer' s paradox  : software engineering | shit
+which open source libraries does mozilla depend on the most  ? | shit
+notes on infinite dimensional word embeddings | cool
+ [ 1511  . 06807  ] adding gradient noise improves learning for very deep networks | cool
+a wizard prompt animation | shit
+the falcon language  ( multi-paradigm  , dynamically typed  ) | cool
+char-rnn in tensorflow | cool
+how to ' force' a sparse activation in conv layer  . | cool
+coding is boring  , unless | shit
+the devwars tournament is now live  !  / r  / devwars | cool
+i need help for my assignment  . i really don' t know how to do it  . please help me  ! | shit
+connect  (  ) | cool
+a paper trading api written in python  [ updated  ] | cool
+doodle jump created in 120 minutes with python | shit
+multiple custom commands in shell startup  ( for terminator  ) | cool
+pedro domingos gives talk at google on his book  ,  " the master algorithm  " | cool
+a survey to see people' s personal fav website for learning  ! | shit
+anyone here have any experience with the actor-critic method for reinforcement learning  ? if so i' d like to pick your brain | shit
+sharing is the root of all contention  ( or  , how not to get hired as a lead engineer  )  . | shit
+sharing is the root of all contention  ( or  , how not to get hired as a lead engineer  )  . | shit
+sharing is the root of all contention  ( or  , how not to get hired as a lead engineer  )  . | shit
+doodle jump programming time lapse | shit
+ [ x-post  ] chrysler recall r40 usb stick potential security issue  ( dump of usb in comments  ) | shit
+december  + development  = devember  !  = 1h of code x 31 days - because coding is awesome  ! | shit
+tiny n-body simulator  , would greatly appreciate comments and suggestions | cool
+a template for web applications powered by spring boot and polymer starter kit | shit
+using launchctl as an anacron replacement | cool
+ios 9 fundamentals - 01 getting started | shit
+decision tree learning - why we use entropy  / gini over the classification error to grow a tree | cool
+the programmer' s oath by uncle bob | shit
+fitting a model via closed-form equations vs  . gradient descent vs stochastic gradient descent vs mini-batch learning  . what is the difference  ? | cool
+nifty c  # async await cheatsheet | shit
+p vs  . np  : the assumption that runs the internet | cool
+what is the best tool  / program to draw deep neural networks  ? | cool
+pointer networks  ( google  , uc berkley  ) - at wikitract | cool
+implementing a  ( sort of  ) generic  ,  ( sort of  ) type-safe array in c | cool
+pipelined tensorflow in r  ( wip ) | cool
+how to know when someone is talking about you on reddit | cool
+conversational seq2seq networks - deep vs shallow | cool
+pointer networks  ( google , uc berkley ) - at wikitract | cool
+lol | shit
+real-time strategy game ai : problems and techniques | cool
+evaluating clojurescript in the browser | shit
+a roadmap towards machine intelligence  ( facebook , u trento ) - at wikitract | cool
+vgg feature visualizer in tensorflow | cool
+i have found a amazing combo , quoda and dropbox . | shit
+building for http / 2 | shit
+geekadvises - with great attention to technical detail . | shit
+ [ question ] is there a formal equivalence between clustering of items represented as a network through community detection and traditional clustering e . g . k-means ? | shit
+creating an open source dataset sharing platform | cool
+using keras lstm rnn for variable length sequence prediction | cool
+the no bullshit guide to start coding | shit
+how to program in binary machine code - raspberry pidp-11 | cool
+best library or way to implement collaborative filtering ? | shit
+a whirlwind tour of gos runtime environment variables | cool
+initializing your mockito mocks | shit
+tutorial : create a machine learning pipeline for iris classification | cool
+must-see javascript dev tools | shit
+why julia' s dataframes are still slow | shit
+netflix hack day - autumn 2015 | shit
+question regarding inversion of softmax function  ( x-post from  / r / mlquestions ) | shit

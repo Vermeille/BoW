@@ -18,6 +18,7 @@ RUN apt-get update &&  apt-get install -y \
          git \
          libboost-all-dev \
          libgoogle-glog-dev \
+         libeigen3-dev \
          libgflags-dev \
          make \
          pkg-config
@@ -35,28 +36,6 @@ RUN git clone https://github.com/Metaswitch/libmicrohttpd --depth=1 && \
 
 RUN apt-get install -y gdb valgrind
 
-RUN git clone https://github.com/Vermeille/http-interface && \
-    cd http-interface && \
-    git checkout fcde45e053315 && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
-    make && \
-    make install && \
-    cd ../.. && \
-    rm -rf http-interface
-
-RUN git clone https://github.com/Vermeille/nlp-common && \
-    cd nlp-common && \
-    git checkout 0a14978 && \
-    mkdir build && \
-    cd build && \
-    cmake .. && \
-    make && \
-    make install && \
-    cd ../.. && \
-    rm -rf nlp-common && echo i
-
 # Mandatory: generate the locales of the languages the library uses.
 RUN locale-gen fr_FR.UTF-8
 
@@ -66,4 +45,4 @@ EXPOSE 8888
 
 RUN mkdir build && cd build && cmake .. && make
 
-ENTRYPOINT ["gdb", "./build/bow"]
+ENTRYPOINT ["valgrind", "./build/src/bow"]

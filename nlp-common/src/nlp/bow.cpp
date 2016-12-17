@@ -11,10 +11,10 @@ static double randr(float from, float to) {
 }
 
 BagOfWords::BagOfWords(size_t in_sz, size_t out_sz)
-        : w_weights_(std::make_shared<Eigen::MatrixXd>(out_sz, in_sz)),
-        b_weights_(std::make_shared<Eigen::MatrixXd>(out_sz, 1)),
-        input_size_(in_sz),
-        output_size_(out_sz) {
+    : w_weights_(std::make_shared<Eigen::MatrixXd>(out_sz, in_sz)),
+      b_weights_(std::make_shared<Eigen::MatrixXd>(out_sz, 1)),
+      input_size_(in_sz),
+      output_size_(out_sz) {
     auto& b_mat = *b_weights_;
     auto& w_mat = *w_weights_;
 
@@ -28,15 +28,15 @@ BagOfWords::BagOfWords(size_t in_sz, size_t out_sz)
 }
 
 BagOfWords::BagOfWords()
-        : w_weights_(std::make_shared<Eigen::MatrixXd>(0, 0)),
-        b_weights_(std::make_shared<Eigen::MatrixXd>(0, 1)),
-        input_size_(0),
-        output_size_(0) {
-}
+    : w_weights_(std::make_shared<Eigen::MatrixXd>(0, 0)),
+      b_weights_(std::make_shared<Eigen::MatrixXd>(0, 1)),
+      input_size_(0),
+      output_size_(0) {}
 
-ad::Var BagOfWords::ComputeModel(
-        ad::ComputationGraph& g, ad::Var& w, ad::Var& b,
-        const std::vector<WordFeatures>& ws) const {
+ad::Var BagOfWords::ComputeModel(ad::ComputationGraph& g,
+                                 ad::Var& w,
+                                 ad::Var& b,
+                                 const std::vector<WordFeatures>& ws) const {
     Eigen::MatrixXd input(input_size_, 1);
     input.setZero();
 
@@ -52,7 +52,8 @@ ad::Var BagOfWords::ComputeModel(
     return ad::Softmax(w * x + b);
 }
 
-Eigen::MatrixXd BagOfWords::ComputeClass(const std::vector<WordFeatures>& ws) const {
+Eigen::MatrixXd BagOfWords::ComputeClass(
+    const std::vector<WordFeatures>& ws) const {
     ad::ComputationGraph g;
     ad::Var w = g.CreateParam(w_weights_);
     ad::Var b = g.CreateParam(b_weights_);
@@ -64,6 +65,10 @@ int BagOfWords::Train(const Document& doc) {
     double nll = 0;
     int nb_correct = 0;
     int nb_tokens = 0;
+
+    if (doc.examples.empty()) {
+        return 0;
+    }
 
     for (auto& ex : doc.examples) {
         using namespace ad;
@@ -80,7 +85,8 @@ int BagOfWords::Train(const Document& doc) {
         Var h = ComputeModel(g, w, b, ex.inputs);
 
         // MSE is weirdly doing better than Cross Entropy
-        Var J = ad::MSE(y, h) + 0.001 * (Mean(EltSquare(w)) * Mean(EltSquare(b)));
+        Var J =
+            ad::MSE(y, h) + 0.001 * (Mean(EltSquare(w)) * Mean(EltSquare(b)));
 
         opt::SGD sgd(0.01);
         g.BackpropFrom(J);
@@ -95,7 +101,7 @@ int BagOfWords::Train(const Document& doc) {
 
         nll += J.value()(0, 0);
     }
-    return  nb_correct * 100 / nb_tokens;
+    return nb_correct * 100 / nb_tokens;
 }
 
 std::string BagOfWords::Serialize() const {
@@ -174,7 +180,8 @@ void BagOfWords::ResizeOutput(size_t out) {
     b_mat.conservativeResize(out, 1);
 
     for (unsigned row = output_size_; row < out; ++row) {
-        for (unsigned col = 0, nb_cols = w_weights_->cols(); col < nb_cols; ++col) {
+        for (unsigned col = 0, nb_cols = w_weights_->cols(); col < nb_cols;
+             ++col) {
             w_mat(row, col) = randr(-1, 1);
         }
     }
@@ -190,9 +197,7 @@ double BagOfWords::weights(size_t label, size_t word) const {
     return (*w_weights_)(label, word);
 }
 
-Eigen::MatrixXd& BagOfWords::weights() const {
-    return *w_weights_;
-}
+Eigen::MatrixXd& BagOfWords::weights() const { return *w_weights_; }
 
 double BagOfWords::apriori(size_t label) const {
     return (*b_weights_)(label, 0);

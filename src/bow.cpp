@@ -1,5 +1,5 @@
-#include <fstream>
 #include <glog/logging.h>
+#include <fstream>
 
 #include <nlp/tokenizer.h>
 
@@ -18,6 +18,9 @@ Document BoWClassifier::Parse(const std::string& str) {
     Document doc;
     while (std::getline(dataset, line)) {
         size_t pipe = line.find('|');
+        if (pipe == std::string::npos) {
+            continue;
+        }
         std::string data(line, 0, pipe - 1);
         std::string label(line, pipe + 2, line.size());
 
